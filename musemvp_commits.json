@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "source_repo": "musemvp/musemvp",
+    "fetched_at": "2026-04-26T02:44:00Z",
+    "total_count": 50,
+    "description": "Latest 50 commits from MuseMVP, auto-synced daily via GitHub Actions."
+  },
+  "commits": [
+    {
+      "sha": "e92d671",
+      "sha_full": "e92d6711f37629b7af35988c8f0148ea63ebc807",
+      "message": "feat(cookie-consent): implement cookie consent banner and configuration",
+      "message_full": "feat(cookie-consent): implement cookie consent banner and configuration\n\n- Added a cookie consent banner with customizable copy for user consent options.\n- Updated the CookieProvider to manage consent state and decisions.\n- Enhanced layout components to include cookie configuration.\n- Added translations for cookie consent messages in English and Chinese.\n- Refactored Document component to utilize the new consent banner and context.\n- Adjusted UI components for improved user experience regarding cookie preferences.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-25T17:30:12Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-25T17:30:12Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e92d6711f37629b7af35988c8f0148ea63ebc807"
+    },
+    {
+      "sha": "7b6e53b",
+      "sha_full": "7b6e53bb312d63640609770db1322bccb7a78efa",
+      "message": "feat(changelog): implement changelog generation and update UI components",
+      "message_full": "feat(changelog): implement changelog generation and update UI components\n\n- Added a new changelog schema to support bilingual entries and structured changelog content.\n- Created a changelog generation skill for producing bilingual changelog entries from git commits.\n- Updated the changelog page to utilize the new MvpChangelogPageContent component for rendering.\n- Enhanced translations for changelog descriptions and types in both English and Chinese.\n- Refactored existing changelog components to improve maintainability and readability.\n- Added e2e tests to verify the visibility of changelog entries on the landing page.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-25T16:35:57Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-25T16:35:57Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7b6e53bb312d63640609770db1322bccb7a78efa"
+    },
+    {
+      "sha": "91260b7",
+      "sha_full": "91260b7d9f1165ffbf6377bc9a28723e3efc8979",
+      "message": "feat(admin-users): implement user ban and unban functionality",
+      "message_full": "feat(admin-users): implement user ban and unban functionality\n\n- Added translations for ban and unban user actions in English and Chinese.\n- Updated AdminUsers component to include ban and unban user actions.\n- Enhanced UserActionsMenu to allow admins to ban and unban users with appropriate callbacks.\n- Implemented banUser and unbanUser functions in useUserActions hook.\n- Added e2e tests to verify the ban and unban functionality for admin users.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-25T13:33:39Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-25T13:33:39Z",
+      "url": "https://github.com/musemvp/musemvp/commit/91260b7d9f1165ffbf6377bc9a28723e3efc8979"
+    },
+    {
+      "sha": "e29f9b1",
+      "sha_full": "e29f9b130203a2147c70fce1fad3ecdef771c77a",
+      "message": "docs(spec): add admin user ban design",
+      "message_full": "docs(spec): add admin user ban design",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-25T13:11:05Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-25T13:11:05Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e29f9b130203a2147c70fce1fad3ecdef771c77a"
+    },
+    {
+      "sha": "1d05fa3",
+      "sha_full": "1d05fa377512674c9c1f59954ff28262d0469685",
+      "message": "Merge pull request #47 from musemvp/fix/direct",
+      "message_full": "Merge pull request #47 from musemvp/fix/direct\n\nfeat: Enhance testability and refactor components for better integration",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T13:16:51Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T13:16:51Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1d05fa377512674c9c1f59954ff28262d0469685"
+    },
+    {
+      "sha": "45bf4ef",
+      "sha_full": "45bf4efcdcd75da28ddf7749a29b0ad8c4292626",
+      "message": "feat(two-factor-auth): enhance TwoFactorVerifyForm with data-testid attributes for improved testability",
+      "message_full": "feat(two-factor-auth): enhance TwoFactorVerifyForm with data-testid attributes for improved testability\n\n- Added `data-testid` attributes to the TwoFactorVerifyForm component to facilitate automated testing.\n- Updated e2e test scenarios to include new routes for two-factor authentication, ensuring proper redirection and visibility of the verification form.\n- Introduced a utility function to create a two-factor scenario user for testing purposes, enhancing test coverage and reliability.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T13:14:13Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T13:14:13Z",
+      "url": "https://github.com/musemvp/musemvp/commit/45bf4efcdcd75da28ddf7749a29b0ad8c4292626"
+    },
+    {
+      "sha": "d655ee4",
+      "sha_full": "d655ee4662b217d63695bff49ebc927196515e91",
+      "message": "feat(password-input): refactor PasswordInput component to use forwardRef and improve type safety",
+      "message_full": "feat(password-input): refactor PasswordInput component to use forwardRef and improve type safety\n\n- Updated the PasswordInput component to utilize React's forwardRef for better integration with parent components.\n- Enhanced type definitions by creating a PasswordInputProps type that omits unnecessary input properties.\n- Improved the structure of the component for better readability and maintainability.\n- Added displayName for better debugging in React DevTools.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T13:07:10Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T13:07:10Z",
+      "url": "https://github.com/musemvp/musemvp/commit/d655ee4662b217d63695bff49ebc927196515e91"
+    },
+    {
+      "sha": "91be374",
+      "sha_full": "91be374ec08825f8ac2bc4be8870df87d8db7374",
+      "message": "feat(settings): add data-testid attributes for improved testability in confirmation and delete account components",
+      "message_full": "feat(settings): add data-testid attributes for improved testability in confirmation and delete account components\n\n- Added `data-testid` attributes to `ConfirmationAlertProvider` for the alert dialog and its buttons to enhance automated testing capabilities.\n- Updated `DeleteAccountForm` to include a `data-testid` for the delete account button, facilitating easier identification in tests.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T12:39:23Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T12:39:23Z",
+      "url": "https://github.com/musemvp/musemvp/commit/91be374ec08825f8ac2bc4be8870df87d8db7374"
+    },
+    {
+      "sha": "a0fd937",
+      "sha_full": "a0fd937788de98f80a9c09237d6919db5d32c8cd",
+      "message": "Merge pull request #46 from musemvp/fix/direct",
+      "message_full": "Merge pull request #46 from musemvp/fix/direct\n\nrefactor(auth): streamline redirect handling and enhance type safety",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T12:34:15Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T12:34:15Z",
+      "url": "https://github.com/musemvp/musemvp/commit/a0fd937788de98f80a9c09237d6919db5d32c8cd"
+    },
+    {
+      "sha": "e470adb",
+      "sha_full": "e470adbb9784e9ba7849a56544b485c0f9875e96",
+      "message": "refactor(auth): streamline redirect handling and enhance type safety",
+      "message_full": "refactor(auth): streamline redirect handling and enhance type safety\n\n- Introduced `replaceWithAuthRedirect` utility to standardize redirect logic across login, signup, and two-factor verification forms.\n- Added `needsTwoFactorRedirect` function to improve type safety when checking for two-factor authentication redirects.\n- Updated `LoginFormMailOTP`, `SignupFormMailOTP`, and `TwoFactorVerifyForm` components to utilize the new redirect handling logic.\n- Changed type of `resData` in `LoginFormMailOTP` from `any` to `unknown` for better type safety.\n- Adjusted e2e tests to reflect changes in routing and ensure correct URL expectations.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T12:29:12Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T12:29:12Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e470adbb9784e9ba7849a56544b485c0f9875e96"
+    },
+    {
+      "sha": "cf77622",
+      "sha_full": "cf77622e66883bd27cbbed623d20d8dbf3433c36",
+      "message": "Merge pull request #44 from musemvp/dependabot/npm_and_yarn/npm-all-980fc9041a",
+      "message_full": "Merge pull request #44 from musemvp/dependabot/npm_and_yarn/npm-all-980fc9041a\n\nchore(deps): bump the npm-all group across 1 directory with 22 updates",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T11:50:47Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T11:50:47Z",
+      "url": "https://github.com/musemvp/musemvp/commit/cf77622e66883bd27cbbed623d20d8dbf3433c36"
+    },
+    {
+      "sha": "8a9bc25",
+      "sha_full": "8a9bc25584e8ea126d9aa6f1eedeeb3123a58bab",
+      "message": "refactor: enhance muse-billing module with improved documentation (#45)",
+      "message_full": "refactor: enhance muse-billing module with improved documentation (#45)\n\n* feat(payment): add comprehensive payment system analysis and module documentation\n\n- Introduced a new document, `PAYMENT_SYSTEM_ANALYSIS.md`, outlining the current payment architecture, identifying potential risks, and providing actionable governance and refactoring strategies.\n- Added a detailed `README.md` for the `muse-billing` module, explaining file functionalities, core logic, and optimization suggestions to facilitate understanding and future improvements.\n- Enhanced the `PricingSection` component with comments to clarify the flow of plan selection and launch link creation.\n- Updated the `MuseBillingHub` class in `lib/index.ts` with detailed JSDoc comments for better code documentation and maintainability.\n- Improved the `orchestrator.ts` file with additional comments to clarify the purpose of various functions and parameters.\n- Added JSDoc comments to several functions across the `lib` and `gateways` directories to enhance code clarity and facilitate easier onboarding for new developers.\n\n* refactor(payment): restructure muse-billing module and update component paths\n\n- Refactored the `muse-billing` module by reorganizing file structures and updating import paths for better clarity and maintainability.\n- Removed deprecated components such as `ActivePlan`, `ChangePlan`, `PricingPageHeader`, and `PricingSection` to streamline the codebase.\n- Updated references in various files to reflect the new component paths, ensuring consistent usage across the application.\n- Enhanced the `useMuseAccess` hook to utilize the new access management structure, improving the overall access resolution process.\n- Adjusted the backend API routes to align with the new service structure, enhancing modularity and separation of concerns.\n\n* docs(billing): update README with payment gateway guide\n\n- Added a reference to the `ADD_PAYMENT_GATEWAY.md` for a detailed step-by-step guide on integrating payment gateways, enhancing documentation clarity for developers.\n\n* feat(billing): enhance muse-billing types and schemas for improved validation\n\n- Updated `museBillingGatewaySchema` to utilize dynamic gateway IDs from the new `MUSE_BILLING_GATEWAY_IDS` constant, enhancing flexibility.\n- Refined `launchResponseSchema` to use the updated `museBillingGatewaySchema` for `gatewayId`, ensuring consistent validation.\n- Enhanced `createLaunchSchema` and `createCustomerHubSchema` to leverage new enums for price types and intervals, improving type safety and maintainability.\n- Updated API client methods to return more specific types, including `MuseAccessPayload`, ensuring better type inference and reducing potential errors.\n- Refactored pricing components to utilize new types and enums, streamlining the pricing logic and improving clarity across the billing module.\n\n* refactor(billing): streamline muse-billing access management and component structure\n\n- Removed deprecated access management methods and components, including `useMuseAccess` and related query keys, to simplify the billing module.\n- Updated `getMuseAccessStatus` to directly utilize session state for improved access resolution.\n- Refactored billing settings components to accept access status as a prop, enhancing data flow and component reusability.\n- Introduced new components for customer portal actions and subscription status badges, improving UI clarity and functionality.\n- Enhanced type definitions and documentation across the billing module for better maintainability and developer experience.\n\n* chore(pricing): remove PricingSection component and related types\n\n- Deleted the `PricingSection` component and its associated types from the billing module to streamline the codebase.\n- This change is part of an ongoing effort to refactor and simplify the pricing components for better maintainability.\n\n* Enhance HeaderDesktopControls component with accessibility improvements\n\n- Added focus styles to the ColorThemeSwitcherNoCustomTheme component to improve accessibility and user experience.\n- Updated the component structure for better readability and maintainability.\n\n* chore(payment): remove outdated payment system analysis and gateway addition documentation\n\n- Deleted `PAYMENT_SYSTEM_ANALYSIS.md` and `ADD_PAYMENT_GATEWAY.md` files to streamline the documentation and remove outdated content.\n- This cleanup is part of an effort to maintain a more concise and relevant codebase, focusing on current practices and documentation.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-22T11:41:29Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-22T11:41:29Z",
+      "url": "https://github.com/musemvp/musemvp/commit/8a9bc25584e8ea126d9aa6f1eedeeb3123a58bab"
+    },
+    {
+      "sha": "0e56424",
+      "sha_full": "0e56424ec194ef7e9c75713a73abad3c7018226d",
+      "message": "chore(deps): bump the npm-all group across 1 directory with 22 updates",
+      "message_full": "chore(deps): bump the npm-all group across 1 directory with 22 updates\n\nBumps the npm-all group with 22 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@ai-sdk/react](https://github.com/vercel/ai) | `3.0.167` | `3.0.170` |\n| [@aws-sdk/client-s3](https://github.com/aws/aws-sdk-js-v3/tree/HEAD/clients/client-s3) | `3.1030.0` | `3.1033.0` |\n| [@aws-sdk/s3-request-presigner](https://github.com/aws/aws-sdk-js-v3/tree/HEAD/packages/s3-request-presigner) | `3.1030.0` | `3.1033.0` |\n| [@react-email/render](https://github.com/resend/react-email/tree/HEAD/packages/render) | `2.0.6` | `2.0.7` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.10.8` | `0.10.9` |\n| [@tanstack/react-query](https://github.com/TanStack/query/tree/HEAD/packages/react-query) | `5.99.0` | `5.99.2` |\n| [ai](https://github.com/vercel/ai) | `6.0.165` | `6.0.168` |\n| [fumadocs-core](https://github.com/fuma-nama/fumadocs) | `16.7.16` | `16.8.1` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `14.3.0` | `14.3.1` |\n| [fumadocs-ui](https://github.com/fuma-nama/fumadocs) | `16.7.16` | `16.8.1` |\n| [react-hook-form](https://github.com/react-hook-form/react-hook-form) | `7.72.1` | `7.73.1` |\n| [resend](https://github.com/resend/resend-node) | `6.12.0` | `6.12.2` |\n| [uuid](https://github.com/uuidjs/uuid) | `13.0.0` | `14.0.0` |\n| [@opennextjs/cloudflare](https://github.com/opennextjs/opennextjs-cloudflare/tree/HEAD/packages/cloudflare) | `1.19.1` | `1.19.3` |\n| [@tailwindcss/postcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/@tailwindcss-postcss) | `4.2.2` | `4.2.4` |\n| [@vitest/ui](https://github.com/vitest-dev/vitest/tree/HEAD/packages/ui) | `4.1.4` | `4.1.5` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.4.1` | `6.6.0` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `5.2.10` | `6.0.0` |\n| [tailwindcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/tailwindcss) | `4.2.2` | `4.2.4` |\n| [typescript](https://github.com/microsoft/TypeScript) | `6.0.2` | `6.0.3` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `4.1.4` | `4.1.5` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.83.0` | `4.84.1` |\n\n\n\nUpdates `@ai-sdk/react` from 3.0.167 to 3.0.170\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/compare/@ai-sdk/react@3.0.167...@ai-sdk/react@3.0.170)\n\nUpdates `@aws-sdk/client-s3` from 3.1030.0 to 3.1033.0\n- [Release notes](https://github.com/aws/aws-sdk-js-v3/releases)\n- [Changelog](https://github.com/aws/aws-sdk-js-v3/blob/main/clients/client-s3/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-js-v3/commits/v3.1033.0/clients/client-s3)\n\nUpdates `@aws-sdk/s3-request-presigner` from 3.1030.0 to 3.1033.0\n- [Release notes](https://github.com/aws/aws-sdk-js-v3/releases)\n- [Changelog](https://github.com/aws/aws-sdk-js-v3/blob/main/packages/s3-request-presigner/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-js-v3/commits/v3.1033.0/packages/s3-request-presigner)\n\nUpdates `@react-email/render` from 2.0.6 to 2.0.7\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/render/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/@react-email/render@2.0.7/packages/render)\n\nUpdates `@scalar/hono-api-reference` from 0.10.8 to 0.10.9\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `@tanstack/react-query` from 5.99.0 to 5.99.2\n- [Release notes](https://github.com/TanStack/query/releases)\n- [Changelog](https://github.com/TanStack/query/blob/main/packages/react-query/CHANGELOG.md)\n- [Commits](https://github.com/TanStack/query/commits/@tanstack/react-query@5.99.2/packages/react-query)\n\nUpdates `ai` from 6.0.165 to 6.0.168\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/compare/ai@6.0.165...ai@6.0.168)\n\nUpdates `fumadocs-core` from 16.7.16 to 16.8.1\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-core@16.7.16...fumadocs-core@16.8.1)\n\nUpdates `fumadocs-mdx` from 14.3.0 to 14.3.1\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@14.3.0...fumadocs-ui@14.3.1)\n\nUpdates `fumadocs-ui` from 16.7.16 to 16.8.1\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-ui@16.7.16...fumadocs-ui@16.8.1)\n\nUpdates `react-hook-form` from 7.72.1 to 7.73.1\n- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)\n- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.72.1...v7.73.1)\n\nUpdates `resend` from 6.12.0 to 6.12.2\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/compare/v6.12.0...v6.12.2)\n\nUpdates `uuid` from 13.0.0 to 14.0.0\n- [Release notes](https://github.com/uuidjs/uuid/releases)\n- [Changelog](https://github.com/uuidjs/uuid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/uuidjs/uuid/compare/v13.0.0...v14.0.0)\n\nUpdates `@opennextjs/cloudflare` from 1.19.1 to 1.19.3\n- [Release notes](https://github.com/opennextjs/opennextjs-cloudflare/releases)\n- [Changelog](https://github.com/opennextjs/opennextjs-cloudflare/blob/main/packages/cloudflare/CHANGELOG.md)\n- [Commits](https://github.com/opennextjs/opennextjs-cloudflare/commits/@opennextjs/cloudflare@1.19.3/packages/cloudflare)\n\nUpdates `@tailwindcss/postcss` from 4.2.2 to 4.2.4\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.2.4/packages/@tailwindcss-postcss)\n\nUpdates `@vitest/ui` from 4.1.4 to 4.1.5\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.5/packages/ui)\n\nUpdates `knip` from 6.4.1 to 6.6.0\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.6.0/packages/knip)\n\nUpdates `react-email` from 5.2.10 to 6.0.0\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.0.0/packages/react-email)\n\nUpdates `tailwindcss` from 4.2.2 to 4.2.4\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.2.4/packages/tailwindcss)\n\nUpdates `typescript` from 6.0.2 to 6.0.3\n- [Release notes](https://github.com/microsoft/TypeScript/releases)\n- [Commits](https://github.com/microsoft/TypeScript/compare/v6.0.2...v6.0.3)\n\nUpdates `vitest` from 4.1.4 to 4.1.5\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.5/packages/vitest)\n\nUpdates `wrangler` from 4.83.0 to 4.84.1\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.84.1/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@ai-sdk/react\"\n  dependency-version: 3.0.170\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@aws-sdk/client-s3\"\n  dependency-version: 3.1033.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@aws-sdk/s3-request-presigner\"\n  dependency-version: 3.1033.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@react-email/render\"\n  dependency-version: 2.0.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.10.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@tanstack/react-query\"\n  dependency-version: 5.99.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: ai\n  dependency-version: 6.0.168\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-core\n  dependency-version: 16.8.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 14.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-ui\n  dependency-version: 16.8.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-hook-form\n  dependency-version: 7.73.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.12.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: uuid\n  dependency-version: 14.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: \"@opennextjs/cloudflare\"\n  dependency-version: 1.19.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@tailwindcss/postcss\"\n  dependency-version: 4.2.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@vitest/ui\"\n  dependency-version: 4.1.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: tailwindcss\n  dependency-version: 4.2.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: typescript\n  dependency-version: 6.0.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: vitest\n  dependency-version: 4.1.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.84.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-04-21T16:14:21Z",
+        "github_login": "dependabot[bot]",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
+      },
+      "committed_at": "2026-04-21T16:14:21Z",
+      "url": "https://github.com/musemvp/musemvp/commit/0e56424ec194ef7e9c75713a73abad3c7018226d"
+    },
+    {
+      "sha": "9050bb6",
+      "sha_full": "9050bb60408de5b967f9168e1d870a2fa1abdb1d",
+      "message": "feat(agents): enhance feature delivery and testing guidelines (#41)",
+      "message_full": "feat(agents): enhance feature delivery and testing guidelines (#41)\n\n* refactor: reorganize imports and improve test logging\n\n- Reformatted import statements in `header-menu-icons.tsx` for better readability.\n- Adjusted logging in `avatar-upload.real-api.test.ts` to enhance clarity by using template literals for console messages.\n- Removed unnecessary whitespace in `avatar-upload.service.test.ts` to maintain code cleanliness.\n\n* test: enhance avatar upload tests with dynamic user ID generation\n\n- Added dynamic user ID generation using `randomUUID()` in `saveScenarioUser` to improve test isolation and variability.\n- Updated the avatar upload real API test to utilize the new user ID, ensuring consistent test behavior and clarity in scenarios.\n\n* refactor: remove StreamdownCommonRender and replace with SimpleMarkdownRender\n\n- Deleted the StreamdownCommonRender component to streamline the codebase.\n- Updated legal components (Behavior, Privacy, Terms) to utilize SimpleMarkdownRender for rendering markdown content, enhancing consistency across the application.\n\n* fix(legal-page): add unique ID to legal page container for improved accessibility\n\n- Added an ID attribute to the legal page container to enhance accessibility and facilitate better navigation for users and assistive technologies.\n\n* feat: add unique IDs to landing page components for improved accessibility\n\n- Added unique ID attributes to the blog, changelog, contact, features, and docs pages to enhance accessibility and facilitate better navigation for users and assistive technologies.\n- Updated the NotFound component with an ID for consistency in error handling.\n- Introduced smoke tests for each landing page to ensure proper rendering and visibility of the new IDs.\n\n* feat(settings): add test IDs to settings components for improved testability\n\n- Introduced `testId` attributes to various settings components (billing, general, security, tokens) to enhance testability and facilitate easier identification in automated tests.\n- Updated the `SettingsShell` component to accept and render the `testId` prop, ensuring consistency across all settings pages.\n\n* feat(api-keys): enhance API key verification endpoint with OpenAPI documentation\n\n- Updated the `/verify` endpoint to include OpenAPI documentation using `describeRoute`, providing tags, summary, and response descriptions for better clarity.\n- Improved the response structure to include detailed error handling and validation results.\n- Refactored the verification logic to maintain functionality while enhancing code readability.\n\n* feat(agents): enhance feature delivery and testing guidelines\n\n- Expanded the feature delivery and testing workflow in `AGENTS.md` to include detailed steps for defining acceptance paths, implementing changes, and verifying results.\n- Introduced new sections on test placement rules and expectations by change type to clarify where and how to add automated tests.\n- Updated `SKILL.md` files to reflect the importance of test planning and coverage in the context of feature development.\n- Ensured consistency in documentation regarding the handling of browser-visible journeys and the alignment of `tests/e2e/SCENARIOS.md` with feature changes.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-17T07:33:13Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-17T07:33:13Z",
+      "url": "https://github.com/musemvp/musemvp/commit/9050bb60408de5b967f9168e1d870a2fa1abdb1d"
+    },
+    {
+      "sha": "cd92903",
+      "sha_full": "cd929038d5465bd443423022664f95934553e8f0",
+      "message": "Merge pull request #39 from musemvp/dependabot/npm_and_yarn/npm-all-656f268e25",
+      "message_full": "Merge pull request #39 from musemvp/dependabot/npm_and_yarn/npm-all-656f268e25\n\nchore(deps): bump the npm-all group with 60 updates",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-17T02:13:26Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-17T02:13:26Z",
+      "url": "https://github.com/musemvp/musemvp/commit/cd929038d5465bd443423022664f95934553e8f0"
+    },
+    {
+      "sha": "36eb81d",
+      "sha_full": "36eb81da41e68acf60be8c32570a3640594129d3",
+      "message": "chore(deps): update package versions in package.json and pnpm-lock.yaml",
+      "message_full": "chore(deps): update package versions in package.json and pnpm-lock.yaml\n\n- Updated \"@better-auth/api-key\" from \"1.6.5\" to \"^1.6.5\" for flexible versioning.\n- Downgraded \"stripe\" from \"^22.0.2\" to \"20.3.0\" to align with compatibility requirements.\n- Adjusted pnpm-lock.yaml to reflect the changes in package.json, ensuring consistency across dependencies.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-17T02:00:32Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-17T02:00:32Z",
+      "url": "https://github.com/musemvp/musemvp/commit/36eb81da41e68acf60be8c32570a3640594129d3"
+    },
+    {
+      "sha": "999bc26",
+      "sha_full": "999bc26bbe47a5168c19cb21a1ebe5d98f787210",
+      "message": "chore(deps): bump the npm-all group with 60 updates",
+      "message_full": "chore(deps): bump the npm-all group with 60 updates\n\nBumps the npm-all group with 60 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@ai-sdk/google](https://github.com/vercel/ai) | `3.0.21` | `3.0.63` |\n| [@ai-sdk/react](https://github.com/vercel/ai) | `3.0.75` | `3.0.164` |\n| [@aws-sdk/client-s3](https://github.com/aws/aws-sdk-js-v3/tree/HEAD/clients/client-s3) | `3.983.0` | `3.1030.0` |\n| [@aws-sdk/s3-request-presigner](https://github.com/aws/aws-sdk-js-v3/tree/HEAD/packages/s3-request-presigner) | `3.983.0` | `3.1030.0` |\n| [@better-auth/api-key](https://github.com/better-auth/better-auth/tree/HEAD/packages/api-key) | `1.6.3` | `1.6.4` |\n| [@marsidev/react-turnstile](https://github.com/marsidev/react-turnstile) | `1.4.2` | `1.5.0` |\n| [@next/third-parties](https://github.com/vercel/next.js/tree/HEAD/packages/third-parties) | `16.2.3` | `16.2.4` |\n| [@react-email/components](https://github.com/resend/react-email/tree/HEAD/packages/components) | `1.0.7` | `1.0.12` |\n| [@react-email/render](https://github.com/resend/react-email/tree/HEAD/packages/render) | `2.0.4` | `2.0.6` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.9.40` | `0.10.8` |\n| [@tanstack/react-query](https://github.com/TanStack/query/tree/HEAD/packages/react-query) | `5.90.20` | `5.99.0` |\n| [ai](https://github.com/vercel/ai) | `6.0.73` | `6.0.162` |\n| [better-auth](https://github.com/better-auth/better-auth/tree/HEAD/packages/better-auth) | `1.6.3` | `1.6.4` |\n| [better-auth-harmony](https://github.com/GeKorm/better-auth-harmony) | `1.2.5` | `1.3.1` |\n| [drizzle-orm](https://github.com/drizzle-team/drizzle-orm) | `0.44.2` | `0.45.2` |\n| [fumadocs-core](https://github.com/fuma-nama/fumadocs) | `16.7.10` | `16.7.16` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `14.2.11` | `14.2.14` |\n| [fumadocs-ui](https://github.com/fuma-nama/fumadocs) | `16.7.10` | `16.7.16` |\n| [geist](https://github.com/vercel/geist-font/tree/HEAD/packages/next) | `1.5.1` | `1.7.0` |\n| [hono](https://github.com/honojs/hono) | `4.11.7` | `4.12.14` |\n| [hono-openapi](https://github.com/rhinobase/hono-openapi) | `1.2.0` | `1.3.0` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `0.563.0` | `1.8.0` |\n| [motion](https://github.com/motiondivision/motion) | `12.31.3` | `12.38.0` |\n| [nanoid](https://github.com/ai/nanoid) | `5.1.6` | `5.1.9` |\n| [next](https://github.com/vercel/next.js) | `16.2.3` | `16.2.4` |\n| [next-intl](https://github.com/amannn/next-intl) | `4.8.2` | `4.9.1` |\n| [nuqs](https://github.com/47ng/nuqs/tree/HEAD/packages/nuqs) | `2.8.8` | `2.8.9` |\n| [postgres](https://github.com/porsager/postgres) | `3.4.8` | `3.4.9` |\n| [react](https://github.com/facebook/react/tree/HEAD/packages/react) | `19.2.4` | `19.2.5` |\n| [@types/react](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/react) | `19.2.13` | `19.2.14` |\n| [react-day-picker](https://github.com/gpbl/react-day-picker) | `9.13.0` | `9.14.0` |\n| [react-dom](https://github.com/facebook/react/tree/HEAD/packages/react-dom) | `19.2.4` | `19.2.5` |\n| [react-dropzone](https://github.com/react-dropzone/react-dropzone) | `14.4.0` | `15.0.0` |\n| [react-easy-crop](https://github.com/ValentinH/react-easy-crop) | `5.5.6` | `5.5.7` |\n| [react-hook-form](https://github.com/react-hook-form/react-hook-form) | `7.71.1` | `7.72.1` |\n| [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer) | `10.0.2` | `10.0.3` |\n| [recharts](https://github.com/recharts/recharts) | `3.7.0` | `3.8.1` |\n| [resend](https://github.com/resend/resend-node) | `6.9.2` | `6.12.0` |\n| [shiki](https://github.com/shikijs/shiki/tree/HEAD/packages/shiki) | `3.22.0` | `4.0.2` |\n| [slugify](https://github.com/simov/slugify) | `1.6.6` | `1.6.9` |\n| [streamdown](https://github.com/vercel/streamdown/tree/HEAD/packages/streamdown) | `2.1.0` | `2.5.0` |\n| [stripe](https://github.com/stripe/stripe-node) | `20.3.0` | `22.0.1` |\n| [use-intl](https://github.com/amannn/next-intl) | `4.8.2` | `4.9.1` |\n| [use-stick-to-bottom](https://github.com/stackblitz/use-stick-to-bottom) | `1.1.2` | `1.1.3` |\n| [validator](https://github.com/validatorjs/validator.js) | `13.15.26` | `13.15.35` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.3.14` | `2.4.12` |\n| [@react-email/preview-server](https://github.com/resend/react-email/tree/HEAD/packages/preview-server) | `5.2.8` | `5.2.10` |\n| [@shikijs/rehype](https://github.com/shikijs/shiki/tree/HEAD/packages/rehype) | `3.22.0` | `4.0.2` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `25.2.1` | `25.6.0` |\n| [@vitest/ui](https://github.com/vitest-dev/vitest/tree/HEAD/packages/ui) | `3.2.4` | `4.1.4` |\n| [autoprefixer](https://github.com/postcss/autoprefixer) | `10.4.24` | `10.5.0` |\n| [dotenv](https://github.com/motdotla/dotenv) | `17.2.4` | `17.4.2` |\n| [drizzle-kit](https://github.com/drizzle-team/drizzle-orm) | `0.31.9` | `0.31.10` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `5.83.0` | `6.4.1` |\n| [postcss](https://github.com/postcss/postcss) | `8.5.6` | `8.5.10` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `5.2.8` | `5.2.10` |\n| [sass](https://github.com/sass/dart-sass) | `1.97.3` | `1.99.0` |\n| [typescript](https://github.com/microsoft/TypeScript) | `5.9.3` | `6.0.2` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `3.2.4` | `4.1.4` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.65.0` | `4.83.0` |\n\n\nUpdates `@ai-sdk/google` from 3.0.21 to 3.0.63\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/compare/@ai-sdk/google@3.0.21...@ai-sdk/google@3.0.63)\n\nUpdates `@ai-sdk/react` from 3.0.75 to 3.0.164\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/compare/@ai-sdk/react@3.0.75...@ai-sdk/react@3.0.164)\n\nUpdates `@aws-sdk/client-s3` from 3.983.0 to 3.1030.0\n- [Release notes](https://github.com/aws/aws-sdk-js-v3/releases)\n- [Changelog](https://github.com/aws/aws-sdk-js-v3/blob/main/clients/client-s3/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-js-v3/commits/v3.1030.0/clients/client-s3)\n\nUpdates `@aws-sdk/s3-request-presigner` from 3.983.0 to 3.1030.0\n- [Release notes](https://github.com/aws/aws-sdk-js-v3/releases)\n- [Changelog](https://github.com/aws/aws-sdk-js-v3/blob/main/packages/s3-request-presigner/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-js-v3/commits/v3.1030.0/packages/s3-request-presigner)\n\nUpdates `@better-auth/api-key` from 1.6.3 to 1.6.4\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/api-key/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/@better-auth/api-key@1.6.4/packages/api-key)\n\nUpdates `@marsidev/react-turnstile` from 1.4.2 to 1.5.0\n- [Release notes](https://github.com/marsidev/react-turnstile/releases)\n- [Commits](https://github.com/marsidev/react-turnstile/compare/v1.4.2...v1.5.0)\n\nUpdates `@next/third-parties` from 16.2.3 to 16.2.4\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)\n- [Commits](https://github.com/vercel/next.js/commits/v16.2.4/packages/third-parties)\n\nUpdates `@react-email/components` from 1.0.7 to 1.0.12\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/@react-email/components@1.0.12/packages/components/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/@react-email/components@1.0.12/packages/components)\n\nUpdates `@react-email/render` from 2.0.4 to 2.0.6\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/render/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/@react-email/render@2.0.6/packages/render)\n\nUpdates `@scalar/hono-api-reference` from 0.9.40 to 0.10.8\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `@tanstack/react-query` from 5.90.20 to 5.99.0\n- [Release notes](https://github.com/TanStack/query/releases)\n- [Changelog](https://github.com/TanStack/query/blob/main/packages/react-query/CHANGELOG.md)\n- [Commits](https://github.com/TanStack/query/commits/@tanstack/react-query@5.99.0/packages/react-query)\n\nUpdates `ai` from 6.0.73 to 6.0.162\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/compare/ai@6.0.73...ai@6.0.162)\n\nUpdates `better-auth` from 1.6.3 to 1.6.4\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/better-auth/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/better-auth@1.6.4/packages/better-auth)\n\nUpdates `better-auth-harmony` from 1.2.5 to 1.3.1\n- [Release notes](https://github.com/GeKorm/better-auth-harmony/releases)\n- [Commits](https://github.com/GeKorm/better-auth-harmony/compare/better-auth-harmony@1.2.5...better-auth-harmony@1.3.1)\n\nUpdates `drizzle-orm` from 0.44.2 to 0.45.2\n- [Release notes](https://github.com/drizzle-team/drizzle-orm/releases)\n- [Commits](https://github.com/drizzle-team/drizzle-orm/compare/0.44.2...0.45.2)\n\nUpdates `fumadocs-core` from 16.7.10 to 16.7.16\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-core@16.7.10...fumadocs-core@16.7.16)\n\nUpdates `fumadocs-mdx` from 14.2.11 to 14.2.14\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@14.2.11...fumadocs-mdx@14.2.14)\n\nUpdates `fumadocs-ui` from 16.7.10 to 16.7.16\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-ui@16.7.10...fumadocs-ui@16.7.16)\n\nUpdates `geist` from 1.5.1 to 1.7.0\n- [Release notes](https://github.com/vercel/geist-font/releases)\n- [Changelog](https://github.com/vercel/geist-font/blob/main/packages/next/CHANGELOG.md)\n- [Commits](https://github.com/vercel/geist-font/commits/geist@1.7.0/packages/next)\n\nUpdates `hono` from 4.11.7 to 4.12.14\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.11.7...v4.12.14)\n\nUpdates `hono-openapi` from 1.2.0 to 1.3.0\n- [Release notes](https://github.com/rhinobase/hono-openapi/releases)\n- [Commits](https://github.com/rhinobase/hono-openapi/compare/v1.2.0...v1.3.0)\n\nUpdates `lucide-react` from 0.563.0 to 1.8.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.8.0/packages/lucide-react)\n\nUpdates `motion` from 12.31.3 to 12.38.0\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.31.3...v12.38.0)\n\nUpdates `nanoid` from 5.1.6 to 5.1.9\n- [Release notes](https://github.com/ai/nanoid/releases)\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ai/nanoid/compare/5.1.6...5.1.9)\n\nUpdates `next` from 16.2.3 to 16.2.4\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)\n- [Commits](https://github.com/vercel/next.js/compare/v16.2.3...v16.2.4)\n\nUpdates `next-intl` from 4.8.2 to 4.9.1\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.8.2...v4.9.1)\n\nUpdates `nuqs` from 2.8.8 to 2.8.9\n- [Release notes](https://github.com/47ng/nuqs/releases)\n- [Commits](https://github.com/47ng/nuqs/commits/v2.8.9/packages/nuqs)\n\nUpdates `postgres` from 3.4.8 to 3.4.9\n- [Release notes](https://github.com/porsager/postgres/releases)\n- [Changelog](https://github.com/porsager/postgres/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/porsager/postgres/compare/v3.4.8...v3.4.9)\n\nUpdates `react` from 19.2.4 to 19.2.5\n- [Release notes](https://github.com/facebook/react/releases)\n- [Changelog](https://github.com/facebook/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/facebook/react/commits/v19.2.5/packages/react)\n\nUpdates `@types/react` from 19.2.13 to 19.2.14\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\nUpdates `react-day-picker` from 9.13.0 to 9.14.0\n- [Release notes](https://github.com/gpbl/react-day-picker/releases)\n- [Changelog](https://github.com/gpbl/react-day-picker/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/gpbl/react-day-picker/compare/v9.13.0...v9.14.0)\n\nUpdates `react-dom` from 19.2.4 to 19.2.5\n- [Release notes](https://github.com/facebook/react/releases)\n- [Changelog](https://github.com/facebook/react/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/facebook/react/commits/v19.2.5/packages/react-dom)\n\nUpdates `react-dropzone` from 14.4.0 to 15.0.0\n- [Release notes](https://github.com/react-dropzone/react-dropzone/releases)\n- [Commits](https://github.com/react-dropzone/react-dropzone/compare/v14.4.0...v15.0.0)\n\nUpdates `react-easy-crop` from 5.5.6 to 5.5.7\n- [Release notes](https://github.com/ValentinH/react-easy-crop/releases)\n- [Commits](https://github.com/ValentinH/react-easy-crop/compare/v5.5.6...v5.5.7)\n\nUpdates `react-hook-form` from 7.71.1 to 7.72.1\n- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)\n- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.71.1...v7.72.1)\n\nUpdates `react-intersection-observer` from 10.0.2 to 10.0.3\n- [Release notes](https://github.com/thebuilder/react-intersection-observer/releases)\n- [Commits](https://github.com/thebuilder/react-intersection-observer/compare/v10.0.2...v10.0.3)\n\nUpdates `recharts` from 3.7.0 to 3.8.1\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.7.0...v3.8.1)\n\nUpdates `resend` from 6.9.2 to 6.12.0\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/compare/v6.9.2...v6.12.0)\n\nUpdates `shiki` from 3.22.0 to 4.0.2\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.0.2/packages/shiki)\n\nUpdates `slugify` from 1.6.6 to 1.6.9\n- [Changelog](https://github.com/simov/slugify/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/simov/slugify/commits)\n\nUpdates `streamdown` from 2.1.0 to 2.5.0\n- [Release notes](https://github.com/vercel/streamdown/releases)\n- [Changelog](https://github.com/vercel/streamdown/blob/main/packages/streamdown/CHANGELOG.md)\n- [Commits](https://github.com/vercel/streamdown/commits/streamdown@2.5.0/packages/streamdown)\n\nUpdates `stripe` from 20.3.0 to 22.0.1\n- [Release notes](https://github.com/stripe/stripe-node/releases)\n- [Changelog](https://github.com/stripe/stripe-node/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/stripe/stripe-node/compare/v20.3.0...v22.0.1)\n\nUpdates `use-intl` from 4.8.2 to 4.9.1\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.8.2...v4.9.1)\n\nUpdates `use-stick-to-bottom` from 1.1.2 to 1.1.3\n- [Changelog](https://github.com/stackblitz-labs/use-stick-to-bottom/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/stackblitz/use-stick-to-bottom/commits)\n\nUpdates `validator` from 13.15.26 to 13.15.35\n- [Release notes](https://github.com/validatorjs/validator.js/releases)\n- [Changelog](https://github.com/validatorjs/validator.js/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/validatorjs/validator.js/compare/13.15.26...13.15.35)\n\nUpdates `@biomejs/biome` from 2.3.14 to 2.4.12\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.4.12/packages/@biomejs/biome)\n\nUpdates `@react-email/preview-server` from 5.2.8 to 5.2.10\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/@react-email/preview-server@5.2.10/packages/preview-server/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/@react-email/preview-server@5.2.10/packages/preview-server)\n\nUpdates `@shikijs/rehype` from 3.22.0 to 4.0.2\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.0.2/packages/rehype)\n\nUpdates `@types/node` from 25.2.1 to 25.6.0\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@types/react` from 19.2.13 to 19.2.14\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/react)\n\nUpdates `@vitest/ui` from 3.2.4 to 4.1.4\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.4/packages/ui)\n\nUpdates `autoprefixer` from 10.4.24 to 10.5.0\n- [Release notes](https://github.com/postcss/autoprefixer/releases)\n- [Changelog](https://github.com/postcss/autoprefixer/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/autoprefixer/compare/10.4.24...10.5.0)\n\nUpdates `dotenv` from 17.2.4 to 17.4.2\n- [Changelog](https://github.com/motdotla/dotenv/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/motdotla/dotenv/compare/v17.2.4...v17.4.2)\n\nUpdates `drizzle-kit` from 0.31.9 to 0.31.10\n- [Release notes](https://github.com/drizzle-team/drizzle-orm/releases)\n- [Commits](https://github.com/drizzle-team/drizzle-orm/compare/drizzle-kit@0.31.9...drizzle-kit@0.31.10)\n\nUpdates `knip` from 5.83.0 to 6.4.1\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.4.1/packages/knip)\n\nUpdates `postcss` from 8.5.6 to 8.5.10\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.6...8.5.10)\n\nUpdates `react-email` from 5.2.8 to 5.2.10\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@5.2.10/packages/react-email)\n\nUpdates `sass` from 1.97.3 to 1.99.0\n- [Release notes](https://github.com/sass/dart-sass/releases)\n- [Changelog](https://github.com/sass/dart-sass/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/sass/dart-sass/compare/1.97.3...1.99.0)\n\nUpdates `typescript` from 5.9.3 to 6.0.2\n- [Release notes](https://github.com/microsoft/TypeScript/releases)\n- [Commits](https://github.com/microsoft/TypeScript/compare/v5.9.3...v6.0.2)\n\nUpdates `vitest` from 3.2.4 to 4.1.4\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.4/packages/vitest)\n\nUpdates `wrangler` from 4.65.0 to 4.83.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.83.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@ai-sdk/google\"\n  dependency-version: 3.0.63\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/react\"\n  dependency-version: 3.0.164\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@aws-sdk/client-s3\"\n  dependency-version: 3.1030.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@aws-sdk/s3-request-presigner\"\n  dependency-version: 3.1030.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@better-auth/api-key\"\n  dependency-version: 1.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@marsidev/react-turnstile\"\n  dependency-version: 1.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@next/third-parties\"\n  dependency-version: 16.2.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@react-email/components\"\n  dependency-version: 1.0.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@react-email/render\"\n  dependency-version: 2.0.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.10.8\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@tanstack/react-query\"\n  dependency-version: 5.99.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: ai\n  dependency-version: 6.0.162\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: better-auth\n  dependency-version: 1.6.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: better-auth-harmony\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: drizzle-orm\n  dependency-version: 0.45.2\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-core\n  dependency-version: 16.7.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 14.2.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-ui\n  dependency-version: 16.7.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: geist\n  dependency-version: 1.7.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.14\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: hono-openapi\n  dependency-version: 1.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.8.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.38.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: nanoid\n  dependency-version: 5.1.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: next\n  dependency-version: 16.2.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: next-intl\n  dependency-version: 4.9.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: nuqs\n  dependency-version: 2.8.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: postgres\n  dependency-version: 3.4.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react\n  dependency-version: 19.2.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@types/react\"\n  dependency-version: 19.2.14\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-day-picker\n  dependency-version: 9.14.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-dom\n  dependency-version: 19.2.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-dropzone\n  dependency-version: 15.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: react-easy-crop\n  dependency-version: 5.5.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-hook-form\n  dependency-version: 7.72.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-intersection-observer\n  dependency-version: 10.0.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.8.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: shiki\n  dependency-version: 4.0.2\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: slugify\n  dependency-version: 1.6.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: streamdown\n  dependency-version: 2.5.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: stripe\n  dependency-version: 22.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: use-intl\n  dependency-version: 4.9.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: use-stick-to-bottom\n  dependency-version: 1.1.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: validator\n  dependency-version: 13.15.35\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.4.12\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@react-email/preview-server\"\n  dependency-version: 5.2.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@shikijs/rehype\"\n  dependency-version: 4.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 25.6.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@types/react\"\n  dependency-version: 19.2.14\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@vitest/ui\"\n  dependency-version: 4.1.4\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: autoprefixer\n  dependency-version: 10.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: dotenv\n  dependency-version: 17.4.2\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: drizzle-kit\n  dependency-version: 0.31.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.4.1\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: postcss\n  dependency-version: 8.5.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 5.2.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: sass\n  dependency-version: 1.99.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: typescript\n  dependency-version: 6.0.2\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: vitest\n  dependency-version: 4.1.4\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.83.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-04-16T16:38:39Z",
+        "github_login": "dependabot[bot]",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
+      },
+      "committed_at": "2026-04-16T16:38:39Z",
+      "url": "https://github.com/musemvp/musemvp/commit/999bc26bbe47a5168c19cb21a1ebe5d98f787210"
+    },
+    {
+      "sha": "0f69648",
+      "sha_full": "0f69648de3d4e5ad9b8da77141fb06b4d48a5d0e",
+      "message": "feat(api): implement avatar upload with signed URL and enhance test coverage (#40)",
+      "message_full": "feat(api): implement avatar upload with signed URL and enhance test coverage (#40)",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T15:07:31Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T15:07:31Z",
+      "url": "https://github.com/musemvp/musemvp/commit/0f69648de3d4e5ad9b8da77141fb06b4d48a5d0e"
+    },
+    {
+      "sha": "f866e80",
+      "sha_full": "f866e802257690266c04a9e5f334fb8378a4cc9d",
+      "message": "test: refactor avatar upload real API tests for improved structure and functionality",
+      "message_full": "test: refactor avatar upload real API tests for improved structure and functionality\n\n- Replaced `beforeEach` with `beforeAll` and `afterAll` hooks to manage test setup and teardown more effectively.\n- Introduced utility functions for user management and API requests, enhancing test clarity and maintainability.\n- Updated test to run an end-to-end flow without mocks, validating signed URL generation and real upload functionality.\n- Added a minimal PNG byte array for testing upload functionality, ensuring consistent test behavior.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T09:28:10Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T09:28:10Z",
+      "url": "https://github.com/musemvp/musemvp/commit/f866e802257690266c04a9e5f334fb8378a4cc9d"
+    },
+    {
+      "sha": "1f27df3",
+      "sha_full": "1f27df357850709eee4df14972b36b195270fd3e",
+      "message": "test: enhance avatar upload URL validation in real API tests",
+      "message_full": "test: enhance avatar upload URL validation in real API tests\n\n- Added logging for expected object key and decoded upload URL to improve test traceability.\n- Updated the expectation for the decoded upload URL to use a variable for better clarity and maintainability.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T08:24:11Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T08:24:11Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1f27df357850709eee4df14972b36b195270fd3e"
+    },
+    {
+      "sha": "3349f8f",
+      "sha_full": "3349f8f51959c6cdf94078bbf0371ac08af9bb8b",
+      "message": "test: bootstrap environment for avatar upload tests and improve error messaging",
+      "message_full": "test: bootstrap environment for avatar upload tests and improve error messaging\n\n- Added `bootstrapTestEnv` function to set environment variables required for running real avatar upload API tests.\n- Enhanced error message in avatar upload tests to clarify missing environment variable requirements, improving test reliability and developer experience.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T08:15:35Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T08:15:35Z",
+      "url": "https://github.com/musemvp/musemvp/commit/3349f8f51959c6cdf94078bbf0371ac08af9bb8b"
+    },
+    {
+      "sha": "07c1a48",
+      "sha_full": "07c1a482498d91f047dabd29c20958f34d140095",
+      "message": "refactor: enhance avatar upload tests with dynamic path generation",
+      "message_full": "refactor: enhance avatar upload tests with dynamic path generation\n\n- Introduced a function to create valid avatar paths dynamically using the current date and a random UUID, improving test reliability and variability.\n- Updated existing tests to utilize the new dynamic path generation, ensuring consistency in avatar upload path validation and error handling.\n- Replaced hardcoded user ID with a test-specific user ID for better clarity in test scenarios.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T08:00:07Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T08:00:07Z",
+      "url": "https://github.com/musemvp/musemvp/commit/07c1a482498d91f047dabd29c20958f34d140095"
+    },
+    {
+      "sha": "dc08c88",
+      "sha_full": "dc08c88fef42a3f6f1c60b3d5615979af4f01155",
+      "message": "feat: implement avatar upload functionality with signed URL generation",
+      "message_full": "feat: implement avatar upload functionality with signed URL generation\n\n- Introduced a new `uploadRouter` for handling avatar uploads, including a POST endpoint to generate signed URLs.\n- Added `avatar-upload.ts` to manage avatar upload logic, including validation and error handling for storage environment variables.\n- Updated existing routes to replace the deprecated upload unified router with the new upload router.\n- Refactored related tests to align with the new avatar upload service structure.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T07:43:55Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T07:43:55Z",
+      "url": "https://github.com/musemvp/musemvp/commit/dc08c88fef42a3f6f1c60b3d5615979af4f01155"
+    },
+    {
+      "sha": "f5170d8",
+      "sha_full": "f5170d859cc2e23fdd3ff856cccd9a60aff5a55b",
+      "message": "docs: enhance documentation for storage environment variable checks and avatar upload URL generation",
+      "message_full": "docs: enhance documentation for storage environment variable checks and avatar upload URL generation\n\n- Added JSDoc comments to `getMissingStorageEnvVars` function to clarify its purpose and error handling.\n- Documented the `generateAvatarUploadUrl` function, detailing parameters, return values, and potential exceptions for improved clarity and maintainability.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T07:28:58Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T07:28:58Z",
+      "url": "https://github.com/musemvp/musemvp/commit/f5170d859cc2e23fdd3ff856cccd9a60aff5a55b"
+    },
+    {
+      "sha": "ccecd51",
+      "sha_full": "ccecd51cce1823062e3e583ec907a156c8b1e0d6",
+      "message": "chore: update dependabot configuration for improved dependency management",
+      "message_full": "chore: update dependabot configuration for improved dependency management\n\nchore: update dependabot configuration for improved dependency manage…",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T05:34:11Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T05:34:11Z",
+      "url": "https://github.com/musemvp/musemvp/commit/ccecd51cce1823062e3e583ec907a156c8b1e0d6"
+    },
+    {
+      "sha": "bfc2662",
+      "sha_full": "bfc2662a72d8159c27ff8ec100c2b81631bccd43",
+      "message": "chore: update dependabot configuration for improved dependency management",
+      "message_full": "chore: update dependabot configuration for improved dependency management\n\n- Changed the npm update schedule from weekly to daily for more frequent updates.\n- Set the open-pull-requests-limit to 1 to streamline pull request handling.\n- Introduced grouping for npm dependencies under 'npm-all' to enhance organization and management.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T05:32:50Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T05:32:50Z",
+      "url": "https://github.com/musemvp/musemvp/commit/bfc2662a72d8159c27ff8ec100c2b81631bccd43"
+    },
+    {
+      "sha": "883068b",
+      "sha_full": "883068b23640516c22ed6a6709c35532770b73a9",
+      "message": "Merge pull request #32 from wztlink1013/musemvp/dev/20260416",
+      "message_full": "Merge pull request #32 from wztlink1013/musemvp/dev/20260416\n\nchore: enhance API key management and update related tests",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T03:57:53Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T03:57:53Z",
+      "url": "https://github.com/musemvp/musemvp/commit/883068b23640516c22ed6a6709c35532770b73a9"
+    },
+    {
+      "sha": "383e1c0",
+      "sha_full": "383e1c0f42512d47792bc63958726aeb36626a11",
+      "message": "chore: enhance API key management and update related tests",
+      "message_full": "chore: enhance API key management and update related tests\n\n- Added new test cases for API key management functionalities, including creation, listing, updating, and deletion in session guard tests.\n- Enhanced coverage for authentication flows related to API key management, ensuring robust testing.\n- Updated the apikey schema to include a new `configId` column and renamed `userId` to `referenceId` for clarity, improving query performance with a new index.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-16T03:54:50Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-16T03:54:50Z",
+      "url": "https://github.com/musemvp/musemvp/commit/383e1c0f42512d47792bc63958726aeb36626a11"
+    },
+    {
+      "sha": "53d9c29",
+      "sha_full": "53d9c299124fd1108ad65eea9e5940969053fe1f",
+      "message": "chore: update @opennextjs/cloudflare dependency to version 1.19.1 and adjust pnpm-lock.yaml for consistency",
+      "message_full": "chore: update @opennextjs/cloudflare dependency to version 1.19.1 and adjust pnpm-lock.yaml for consistency\n\n- Upgraded the @opennextjs/cloudflare package in package.json to version 1.19.1 for improved functionality.\n- Updated pnpm-lock.yaml to reflect the new version and ensure consistency across dependencies.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-15T15:05:41Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-15T15:05:41Z",
+      "url": "https://github.com/musemvp/musemvp/commit/53d9c299124fd1108ad65eea9e5940969053fe1f"
+    },
+    {
+      "sha": "6cf1d0d",
+      "sha_full": "6cf1d0d136789028c57a9127b9074ec659d53cc3",
+      "message": "feat: add test framework module + optimize AI rules file + update nextjs and better-auth. (#31)",
+      "message_full": "feat: add test framework module + optimize AI rules file + update nextjs and better-auth. (#31)\n\n* chore: remove obsolete claude.md file\n\n- Deleted the `claude.md` file as it was no longer relevant to the project documentation.\n\n* chore: update blog post schemas and enhance metadata handling\n\n- Refactored blog post schemas to include descriptions for improved clarity.\n- Streamlined the blog listing and post rendering logic to enhance performance and maintainability.\n- Updated related components to align with the new schema structure.\n\n* chore: update AGENTS.md and README.md for improved clarity and structure\n\n- Enhanced AGENTS.md with a detailed high-signal repo map and task routing defaults for better navigation and understanding of project structure.\n- Updated README.md to reflect project highlights, streamlined setup instructions, and clarified local development requirements.\n- Adjusted deployment targets and local caveats for better guidance on environment configurations.\n\n* chore: add build-time public environment variables to Dockerfile\n\n- Introduced several ARG and ENV variables for public configuration, including site URL and various pricing IDs, to be embedded by Next.js during the build process.\n- Enhanced the Dockerfile for better integration of environment-specific settings.\n\n* chore: update testing setup and improve component structure\n\n- Added Playwright and Vitest configurations to `package.json` for enhanced testing capabilities, including unit, API, and end-to-end tests.\n- Updated `.gitignore` to exclude test results and reference files.\n- Refactored several components to include `data-testid` attributes for better testability, including `AdminUsers`, `AIChatWorkspace`, and various forms in the authentication module.\n- Adjusted TypeScript configurations to include new reference paths for improved project structure.\n\n* chore: update test documentation for clarity and structure\n\n- Revised the README.md to provide a clearer overview of the testing framework, including links to detailed documentation in English and Simplified Chinese.\n- Simplified the commands section and clarified the local setup instructions for running API and E2E tests.\n\n* chore: update testing configurations and enhance test documentation\n\n- Modified `package.json` to update test commands for unit and API tests, reflecting new configuration files for Vitest.\n- Added new Vitest configuration files: `vitest.logic.config.ts` for unit tests and `vitest.contracts.config.ts` for API contract tests.\n- Revised `README.en.md` and `README.zh-CN.md` to clarify the structure and purpose of the tests, including a quick map of configurations and commands.\n- Introduced new API contract tests to validate conversation ownership and public access, ensuring proper role boundaries and session management.\n- Enhanced E2E testing setup with a new cleanup process and updated Playwright configuration for better test management.\n\n* chore: update test artifact paths and improve documentation\n\n- Modified `.gitignore` to include new test artifact directories: `.test-artifacts/` for better organization of test outputs.\n- Updated `README.en.md` and `README.zh-CN.md` to reflect changes in output paths for HTML reports and other test artifacts.\n- Adjusted Playwright configuration to output reports and artifacts to the new `.test-artifacts/` directory.\n\n* chore: add new skills to skills-lock.json for better authentication practices\n\n- Introduced several new skills related to authentication best practices, including \"better-auth-security-best-practices\", \"create-auth-skill\", \"email-and-password-best-practices\", and \"two-factor-authentication-best-practices\".\n- Updated the computed hashes for each new skill to ensure integrity and proper tracking.\n\n* chore: update dependencies and improve authentication handling\n\n- Added \"@better-auth/api-key\" package for enhanced API key management.\n- Updated \"@next/third-parties\" and \"next\" packages to the latest versions for improved compatibility.\n- Refactored authentication middleware to correctly handle session retrieval and authorization checks.\n- Enhanced API key handling in the admin routes to ensure proper user identification.\n- Updated theme management to utilize \"@wrksz/themes\" for consistent theming across components.\n- Improved test documentation and structure for better clarity and usability.\n\n* refactor: update AuthWrapper styles and enhance test documentation\n\n- Changed border radius in AuthWrapper component from `rounded-2xl` to `rounded-xl` for a more modern look.\n- Revised E2E test scenarios documentation to categorize routes into Public, Auth, and Permissions for better clarity.\n- Removed obsolete smoke tests for account entry, admin console, and public routes to streamline the test suite.\n\n* fix: adjust rate limiting and enhance setup form for better testing\n\n- Updated rate limiting configuration in the authentication module to conditionally enable based on test utilities.\n- Added `data-testid` attributes to the setup form and its fields for improved testability in E2E tests.\n- Refactored login and registration smoke tests to utilize new utility functions for better OTP handling and user scenario management.\n\n* refactor: remove obsolete login test and streamline registration tests\n\n- Deleted the test for unauthenticated user redirection to the login page to simplify the smoke test suite.\n- Removed the entire registration route smoke test file to eliminate redundancy and focus on essential authentication flows.\n\n* refactor: enhance authentication smoke tests with clearer descriptions\n\n- Updated test descriptions for login and registration smoke tests to improve clarity and readability.\n- Renamed test suites to better reflect their purpose, focusing on authentication flows.\n- Ensured consistency in test naming conventions across the authentication journey.\n\n* refactor: remove obsolete smoke tests for admin and member access\n\n- Deleted smoke test files for admin user access to the users management page and member access to general settings to streamline the test suite.\n- Removed guest-facing route smoke tests to focus on essential permission checks and improve overall test clarity.\n\n* feat: add comprehensive smoke tests for authentication and landing pages\n\n- Introduced new smoke tests for user authentication, including login with password and OTP, as well as registration flows.\n- Added tests to verify unauthenticated user redirection and ensure landing pages render correctly.\n- Implemented checks for admin and member access to relevant application pages, enhancing overall test coverage.\n\n* refactor: update E2E test structure and documentation\n\n- Renamed directories and updated references in documentation to reflect the new structure, changing 'journeys' to 'pages'.\n- Removed obsolete smoke test for guest-facing routes to streamline the test suite.\n- Adjusted route definitions by removing the 'features' path to focus on essential application routes.\n\n* feat: add data-testid attributes for improved E2E testing\n\n- Added `data-testid` attributes to the header and footer components of the landing page for better identification in end-to-end tests.\n- Updated smoke tests to verify visibility of the header and footer elements, enhancing test coverage and reliability.\n\n* feat: add conditional skip for billing tests in pricing smoke spec\n\n- Introduced a conditional skip for the pricing smoke test based on the billing configuration, enhancing test flexibility.\n- Updated the test suite to ensure it only runs when billing is enabled, improving test relevance and efficiency.\n\n* refactor: update URL expectation in authentication smoke tests\n\n- Modified the URL expectation in the login smoke tests to use a dynamic regular expression based on the application route, enhancing flexibility and maintainability.\n- Ensured consistency in URL checks across different authentication scenarios, improving test reliability.\n\n* refactor: clean up test documentation and configuration\n\n- Removed the 'reference-other-project' entry from .gitignore and tsconfig.json to streamline project references.\n- Deleted outdated README.en.md and README.zh-CN.md files from the tests directory to eliminate redundancy and improve clarity.\n- Updated README.md to enhance the structure and provide clearer guidance on the test module layout and commands.\n\n* feat: enhance apikey schema with configId and update indexing\n\n- Added a new column `configId` to the `apikey` table with a default value of \"default\".\n- Renamed `userId` to `referenceId` for clarity and updated its reference index accordingly.\n- Introduced a new index on `configId` to improve query performance.\n\n* feat: add API key management endpoints to session guard tests\n\n- Introduced new test cases for creating, listing, updating, and deleting API keys in the session guard contract tests.\n- Enhanced coverage for API key management functionalities, ensuring robust testing of authentication flows.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-15T14:36:44Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-15T14:36:44Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6cf1d0d136789028c57a9127b9074ec659d53cc3"
+    },
+    {
+      "sha": "4194f28",
+      "sha_full": "4194f2888c0de52d570ec571a19ea6c9a77e723f",
+      "message": "chore: remove unused blog components and update imports",
+      "message_full": "chore: remove unused blog components and update imports\n\n- Deleted several unused blog components including `BlogWidgetCard`, `PostContent`, `PostContentWrapper`, and `StaticTableOfContents`, streamlining the codebase.\n- Updated import paths for `PostCoverImage` to maintain consistency.\n- Removed the `unist-util-visit` dependency from `package.json` as it is no longer needed.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-13T11:52:43Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-13T11:52:43Z",
+      "url": "https://github.com/musemvp/musemvp/commit/4194f2888c0de52d570ec571a19ea6c9a77e723f"
+    },
+    {
+      "sha": "43175cd",
+      "sha_full": "43175cd18e31c8965fa1a7f4f4a2dc7b4b51f7cf",
+      "message": "refactor: restructure blog and legal related pages; optimize landing page rendering (#29)",
+      "message_full": "refactor: restructure blog and legal related pages; optimize landing page rendering (#29)\n\n* feat: add Route Rendering Map documentation and enforce static rendering for key routes\n\n- Introduced a comprehensive `ROUTE_RENDERING_MAP.md` file detailing the rendering modes for various routes in the project, including landing pages, auth routes, and SaaS app routes.\n- Updated multiple route components to enforce `force-static` rendering, ensuring optimal performance and clarity in static content delivery.\n- Enhanced metadata generation and localization handling across affected components to align with the new documentation standards.\n\n* chore: remove unused dependencies and update blog structure\n\n- Removed `remark-gfm` from `package.json` and `pnpm-lock.yaml` as it is no longer needed.\n- Deleted the `ROUTE_RENDERING_MAP.md` file to streamline documentation.\n- Refactored blog components to enhance structure and improve metadata handling, including the introduction of a new `blogSource` for better data management.\n- Updated blog post schemas to include descriptions and streamlined the blog listing and post rendering logic.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-13T08:14:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-13T08:14:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/43175cd18e31c8965fa1a7f4f4a2dc7b4b51f7cf"
+    },
+    {
+      "sha": "3f543a4",
+      "sha_full": "3f543a48054756aa88c22934cdf0c086efa6c1da",
+      "message": "Merge pull request #28 from musemvp:musemvp/main",
+      "message_full": "Merge pull request #28 from musemvp:musemvp/main\n\nchore: update derivative repository links to point to pull requests",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-08T10:37:58Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-08T10:37:58Z",
+      "url": "https://github.com/musemvp/musemvp/commit/3f543a48054756aa88c22934cdf0c086efa6c1da"
+    },
+    {
+      "sha": "b050de1",
+      "sha_full": "b050de1e431ff749c98ca3248f3d95b65f7c77da",
+      "message": "refactor: standardize button and input styles across data table components",
+      "message_full": "refactor: standardize button and input styles across data table components\n\n- Replaced hardcoded class names with constants for button and input styles in `DataTableDateFilter`, `DataTableFacetedFilter`, `DataTableSliderFilter`, `DataTableToolbar`, and `DataTableViewOptions` components to ensure consistency.\n- Updated button classes to use `DATA_TABLE_TOOLBAR_BUTTON_CLASS_NAME` and input classes to use `DATA_TABLE_TOOLBAR_INPUT_CLASS_NAME`, enhancing maintainability and readability.\n- Adjusted button styles for better visual consistency across the data table components.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-08T10:33:15Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-08T10:33:15Z",
+      "url": "https://github.com/musemvp/musemvp/commit/b050de1e431ff749c98ca3248f3d95b65f7c77da"
+    },
+    {
+      "sha": "ee2eb45",
+      "sha_full": "ee2eb455267c05a31fa9d03d7fe36e524a7c6013",
+      "message": "Merge pull request #27 from musemvp/musemvp/main",
+      "message_full": "Merge pull request #27 from musemvp/musemvp/main\n\nfeat: introduce MuseMVP skill for customizing SaaS app home route",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-08T07:23:43Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-08T07:23:43Z",
+      "url": "https://github.com/musemvp/musemvp/commit/ee2eb455267c05a31fa9d03d7fe36e524a7c6013"
+    },
+    {
+      "sha": "cbc4963",
+      "sha_full": "cbc49636c99621d318ab7c1b156608df6448f8ed",
+      "message": "feat: introduce MuseMVP skill for customizing SaaS app home route",
+      "message_full": "feat: introduce MuseMVP skill for customizing SaaS app home route\n\n- Added a new skill `musemvp-configure-saas-page-route` to facilitate customization of the authenticated app home route at `src/app/(saas-page)/app/(account)/page.tsx`.\n- Implemented `MockRecentActivityTable` component to replace the previous `RecentActivityTable`, providing a mock data structure for recent activities.\n- Created a comprehensive README for dashboard components, outlining structure, responsibilities, and customization guidelines.\n- Established new files for recent activity management, including types, mock data, columns, and cell rendering, enhancing modularity and maintainability.\n- Removed the outdated `RecentActivityTable` component to streamline the codebase.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-08T07:21:52Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-08T07:21:52Z",
+      "url": "https://github.com/musemvp/musemvp/commit/cbc49636c99621d318ab7c1b156608df6448f8ed"
+    },
+    {
+      "sha": "7f0e10d",
+      "sha_full": "7f0e10dae0b38457f47082e4f3652a3d97295126",
+      "message": "refactor: enhance static parameter generation and localization handling in documentation page",
+      "message_full": "refactor: enhance static parameter generation and localization handling in documentation page\n\n- Removed the `dynamicParams` export to streamline the documentation page configuration.\n- Updated `generateStaticParams` to improve locale handling by filtering unique locales and constructing root paths, enhancing the static generation process.\n- Ensured better clarity and performance in the static parameter generation logic.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-07T09:00:02Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-07T09:00:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7f0e10dae0b38457f47082e4f3652a3d97295126"
+    },
+    {
+      "sha": "7f96f88",
+      "sha_full": "7f96f885811bea0944603f1af2adccea33b50405",
+      "message": "refactor: migrate from content-collections to Fumadocs MDX and update related configurations",
+      "message_full": "refactor: migrate from content-collections to Fumadocs MDX and update related configurations\n\n- Removed the `content-collections` package and its related files, transitioning to Fumadocs MDX for content management.\n- Updated `.gitignore` to exclude the new `.source` directory.\n- Refactored `next.config.ts` to integrate Fumadocs MDX configuration.\n- Adjusted documentation and blog components to utilize the new content structure and types.\n- Enhanced localization handling and updated paths in various components to reflect the new source structure.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-07T08:47:06Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-07T08:47:06Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7f96f885811bea0944603f1af2adccea33b50405"
+    },
+    {
+      "sha": "88091be",
+      "sha_full": "88091be368807655dc1edf1cb2168f7621edfefc",
+      "message": "refactor: simplify metadata generation and improve locale handling",
+      "message_full": "refactor: simplify metadata generation and improve locale handling\n\n- Removed the asynchronous fetching of locale in `generateMetadata` for the main layout, streamlining the function.\n- Updated `generateMetadata` in landing page layout to accept locale as a parameter, enhancing clarity and performance.\n- Refactored `getHeaderMenuItems` to directly accept locale as an argument, improving code readability.\n- Adjusted message fetching in documentation layouts to use the locale parameter, ensuring accurate localization.\n- Introduced static rendering options in documentation page layout for better performance.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-07T06:48:46Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-07T06:48:46Z",
+      "url": "https://github.com/musemvp/musemvp/commit/88091be368807655dc1edf1cb2168f7621edfefc"
+    },
+    {
+      "sha": "12d7b9c",
+      "sha_full": "12d7b9c38dae61ee8fd3e0b2b59813dfb8bb585b",
+      "message": "docs: enforce JSDoc formatting for code comments in AGENTS.md",
+      "message_full": "docs: enforce JSDoc formatting for code comments in AGENTS.md\n\n- Added a requirement for code comments to strictly follow standard JSDoc formatting to improve documentation consistency and clarity.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-05T04:04:01Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-05T04:04:01Z",
+      "url": "https://github.com/musemvp/musemvp/commit/12d7b9c38dae61ee8fd3e0b2b59813dfb8bb585b"
+    },
+    {
+      "sha": "86ee9b0",
+      "sha_full": "86ee9b0828ac777f0fc901ee453576df2c0d6140",
+      "message": "refactor: update Chinese translations and enhance ColorThemeSwitcher styling",
+      "message_full": "refactor: update Chinese translations and enhance ColorThemeSwitcher styling\n\n- Changed the translation for \"system\" in the Chinese language file from \"跟随系统\" to \"系统\" for improved clarity.\n- Refactored the ColorThemeSwitcher component to enhance styling and accessibility, including changes to button elements and class names for better visual consistency.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-05T03:52:28Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-05T03:52:28Z",
+      "url": "https://github.com/musemvp/musemvp/commit/86ee9b0828ac777f0fc901ee453576df2c0d6140"
+    },
+    {
+      "sha": "6f50c64",
+      "sha_full": "6f50c64672d8b2354847b8c99ace25cd10973a69",
+      "message": "refactor: streamline ColorThemeSwitcher component by removing select variant",
+      "message_full": "refactor: streamline ColorThemeSwitcher component by removing select variant\n\n- Removed the `select` variant from the `ColorThemeSwitcherBaseProps` interface and its related implementation, simplifying the component's functionality.\n- Enhanced code clarity by eliminating unnecessary props and focusing on the remaining variants.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-05T03:39:32Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-05T03:39:32Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6f50c64672d8b2354847b8c99ace25cd10973a69"
+    },
+    {
+      "sha": "32a213b",
+      "sha_full": "32a213bd7998747630d218c944133482ee4b4ca6",
+      "message": "refactor: simplify ColorThemeSwitcherNoCustomTheme usage across components",
+      "message_full": "refactor: simplify ColorThemeSwitcherNoCustomTheme usage across components\n\n- Removed unnecessary props from `ColorThemeSwitcherNoCustomTheme` in multiple components, streamlining its implementation.\n- Updated the `ColorThemeSwitcherBaseProps` interface to remove the export keyword for better encapsulation.\n- Enhanced code readability and maintainability by reducing prop complexity in the theme switcher component.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-05T03:38:41Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-05T03:38:41Z",
+      "url": "https://github.com/musemvp/musemvp/commit/32a213bd7998747630d218c944133482ee4b4ca6"
+    },
+    {
+      "sha": "c1a1213",
+      "sha_full": "c1a12137357d36252afd9f70ca9755c0c87b38ee",
+      "message": "refactor: rename SortableRoot to Sortable and update Slot import",
+      "message_full": "refactor: rename SortableRoot to Sortable and update Slot import\n\n- Renamed `SortableRoot` to `Sortable` for clarity and consistency in naming conventions.\n- Updated the import of `Slot` from `@radix-ui/react-slot` to `radix-ui` to align with the latest library changes.\n- Adjusted related references and props to ensure proper functionality with the new naming and import structure.\n- Added a comment in `composeRefs` to clarify the memoization behavior.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-05T03:29:16Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-05T03:29:16Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c1a12137357d36252afd9f70ca9755c0c87b38ee"
+    },
+    {
+      "sha": "c86af5b",
+      "sha_full": "c86af5b1b5834103f941405119130599cfb344b3",
+      "message": "Merge pull request #25 from musemvp/origin/dev/fumadocs-skill",
+      "message_full": "Merge pull request #25 from musemvp/origin/dev/fumadocs-skill\n\nchore: update package dependencies and improve documentation components",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-03T07:57:35Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-03T07:57:35Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c86af5b1b5834103f941405119130599cfb344b3"
+    },
+    {
+      "sha": "863a00a",
+      "sha_full": "863a00ae0d1221c2b3dd6a21a7b91d78aa20ae2d",
+      "message": "chore: update package dependencies and improve documentation components",
+      "message_full": "chore: update package dependencies and improve documentation components\n\n- Bumped versions of `@fumadocs/content-collections`, `fumadocs-core`, and `fumadocs-ui` to the latest releases for improved features and bug fixes.\n- Refactored `DocumentationPage` to simplify the handling of markdown URLs and removed the GitHub URL logic for cleaner code.\n- Enhanced `DocsAiActions` component by removing the GitHub URL prop, streamlining its functionality.\n- Updated image handling in `FumadocsRichMdxComponents` to improve type safety and clarity.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-03T07:53:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-03T07:53:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/863a00ae0d1221c2b3dd6a21a7b91d78aa20ae2d"
+    },
+    {
+      "sha": "48801cd",
+      "sha_full": "48801cd61423197b24d54785b07072de3a086d49",
+      "message": "Merge pull request #24 from musemvp/origin/dev/fumadocs-skill",
+      "message_full": "Merge pull request #24 from musemvp/origin/dev/fumadocs-skill\n\nrefactor: S3 credentials handling and improve fumadocs sturcture.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-03T07:07:40Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-03T07:07:40Z",
+      "url": "https://github.com/musemvp/musemvp/commit/48801cd61423197b24d54785b07072de3a086d49"
+    },
+    {
+      "sha": "7c43939",
+      "sha_full": "7c4393980db1cf8d55a813693493eacdd962eeba",
+      "message": "refactor: remove Pro content handling and related components",
+      "message_full": "refactor: remove Pro content handling and related components\n\n- Eliminated the `isPro` field from content schemas in `content-collections.ts`.\n- Removed references to Pro content in documentation files, including the deletion of the `paid-content-demo` pages.\n- Refactored blog and documentation components to remove Pro access checks and related logic, simplifying the rendering process.\n- Deleted unused Pro content components and utility functions, streamlining the codebase for better maintainability.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-03T07:05:40Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-03T07:05:40Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7c4393980db1cf8d55a813693493eacdd962eeba"
+    },
+    {
+      "sha": "27c1603",
+      "sha_full": "27c16030feca15714fa087088b1b33e9fe46f2d4",
+      "message": "refactor: improve layout and styling in AppSidebar and ProfileDropdown components",
+      "message_full": "refactor: improve layout and styling in AppSidebar and ProfileDropdown components\n\n- Adjusted the formatting of the displayName in AppSidebar for better readability.\n- Reintroduced the import of the `cn` utility in ProfileDropdown for consistent class name management.\n- Enhanced overall component structure for improved visual consistency and maintainability.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-03T05:44:50Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-03T05:44:50Z",
+      "url": "https://github.com/musemvp/musemvp/commit/27c16030feca15714fa087088b1b33e9fe46f2d4"
+    },
+    {
+      "sha": "804ef03",
+      "sha_full": "804ef0350cd0d14d78d2f4298faa6eaf01e6520c",
+      "message": "refactor: remove hardcoded S3 credentials from config and use environment variables",
+      "message_full": "refactor: remove hardcoded S3 credentials from config and use environment variables\n\n- Eliminated S3_ACCESS_KEY_ID, S3_SECRET_ACCESS_KEY, and S3_ENDPOINT from the configuration file for improved security.\n- Updated the S3 client to retrieve these values directly from environment variables, ensuring sensitive information is not stored in the codebase.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-04-03T05:43:47Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-04-03T05:43:47Z",
+      "url": "https://github.com/musemvp/musemvp/commit/804ef0350cd0d14d78d2f4298faa6eaf01e6520c"
+    }
+  ]
+}

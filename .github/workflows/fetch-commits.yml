@@ -1,0 +1,98 @@
+name: Fetch MuseMVP Commits
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-commits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout musemvp.github.io
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch and process commits
+        env:
+          GH_TOKEN: ${{ secrets.COMMIT_FETCH_TOKEN }}
+        run: |
+          python3 << 'EOF'
+          import json, subprocess, sys, os
+          from datetime import datetime, timezone
+
+          result = subprocess.run([
+            "curl", "-sf",
+            "-H", f"Authorization: Bearer {os.environ['GH_TOKEN']}",
+            "-H", "Accept: application/vnd.github+json",
+            "-H", "X-GitHub-Api-Version: 2022-11-28",
+            "https://api.github.com/repos/musemvp/musemvp/commits?per_page=50"
+          ], capture_output=True, text=True)
+
+          if result.returncode != 0:
+            print(f"curl failed: {result.stderr}", file=sys.stderr)
+            sys.exit(1)
+
+          raw = json.loads(result.stdout)
+
+          if not isinstance(raw, list):
+            print(f"Unexpected response: {result.stdout[:300]}", file=sys.stderr)
+            sys.exit(1)
+
+          commits = []
+          for item in raw:
+            c = item.get("commit", {})
+            author_git = c.get("author", {})
+            committer_git = c.get("committer", {})
+            author_gh = item.get("author") or {}
+
+            commits.append({
+              "sha":          item.get("sha", "")[:7],
+              "sha_full":     item.get("sha", ""),
+              "message":      c.get("message", "").split("\n")[0],
+              "message_full": c.get("message", ""),
+              "author": {
+                "name":         author_git.get("name", ""),
+                "email":        author_git.get("email", ""),
+                "date":         author_git.get("date", ""),
+                "github_login": author_gh.get("login", ""),
+                "avatar_url":   author_gh.get("avatar_url", ""),
+              },
+              "committed_at": committer_git.get("date", ""),
+              "url":          item.get("html_url", ""),
+            })
+
+          output = {
+            "meta": {
+              "source_repo": "musemvp/musemvp",
+              "fetched_at":  datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+              "total_count": len(commits),
+              "description": "Latest 50 commits from MuseMVP, auto-synced daily via GitHub Actions."
+            },
+            "commits": commits
+          }
+
+          with open("musemvp_commits.json", "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+
+          print(f"Saved {len(commits)} commits to musemvp_commits.json")
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add musemvp_commits.json
+
+          if git diff --cached --quiet; then
+            echo "No changes detected, skipping commit."
+          else
+            git commit -m "chore: sync musemvp commits [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git push
+            echo "Pushed updated musemvp_commits.json"
+          fi

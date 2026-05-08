@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "a66bb14",
+      "sha_full": "a66bb1440ae2dc89f9f6f8e5370f4d605e1643fe",
+      "message": "chore(deps): add new AI SDK dependencies and update existing ones",
+      "message_full": "chore(deps): add new AI SDK dependencies and update existing ones\n\n- Added dependencies: `@ai-sdk/anthropic`, `@ai-sdk/deepseek`, `@ai-sdk/openai`, `@ai-sdk/openai-compatible`, `@openrouter/ai-sdk-provider`, and `zhipu-ai-provider`.\n- Updated versions for existing dependencies in the `pnpm-lock.yaml` file to ensure compatibility and access to the latest features.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-08T08:49:39Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-08T08:49:39Z",
+      "url": "https://github.com/musemvp/musemvp/commit/a66bb1440ae2dc89f9f6f8e5370f4d605e1643fe"
+    },
+    {
+      "sha": "eac8465",
+      "sha_full": "eac846538f2af3b37bc838f9095e5b3cd428f5a6",
+      "message": "feat(config): add Next.js configuration file for Cloudflare and MDX support",
+      "message_full": "feat(config): add Next.js configuration file for Cloudflare and MDX support\n\n- Introduced `next.config.mjs` to configure Next.js with Cloudflare integration and MDX support.\n- Integrated `next-intl` for internationalization and defined remote image patterns for Google and GitHub profile images.\n- Configured database connection strategies and server external packages for improved deployment options.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-08T08:45:17Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-08T08:45:17Z",
+      "url": "https://github.com/musemvp/musemvp/commit/eac846538f2af3b37bc838f9095e5b3cd428f5a6"
+    },
+    {
+      "sha": "acbea11",
+      "sha_full": "acbea11ca19982fe61724587f331e33c3dcd58e3",
+      "message": "fix(config): comment out build command to prevent oversized Worker bundles",
+      "message_full": "fix(config): comment out build command to prevent oversized Worker bundles",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-08T08:34:16Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-08T08:34:16Z",
+      "url": "https://github.com/musemvp/musemvp/commit/acbea11ca19982fe61724587f331e33c3dcd58e3"
+    },
+    {
       "sha": "82835fc",
       "sha_full": "82835fc9a32579d2dd9021bfca5d000adc243e56",
       "message": "Merge pull request #60 from musemvp/dependabot/npm_and_yarn/npm-all-81cd6a4602",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-04-16T03:57:53Z",
       "url": "https://github.com/musemvp/musemvp/commit/883068b23640516c22ed6a6709c35532770b73a9"
-    },
-    {
-      "sha": "383e1c0",
-      "sha_full": "383e1c0f42512d47792bc63958726aeb36626a11",
-      "message": "chore: enhance API key management and update related tests",
-      "message_full": "chore: enhance API key management and update related tests\n\n- Added new test cases for API key management functionalities, including creation, listing, updating, and deletion in session guard tests.\n- Enhanced coverage for authentication flows related to API key management, ensuring robust testing.\n- Updated the apikey schema to include a new `configId` column and renamed `userId` to `referenceId` for clarity, improving query performance with a new index.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-16T03:54:50Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-16T03:54:50Z",
-      "url": "https://github.com/musemvp/musemvp/commit/383e1c0f42512d47792bc63958726aeb36626a11"
-    },
-    {
-      "sha": "53d9c29",
-      "sha_full": "53d9c299124fd1108ad65eea9e5940969053fe1f",
-      "message": "chore: update @opennextjs/cloudflare dependency to version 1.19.1 and adjust pnpm-lock.yaml for consistency",
-      "message_full": "chore: update @opennextjs/cloudflare dependency to version 1.19.1 and adjust pnpm-lock.yaml for consistency\n\n- Upgraded the @opennextjs/cloudflare package in package.json to version 1.19.1 for improved functionality.\n- Updated pnpm-lock.yaml to reflect the new version and ensure consistency across dependencies.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-15T15:05:41Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-15T15:05:41Z",
-      "url": "https://github.com/musemvp/musemvp/commit/53d9c299124fd1108ad65eea9e5940969053fe1f"
-    },
-    {
-      "sha": "6cf1d0d",
-      "sha_full": "6cf1d0d136789028c57a9127b9074ec659d53cc3",
-      "message": "feat: add test framework module + optimize AI rules file + update nextjs and better-auth. (#31)",
-      "message_full": "feat: add test framework module + optimize AI rules file + update nextjs and better-auth. (#31)\n\n* chore: remove obsolete claude.md file\n\n- Deleted the `claude.md` file as it was no longer relevant to the project documentation.\n\n* chore: update blog post schemas and enhance metadata handling\n\n- Refactored blog post schemas to include descriptions for improved clarity.\n- Streamlined the blog listing and post rendering logic to enhance performance and maintainability.\n- Updated related components to align with the new schema structure.\n\n* chore: update AGENTS.md and README.md for improved clarity and structure\n\n- Enhanced AGENTS.md with a detailed high-signal repo map and task routing defaults for better navigation and understanding of project structure.\n- Updated README.md to reflect project highlights, streamlined setup instructions, and clarified local development requirements.\n- Adjusted deployment targets and local caveats for better guidance on environment configurations.\n\n* chore: add build-time public environment variables to Dockerfile\n\n- Introduced several ARG and ENV variables for public configuration, including site URL and various pricing IDs, to be embedded by Next.js during the build process.\n- Enhanced the Dockerfile for better integration of environment-specific settings.\n\n* chore: update testing setup and improve component structure\n\n- Added Playwright and Vitest configurations to `package.json` for enhanced testing capabilities, including unit, API, and end-to-end tests.\n- Updated `.gitignore` to exclude test results and reference files.\n- Refactored several components to include `data-testid` attributes for better testability, including `AdminUsers`, `AIChatWorkspace`, and various forms in the authentication module.\n- Adjusted TypeScript configurations to include new reference paths for improved project structure.\n\n* chore: update test documentation for clarity and structure\n\n- Revised the README.md to provide a clearer overview of the testing framework, including links to detailed documentation in English and Simplified Chinese.\n- Simplified the commands section and clarified the local setup instructions for running API and E2E tests.\n\n* chore: update testing configurations and enhance test documentation\n\n- Modified `package.json` to update test commands for unit and API tests, reflecting new configuration files for Vitest.\n- Added new Vitest configuration files: `vitest.logic.config.ts` for unit tests and `vitest.contracts.config.ts` for API contract tests.\n- Revised `README.en.md` and `README.zh-CN.md` to clarify the structure and purpose of the tests, including a quick map of configurations and commands.\n- Introduced new API contract tests to validate conversation ownership and public access, ensuring proper role boundaries and session management.\n- Enhanced E2E testing setup with a new cleanup process and updated Playwright configuration for better test management.\n\n* chore: update test artifact paths and improve documentation\n\n- Modified `.gitignore` to include new test artifact directories: `.test-artifacts/` for better organization of test outputs.\n- Updated `README.en.md` and `README.zh-CN.md` to reflect changes in output paths for HTML reports and other test artifacts.\n- Adjusted Playwright configuration to output reports and artifacts to the new `.test-artifacts/` directory.\n\n* chore: add new skills to skills-lock.json for better authentication practices\n\n- Introduced several new skills related to authentication best practices, including \"better-auth-security-best-practices\", \"create-auth-skill\", \"email-and-password-best-practices\", and \"two-factor-authentication-best-practices\".\n- Updated the computed hashes for each new skill to ensure integrity and proper tracking.\n\n* chore: update dependencies and improve authentication handling\n\n- Added \"@better-auth/api-key\" package for enhanced API key management.\n- Updated \"@next/third-parties\" and \"next\" packages to the latest versions for improved compatibility.\n- Refactored authentication middleware to correctly handle session retrieval and authorization checks.\n- Enhanced API key handling in the admin routes to ensure proper user identification.\n- Updated theme management to utilize \"@wrksz/themes\" for consistent theming across components.\n- Improved test documentation and structure for better clarity and usability.\n\n* refactor: update AuthWrapper styles and enhance test documentation\n\n- Changed border radius in AuthWrapper component from `rounded-2xl` to `rounded-xl` for a more modern look.\n- Revised E2E test scenarios documentation to categorize routes into Public, Auth, and Permissions for better clarity.\n- Removed obsolete smoke tests for account entry, admin console, and public routes to streamline the test suite.\n\n* fix: adjust rate limiting and enhance setup form for better testing\n\n- Updated rate limiting configuration in the authentication module to conditionally enable based on test utilities.\n- Added `data-testid` attributes to the setup form and its fields for improved testability in E2E tests.\n- Refactored login and registration smoke tests to utilize new utility functions for better OTP handling and user scenario management.\n\n* refactor: remove obsolete login test and streamline registration tests\n\n- Deleted the test for unauthenticated user redirection to the login page to simplify the smoke test suite.\n- Removed the entire registration route smoke test file to eliminate redundancy and focus on essential authentication flows.\n\n* refactor: enhance authentication smoke tests with clearer descriptions\n\n- Updated test descriptions for login and registration smoke tests to improve clarity and readability.\n- Renamed test suites to better reflect their purpose, focusing on authentication flows.\n- Ensured consistency in test naming conventions across the authentication journey.\n\n* refactor: remove obsolete smoke tests for admin and member access\n\n- Deleted smoke test files for admin user access to the users management page and member access to general settings to streamline the test suite.\n- Removed guest-facing route smoke tests to focus on essential permission checks and improve overall test clarity.\n\n* feat: add comprehensive smoke tests for authentication and landing pages\n\n- Introduced new smoke tests for user authentication, including login with password and OTP, as well as registration flows.\n- Added tests to verify unauthenticated user redirection and ensure landing pages render correctly.\n- Implemented checks for admin and member access to relevant application pages, enhancing overall test coverage.\n\n* refactor: update E2E test structure and documentation\n\n- Renamed directories and updated references in documentation to reflect the new structure, changing 'journeys' to 'pages'.\n- Removed obsolete smoke test for guest-facing routes to streamline the test suite.\n- Adjusted route definitions by removing the 'features' path to focus on essential application routes.\n\n* feat: add data-testid attributes for improved E2E testing\n\n- Added `data-testid` attributes to the header and footer components of the landing page for better identification in end-to-end tests.\n- Updated smoke tests to verify visibility of the header and footer elements, enhancing test coverage and reliability.\n\n* feat: add conditional skip for billing tests in pricing smoke spec\n\n- Introduced a conditional skip for the pricing smoke test based on the billing configuration, enhancing test flexibility.\n- Updated the test suite to ensure it only runs when billing is enabled, improving test relevance and efficiency.\n\n* refactor: update URL expectation in authentication smoke tests\n\n- Modified the URL expectation in the login smoke tests to use a dynamic regular expression based on the application route, enhancing flexibility and maintainability.\n- Ensured consistency in URL checks across different authentication scenarios, improving test reliability.\n\n* refactor: clean up test documentation and configuration\n\n- Removed the 'reference-other-project' entry from .gitignore and tsconfig.json to streamline project references.\n- Deleted outdated README.en.md and README.zh-CN.md files from the tests directory to eliminate redundancy and improve clarity.\n- Updated README.md to enhance the structure and provide clearer guidance on the test module layout and commands.\n\n* feat: enhance apikey schema with configId and update indexing\n\n- Added a new column `configId` to the `apikey` table with a default value of \"default\".\n- Renamed `userId` to `referenceId` for clarity and updated its reference index accordingly.\n- Introduced a new index on `configId` to improve query performance.\n\n* feat: add API key management endpoints to session guard tests\n\n- Introduced new test cases for creating, listing, updating, and deleting API keys in the session guard contract tests.\n- Enhanced coverage for API key management functionalities, ensuring robust testing of authentication flows.",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-15T14:36:44Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-15T14:36:44Z",
-      "url": "https://github.com/musemvp/musemvp/commit/6cf1d0d136789028c57a9127b9074ec659d53cc3"
     }
   ]
 }

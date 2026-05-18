@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "51e9bfa",
+      "sha_full": "51e9bfae8e57a177a7d7687d95b54cedf793994f",
+      "message": "refactor(dependencies): remove unused AWS SDK packages",
+      "message_full": "refactor(dependencies): remove unused AWS SDK packages",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-18T01:44:08Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-18T01:44:08Z",
+      "url": "https://github.com/musemvp/musemvp/commit/51e9bfae8e57a177a7d7687d95b54cedf793994f"
+    },
+    {
       "sha": "0ad2dad",
       "sha_full": "0ad2dadd27084a17d9f0e52a7bfdf6f1fa45e97f",
       "message": "refactor(admin-users): enhance pagination handling and page size normalization",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-04-22T12:39:23Z",
       "url": "https://github.com/musemvp/musemvp/commit/91be374ec08825f8ac2bc4be8870df87d8db7374"
-    },
-    {
-      "sha": "a0fd937",
-      "sha_full": "a0fd937788de98f80a9c09237d6919db5d32c8cd",
-      "message": "Merge pull request #46 from musemvp/fix/direct",
-      "message_full": "Merge pull request #46 from musemvp/fix/direct\n\nrefactor(auth): streamline redirect handling and enhance type safety",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-22T12:34:15Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-22T12:34:15Z",
-      "url": "https://github.com/musemvp/musemvp/commit/a0fd937788de98f80a9c09237d6919db5d32c8cd"
     }
   ]
 }

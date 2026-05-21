@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "36d5576",
+      "sha_full": "36d5576ecfcc4fd2e44bc7b6e9f36e5dda83ab1a",
+      "message": "Remove obsolete skills: deleted Better Auth best practices, security best practices, and brainstorming skills documentation files to streamline the project and eliminate outdated content.",
+      "message_full": "Remove obsolete skills: deleted Better Auth best practices, security best practices, and brainstorming skills documentation files to streamline the project and eliminate outdated content.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-20T03:09:08Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-20T03:09:08Z",
+      "url": "https://github.com/musemvp/musemvp/commit/36d5576ecfcc4fd2e44bc7b6e9f36e5dda83ab1a"
+    },
+    {
       "sha": "b1a3905",
       "sha_full": "b1a390528cf477be322a8cc4d8fe33153a7a87dc",
       "message": "Merge pull request #69 from musemvp/codex/dodo-payments-gateway",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-04-25T16:35:57Z",
       "url": "https://github.com/musemvp/musemvp/commit/7b6e53bb312d63640609770db1322bccb7a78efa"
-    },
-    {
-      "sha": "91260b7",
-      "sha_full": "91260b7d9f1165ffbf6377bc9a28723e3efc8979",
-      "message": "feat(admin-users): implement user ban and unban functionality",
-      "message_full": "feat(admin-users): implement user ban and unban functionality\n\n- Added translations for ban and unban user actions in English and Chinese.\n- Updated AdminUsers component to include ban and unban user actions.\n- Enhanced UserActionsMenu to allow admins to ban and unban users with appropriate callbacks.\n- Implemented banUser and unbanUser functions in useUserActions hook.\n- Added e2e tests to verify the ban and unban functionality for admin users.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-25T13:33:39Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-25T13:33:39Z",
-      "url": "https://github.com/musemvp/musemvp/commit/91260b7d9f1165ffbf6377bc9a28723e3efc8979"
     }
   ]
 }

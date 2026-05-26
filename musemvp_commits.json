@@ -6,6 +6,36 @@
   },
   "commits": [
     {
+      "sha": "bc8ce52",
+      "sha_full": "bc8ce527116e71a2977ac76c4c86066cb73a04e8",
+      "message": "feat(billing): implement direct checkout mode and related configurations",
+      "message_full": "feat(billing): implement direct checkout mode and related configurations\n\n- Added support for direct checkout mode in the billing settings, allowing users to be redirected to the payment provider's portal.\n- Introduced a new `DirectCheckoutBillingNotice` component to inform users about the external management of their subscriptions.\n- Updated the configuration to include direct checkout URLs and checkout mode resolution logic.\n- Enhanced the billing product catalog to support direct checkout URLs for various plans.\n- Added translations for direct checkout notices in English and Chinese.\n- Implemented unit tests for the checkout mode resolution logic.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-25T08:05:22Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-25T08:05:22Z",
+      "url": "https://github.com/musemvp/musemvp/commit/bc8ce527116e71a2977ac76c4c86066cb73a04e8"
+    },
+    {
+      "sha": "98a7aa9",
+      "sha_full": "98a7aa9576b1714edb9cdffcf383e0c8d52ab059",
+      "message": "feat(user-create): add batch user creation and interactive prompts for user setup",
+      "message_full": "feat(user-create): add batch user creation and interactive prompts for user setup\nfeat(data-table): improve row count display in pagination component\nfix(admin-users): set total row count for manual pagination",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-25T03:33:24Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-25T03:33:24Z",
+      "url": "https://github.com/musemvp/musemvp/commit/98a7aa9576b1714edb9cdffcf383e0c8d52ab059"
+    },
+    {
       "sha": "36d5576",
       "sha_full": "36d5576ecfcc4fd2e44bc7b6e9f36e5dda83ab1a",
       "message": "Remove obsolete skills: deleted Better Auth best practices, security best practices, and brainstorming skills documentation files to streamline the project and eliminate outdated content.",
@@ -724,36 +754,6 @@
       },
       "committed_at": "2026-04-26T03:54:00Z",
       "url": "https://github.com/musemvp/musemvp/commit/34cf94a99a9a25a20bf6be9a5d5372f85fe047d8"
-    },
-    {
-      "sha": "e92d671",
-      "sha_full": "e92d6711f37629b7af35988c8f0148ea63ebc807",
-      "message": "feat(cookie-consent): implement cookie consent banner and configuration",
-      "message_full": "feat(cookie-consent): implement cookie consent banner and configuration\n\n- Added a cookie consent banner with customizable copy for user consent options.\n- Updated the CookieProvider to manage consent state and decisions.\n- Enhanced layout components to include cookie configuration.\n- Added translations for cookie consent messages in English and Chinese.\n- Refactored Document component to utilize the new consent banner and context.\n- Adjusted UI components for improved user experience regarding cookie preferences.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-25T17:30:12Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-25T17:30:12Z",
-      "url": "https://github.com/musemvp/musemvp/commit/e92d6711f37629b7af35988c8f0148ea63ebc807"
-    },
-    {
-      "sha": "7b6e53b",
-      "sha_full": "7b6e53bb312d63640609770db1322bccb7a78efa",
-      "message": "feat(changelog): implement changelog generation and update UI components",
-      "message_full": "feat(changelog): implement changelog generation and update UI components\n\n- Added a new changelog schema to support bilingual entries and structured changelog content.\n- Created a changelog generation skill for producing bilingual changelog entries from git commits.\n- Updated the changelog page to utilize the new MvpChangelogPageContent component for rendering.\n- Enhanced translations for changelog descriptions and types in both English and Chinese.\n- Refactored existing changelog components to improve maintainability and readability.\n- Added e2e tests to verify the visibility of changelog entries on the landing page.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-25T16:35:57Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-25T16:35:57Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7b6e53bb312d63640609770db1322bccb7a78efa"
     }
   ]
 }

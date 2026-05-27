@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "b7e1493",
+      "sha_full": "b7e149380e28a798a52969cd7378f42f243bf633",
+      "message": "Merge pull request #75 from musemvp/feat/muse-subscribe-settings",
+      "message_full": "Merge pull request #75 from musemvp/feat/muse-subscribe-settings\n\nfeat: add museSubscribeEnabled user preference and subscriptions settings",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-27T07:57:59Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-27T07:57:59Z",
+      "url": "https://github.com/musemvp/musemvp/commit/b7e149380e28a798a52969cd7378f42f243bf633"
+    },
+    {
+      "sha": "fe95b3b",
+      "sha_full": "fe95b3b54b519c2695251b51eb953f5db8d1c8a9",
+      "message": "feat(admin): show museSubscribeEnabled column with filter on users list",
+      "message_full": "feat(admin): show museSubscribeEnabled column with filter on users list\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-27T06:59:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-27T06:59:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/fe95b3b54b519c2695251b51eb953f5db8d1c8a9"
+    },
+    {
+      "sha": "3146cde",
+      "sha_full": "3146cde150758d3983c332a719b77805cf987b7f",
+      "message": "feat(settings): add museSubscribeEnabled and subscriptions page",
+      "message_full": "feat(settings): add museSubscribeEnabled and subscriptions page\n\n- Add muse_subscribe_enabled column (default true) to user schema\n- Register museSubscribeEnabled in Better Auth additionalFields\n- Add /app/settings/subscriptions route with toggle form\n- Wire subscriptions nav item in sidebar, fortress layout, and profile menu\n- Add en/zh i18n strings for subscriptions settings\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-27T06:28:21Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-27T06:28:21Z",
+      "url": "https://github.com/musemvp/musemvp/commit/3146cde150758d3983c332a719b77805cf987b7f"
+    },
+    {
       "sha": "c5b8509",
       "sha_full": "c5b8509a9d0445064a47dcda91488f3c4bcffeb2",
       "message": "feat(i18n): refactor locale handling to use enum and improve default locale resolution",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-04-28T16:11:13Z",
       "url": "https://github.com/musemvp/musemvp/commit/9c2cc370616c06c4f1ec02e2f2ca5118d57229c9"
-    },
-    {
-      "sha": "6b1a950",
-      "sha_full": "6b1a950c94634764670d44e0d871c137677bd0af",
-      "message": "Merge pull request #50 from musemvp/dependabot/npm_and_yarn/npm-all-8129b5918e",
-      "message_full": "Merge pull request #50 from musemvp/dependabot/npm_and_yarn/npm-all-8129b5918e\n\nchore(deps): bump the npm-all group across 1 directory with 15 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-26T06:15:42Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-26T06:15:42Z",
-      "url": "https://github.com/musemvp/musemvp/commit/6b1a950c94634764670d44e0d871c137677bd0af"
-    },
-    {
-      "sha": "ab2d393",
-      "sha_full": "ab2d393a07df33a2fb3b5481893c83ebd64162d6",
-      "message": "test(changelog): enhance smoke tests for landing page changelog visibility",
-      "message_full": "test(changelog): enhance smoke tests for landing page changelog visibility\n\n- Updated smoke tests to improve resilience against content changes and locale variations.\n- Replaced specific heading checks with more general visibility assertions for the changelog page.\n- Added conditional checks for displaying either the first changelog entry or an empty state message.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-26T06:14:53Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-26T06:14:53Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ab2d393a07df33a2fb3b5481893c83ebd64162d6"
-    },
-    {
-      "sha": "0ef0a13",
-      "sha_full": "0ef0a13f684703dae640302aa10eca45f6f1fbeb",
-      "message": "Merge github.com:musemvp/musemvp into dependabot/npm_and_yarn/npm-all-8129b5918e",
-      "message_full": "Merge github.com:musemvp/musemvp into dependabot/npm_and_yarn/npm-all-8129b5918e",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-26T06:08:40Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-26T06:08:40Z",
-      "url": "https://github.com/musemvp/musemvp/commit/0ef0a13f684703dae640302aa10eca45f6f1fbeb"
     }
   ]
 }

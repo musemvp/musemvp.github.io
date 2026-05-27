@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "c5b8509",
+      "sha_full": "c5b8509a9d0445064a47dcda91488f3c4bcffeb2",
+      "message": "feat(i18n): refactor locale handling to use enum and improve default locale resolution",
+      "message_full": "feat(i18n): refactor locale handling to use enum and improve default locale resolution\n\n- Changed `AppLocaleCode` from a type to an enum for better type safety.\n- Introduced a new `APP_LOCALE_VALUES` set to validate locale values.\n- Updated `appI18nConfig` to use enum values for locale keys.\n- Implemented `resolveDefaultLocale` function to determine the default locale from environment variables, defaulting to English if invalid.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-26T14:06:28Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-26T14:06:28Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c5b8509a9d0445064a47dcda91488f3c4bcffeb2"
+    },
+    {
+      "sha": "2b0b26b",
+      "sha_full": "2b0b26b36356a78cc86070c1c9e9c47d3b334db3",
+      "message": "feat(icon): update favicon and icon assets with new designs and sizes",
+      "message_full": "feat(icon): update favicon and icon assets with new designs and sizes",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-26T13:52:40Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-26T13:52:40Z",
+      "url": "https://github.com/musemvp/musemvp/commit/2b0b26b36356a78cc86070c1c9e9c47d3b334db3"
+    },
+    {
+      "sha": "bf63b44",
+      "sha_full": "bf63b44776fa318462f1606eb352fc142db31122",
+      "message": "fix(config): update Discord invite link to new URL",
+      "message_full": "fix(config): update Discord invite link to new URL",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-26T06:56:42Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-26T06:56:42Z",
+      "url": "https://github.com/musemvp/musemvp/commit/bf63b44776fa318462f1606eb352fc142db31122"
+    },
+    {
       "sha": "bc8ce52",
       "sha_full": "bc8ce527116e71a2977ac76c4c86066cb73a04e8",
       "message": "feat(billing): implement direct checkout mode and related configurations",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-04-26T06:08:40Z",
       "url": "https://github.com/musemvp/musemvp/commit/0ef0a13f684703dae640302aa10eca45f6f1fbeb"
-    },
-    {
-      "sha": "37ab5ad",
-      "sha_full": "37ab5ad053b7cee2db68c0b2f78848d1d68fd338",
-      "message": "refactor(header-nav): update styles and improve layout for better user experience",
-      "message_full": "refactor(header-nav): update styles and improve layout for better user experience\n\n- Modified NavigationMenuContent and subItem styles for enhanced visual consistency and responsiveness.\n- Adjusted hover effects and transitions to improve interactivity and user feedback.\n- Refactored layout components to streamline design and enhance readability.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-26T05:46:54Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-26T05:46:54Z",
-      "url": "https://github.com/musemvp/musemvp/commit/37ab5ad053b7cee2db68c0b2f78848d1d68fd338"
-    },
-    {
-      "sha": "d210aa8",
-      "sha_full": "d210aa836d5921cb2409afaf51dd0d06cd530fa9",
-      "message": "feat(localization): enhance locale handling in landing page components",
-      "message_full": "feat(localization): enhance locale handling in landing page components\n\n- Updated BlogListLayoutHeader, FeaturesPageHeader, and PricingPageHeader to accept locale as a prop for improved localization.\n- Refactored generateMetadata functions in FeaturesPage and PricingPage to utilize locale for fetching translations.\n- Ensured consistent locale usage across landing page components for better internationalization support.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-26T05:41:08Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-26T05:41:08Z",
-      "url": "https://github.com/musemvp/musemvp/commit/d210aa836d5921cb2409afaf51dd0d06cd530fa9"
-    },
-    {
-      "sha": "34cf94a",
-      "sha_full": "34cf94a99a9a25a20bf6be9a5d5372f85fe047d8",
-      "message": "changelog: remove outdated reference to full commit list",
-      "message_full": "changelog: remove outdated reference to full commit list\n\n- Removed the line referencing the full list of commits in the changelog for clarity and conciseness.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-26T03:54:00Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-26T03:54:00Z",
-      "url": "https://github.com/musemvp/musemvp/commit/34cf94a99a9a25a20bf6be9a5d5372f85fe047d8"
     }
   ]
 }

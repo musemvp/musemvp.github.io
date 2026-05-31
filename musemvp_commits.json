@@ -6,6 +6,36 @@
   },
   "commits": [
     {
+      "sha": "f0de366",
+      "sha_full": "f0de366777a8ee9ce940860909446ef24a30b360",
+      "message": "refactor(aichat): improve layout and overflow handling in AIChat components",
+      "message_full": "refactor(aichat): improve layout and overflow handling in AIChat components\n\n- Updated the AIChatPage to use calculated heights for better responsiveness.\n- Refactored AIChatWorkspace to ensure proper overflow handling and layout structure.\n- Enhanced ChatPanel to maintain consistent height and overflow behavior across components.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-30T14:46:35Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-30T14:46:35Z",
+      "url": "https://github.com/musemvp/musemvp/commit/f0de366777a8ee9ce940860909446ef24a30b360"
+    },
+    {
+      "sha": "8af4df7",
+      "sha_full": "8af4df763707310576a1a55d74e9490cb9a8a9fc",
+      "message": "feat(header): add Discord button to header and update configuration",
+      "message_full": "feat(header): add Discord button to header and update configuration\n\n- Introduced a new `HeaderDiscordButton` component for displaying a Discord link in both desktop and mobile headers.\n- Updated `headerConfig` in the configuration to include a `showDiscord` option.\n- Modified `SwitchHeader`, `HeaderDesktopControls`, and `HeaderMobileMenu` components to conditionally render the Discord button based on the new configuration.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-05-30T13:10:36Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-05-30T13:10:36Z",
+      "url": "https://github.com/musemvp/musemvp/commit/8af4df763707310576a1a55d74e9490cb9a8a9fc"
+    },
+    {
       "sha": "c43e6fb",
       "sha_full": "c43e6fb369bfbfc1d37f7c580c36b13ac2c2967f",
       "message": "feat(dependencies): add embla-carousel-autoplay package version 8.6.0 to enhance carousel functionality",
@@ -724,36 +754,6 @@
       },
       "committed_at": "2026-04-29T07:06:19Z",
       "url": "https://github.com/musemvp/musemvp/commit/caf26b9529d0007baaf0daaca1305800df10c191"
-    },
-    {
-      "sha": "77e8153",
-      "sha_full": "77e815346c108310eb131f15c1f382c1ee1205ab",
-      "message": "docs(claude): enhance documentation for context management and verification processes",
-      "message_full": "docs(claude): enhance documentation for context management and verification processes\n\n- Updated the introduction to clarify project architecture and verification defaults.\n- Improved guidelines for context compacting, verification processes, and reading relevant skills before multi-step tasks.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-29T06:53:33Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-29T06:53:33Z",
-      "url": "https://github.com/musemvp/musemvp/commit/77e815346c108310eb131f15c1f382c1ee1205ab"
-    },
-    {
-      "sha": "3df380e",
-      "sha_full": "3df380eca635dd8c5a21e4bbd473ef017a80ced0",
-      "message": "chore(skills): update skill paths and enhance brainstorming documentation",
-      "message_full": "chore(skills): update skill paths and enhance brainstorming documentation\n\n- Added skill paths for various skills in skills-lock.json to improve organization and accessibility.\n- Updated the brainstorming SKILL.md to replace the spec review loop with a self-review process for better clarity and efficiency.\n- Enhanced visual-companion.md to clarify directory usage for HTML files and state management.\n- Refactored server scripts to utilize session and state directories for improved structure and maintainability.\n- Added silence detection rules to remotion-best-practices, enhancing audio processing capabilities.\n- Updated Stripe best practices to include security guidelines and improved integration details.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-29T06:43:00Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-29T06:43:00Z",
-      "url": "https://github.com/musemvp/musemvp/commit/3df380eca635dd8c5a21e4bbd473ef017a80ced0"
     }
   ]
 }

@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "1bd1075",
+      "sha_full": "1bd107598e9fbb18f6a868eef8e731f121de6722",
+      "message": "refactor(layout): remove fortress layout and related components",
+      "message_full": "refactor(layout): remove fortress layout and related components\n\n- Deleted the AppFortressLayout component along with its associated LogoutButton and NavSection components.\n- Cleaned up imports and references to streamline the layout structure.\n\nCo-authored-by: wztlink1013 <wztlink1013@163.com>\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-06T14:53:08Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-06T14:53:08Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1bd107598e9fbb18f6a868eef8e731f121de6722"
+    },
+    {
       "sha": "f0de366",
       "sha_full": "f0de366777a8ee9ce940860909446ef24a30b360",
       "message": "refactor(aichat): improve layout and overflow handling in AIChat components",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-05-01T19:28:55Z",
       "url": "https://github.com/musemvp/musemvp/commit/eb381cf475fa0fc2aeac5a44e767f0d7f8558c28"
-    },
-    {
-      "sha": "caf26b9",
-      "sha_full": "caf26b9529d0007baaf0daaca1305800df10c191",
-      "message": "Merge pull request #52 from musemvp/dependabot/npm_and_yarn/npm-all-1e85a1bcd2",
-      "message_full": "Merge pull request #52 from musemvp/dependabot/npm_and_yarn/npm-all-1e85a1bcd2\n\nchore(deps): bump the npm-all group across 1 directory with 15 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-04-29T07:06:19Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-04-29T07:06:19Z",
-      "url": "https://github.com/musemvp/musemvp/commit/caf26b9529d0007baaf0daaca1305800df10c191"
     }
   ]
 }

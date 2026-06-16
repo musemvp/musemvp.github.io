@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "2b88a52",
+      "sha_full": "2b88a52d651dc4941681c27214beefefa15b2ad6",
+      "message": "refactor(i18n): enforce exclusive use of `mvp.json` for derivative-product translations",
+      "message_full": "refactor(i18n): enforce exclusive use of `mvp.json` for derivative-product translations\n\n- Updated documentation across multiple files to clarify that all MuseMVP-derived user-visible copy must be placed exclusively in `src/i18n/translations/en/mvp.json` and `src/i18n/translations/zh/mvp.json`.\n- Emphasized the importance of not modifying legacy namespaces (e.g., `home.json`, `pricing.json`) for derivative messaging to maintain upstream template defaults.\n- Ensured synchronization of locale keys and content pairs between English and Chinese translations.\n\nCo-authored-by: wztlink1013 <wztlink1013@163.com>\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-15T08:53:13Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-15T08:53:13Z",
+      "url": "https://github.com/musemvp/musemvp/commit/2b88a52d651dc4941681c27214beefefa15b2ad6"
+    },
+    {
       "sha": "fd669be",
       "sha_full": "fd669bed434a2974cd250cac0304c63cd5789e11",
       "message": "Merge pull request #86 from musemvp/refactor/remove-ai",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-05-14T16:29:07Z",
       "url": "https://github.com/musemvp/musemvp/commit/ba917f6e3e3321e0260f66b1b3f22e4ea297e65d"
-    },
-    {
-      "sha": "a9aa68b",
-      "sha_full": "a9aa68bfd1ccecfc584648fb1cb4b3eec891f694",
-      "message": "refactor(calendar): enhance month grid styling for improved layout",
-      "message_full": "refactor(calendar): enhance month grid styling for improved layout\n\n- Updated the calendar component to include default class names for the month grid, ensuring consistent styling across the application.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-09T01:51:59Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-09T01:51:59Z",
-      "url": "https://github.com/musemvp/musemvp/commit/a9aa68bfd1ccecfc584648fb1cb4b3eec891f694"
     }
   ]
 }

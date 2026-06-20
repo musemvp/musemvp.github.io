@@ -6,6 +6,246 @@
   },
   "commits": [
     {
+      "sha": "0f938e9",
+      "sha_full": "0f938e9bf68ca7c693080ef3d956e48460d28fa5",
+      "message": "Merge pull request #94 from musemvp/fix/critical-security-audit",
+      "message_full": "Merge pull request #94 from musemvp/fix/critical-security-audit\n\nSecurity hardening + cross-cutting resilience + test coverage (audit remediation)",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-19T11:03:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-19T11:03:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/0f938e9bf68ca7c693080ef3d956e48460d28fa5"
+    },
+    {
+      "sha": "9ad4236",
+      "sha_full": "9ad4236346114674076f6320815f508353aef079",
+      "message": "fix(ci): provide placeholder DB/auth env for the unit test job",
+      "message_full": "fix(ci): provide placeholder DB/auth env for the unit test job\n\nThe unit job failed with \"No database connection string available\"\nbecause importing the Better Auth test utils (via the skipped real-upload\nintegration test) eagerly constructs the auth instance at module load,\nwhich needs a connection string present. Unit tests are fully mocked and\nnever connect, so provide placeholder DATABASE_URL / BETTER_AUTH_SECRET /\nstrategy values for the job.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-19T09:17:27Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-19T09:17:27Z",
+      "url": "https://github.com/musemvp/musemvp/commit/9ad4236346114674076f6320815f508353aef079"
+    },
+    {
+      "sha": "7086b5d",
+      "sha_full": "7086b5d63e3ebb7402f0d85bbf9aab6cc8888e94",
+      "message": "fix(ci): generate Fumadocs .source via postinstall",
+      "message_full": "fix(ci): generate Fumadocs .source via postinstall\n\nCI type-check failed on a fresh checkout because the gitignored Fumadocs\n`.source` artifacts (the `collections/*` modules and generated PageData\ntypes) were never generated -- locally they exist only because dev/build\nhad run. Add a `postinstall: fumadocs-mdx` script so `pnpm install`\ngenerates them everywhere (CI and fresh clones), resolving the\n\"Cannot find module 'collections/server'\" and \"Property ... does not\nexist on DocMethods & PageData\" type-check errors.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-19T09:12:07Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-19T09:12:07Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7086b5d63e3ebb7402f0d85bbf9aab6cc8888e94"
+    },
+    {
+      "sha": "bcf06e6",
+      "sha_full": "bcf06e632423cae3fdb76c6f59be29ae3ea8df45",
+      "message": "feat(env): validate the server environment at startup",
+      "message_full": "feat(env): validate the server environment at startup\n\nAdd a Zod-based validator run from instrumentation.ts register().\nWarnings are always logged (an enabled gateway missing its webhook\nsecret, database_url_first without DATABASE_URL, resend without\nRESEND_API_KEY); a missing BETTER_AUTH_SECRET throws only in a production\nruntime (never during next build, dev, or on valid setups) so\nmisconfiguration fails fast instead of mid-request. Unit-tested for both\nissue collection and the throw / no-throw paths.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-19T08:31:24Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-19T08:31:24Z",
+      "url": "https://github.com/musemvp/musemvp/commit/bcf06e632423cae3fdb76c6f59be29ae3ea8df45"
+    },
+    {
+      "sha": "32df5aa",
+      "sha_full": "32df5aa8c55aa6871cf0e802c96575cac59f1142",
+      "message": "feat(app): add App Router error boundaries",
+      "message_full": "feat(app): add App Router error boundaries\n\nAdd a self-contained root global-error.tsx (its own <html>/<body> and\ninline styles, since it replaces all providers) plus segment error.tsx\nfor the signed-in app and public landing trees, sharing an ErrorState\nfallback with retry + home actions. Localized copy lives in the errors\nnamespace (en/zh). Previously an uncaught render error fell through to\nNext.js's bare default page with no recovery.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-19T08:31:24Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-19T08:31:24Z",
+      "url": "https://github.com/musemvp/musemvp/commit/32df5aa8c55aa6871cf0e802c96575cac59f1142"
+    },
+    {
+      "sha": "6f7c687",
+      "sha_full": "6f7c68733ec9997d1b18b792d57e609017646622",
+      "message": "fix(auth): surface email delivery failures instead of silent success",
+      "message_full": "fix(auth): surface email delivery failures instead of silent success\n\nAuth callbacks awaited sendEmail but ignored its boolean result, so a\nfailed OTP / magic-link / password-reset send still reported success to\nthe client while the user received nothing. Route the auth sends through\nsendAuthEmailOrThrow, which throws on failure so Better Auth surfaces a\nreal error. sendEmail's contract for newsletter/contact is unchanged.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-19T08:31:23Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-19T08:31:23Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6f7c68733ec9997d1b18b792d57e609017646622"
+    },
+    {
+      "sha": "0479d20",
+      "sha_full": "0479d2043f63782b9a31cfac143dd4fbd14e7c10",
+      "message": "chore: add .claude/settings.local.json to .gitignore for personal settings",
+      "message_full": "chore: add .claude/settings.local.json to .gitignore for personal settings",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T19:25:50Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T19:25:50Z",
+      "url": "https://github.com/musemvp/musemvp/commit/0479d2043f63782b9a31cfac143dd4fbd14e7c10"
+    },
+    {
+      "sha": "4e0edd2",
+      "sha_full": "4e0edd2352e2cc96d622f8e4a916c6e5085e0eeb",
+      "message": "test(e2e): serve a production build via Playwright webServer + retries",
+      "message_full": "test(e2e): serve a production build via Playwright webServer + retries\n\nThe e2e suite previously required a hand-started `next dev --turbo`\nserver. Under sustained load that dev server's Turbopack worker pool\ncrashes (EPIPE / \"Jest worker exceeding retry limit\"), returning 500s on\n/api/** that surfaced as flaky auth failures (e.g. change-password and\nreset-password re-login).\n\nAdd a Playwright webServer that builds and serves a compiled production\napp (`pnpm build && pnpm start`), which has no dev-worker pool and is both\nstable and much faster. Locally an already-running server is reused; CI\nbuilds fresh. Add retries (CI 2 / local 1) as a flaky safety net.\n\n`next start` is unsupported with `output: standalone`, so gate the\nstandalone output behind E2E_DISABLE_STANDALONE, which the webServer sets\nalongside DATABASE_CONNECTION_STRATEGY=database_url_first.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T19:09:21Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T19:09:21Z",
+      "url": "https://github.com/musemvp/musemvp/commit/4e0edd2352e2cc96d622f8e4a916c6e5085e0eeb"
+    },
+    {
+      "sha": "081cf61",
+      "sha_full": "081cf617cfb29b1b6e2e67331558e1b7cd172045",
+      "message": "fix(settings): drop nested <main>; harden settings e2e asserts",
+      "message_full": "fix(settings): drop nested <main>; harden settings e2e asserts\n\nThe settings layout rendered a <main> inside the app shell's <main>\n(invalid nested landmark). Use a plain container so there is a single\n<main> per page.\n\nDuring streaming SSR a hidden buffer copy of a settings page can briefly\ncoexist with the rendered one, so getByTestId(...).toBeVisible() hit a\nPlaywright strict-mode violation (2 matches). Scope the settings-page\nassertions to the visible instance, and assert the change-password\nsuccess via the locale-independent sonner success toast instead of a\nhardcoded English string.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T18:36:57Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T18:36:57Z",
+      "url": "https://github.com/musemvp/musemvp/commit/081cf617cfb29b1b6e2e67331558e1b7cd172045"
+    },
+    {
+      "sha": "15d3101",
+      "sha_full": "15d31018b93c468c7ca833d4803c595b67baf0ca",
+      "message": "test(billing): cover the webhook entitlement-grant chain",
+      "message_full": "test(billing): cover the webhook entitlement-grant chain\n\nAdd unit coverage for the previously untested money/access spine:\n- persistContractSnapshot: create/update/skip paths, and the cross-user\n  guard that refuses to overwrite an existing contract's userId with a\n  spoofed event referenceId (logs a warning, keeps the owner).\n- handleGatewayWebhook: persists only when the event carries a snapshot,\n  ignores snapshot-less events, throws when the gateway is not enabled.\n- entitlement resolution: getLatestMuseBillingContractsByIdentity dedup /\n  latest-wins, and getMuseAccessByUserId active-contract gating.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T18:36:57Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T18:36:57Z",
+      "url": "https://github.com/musemvp/musemvp/commit/15d31018b93c468c7ca833d4803c595b67baf0ca"
+    },
+    {
+      "sha": "2d59832",
+      "sha_full": "2d59832b9fa48ebfb6d86e4a9d8687883a04f4ed",
+      "message": "ci: add type-check/lint/unit workflow and make real-upload test opt-in",
+      "message_full": "ci: add type-check/lint/unit workflow and make real-upload test opt-in\n\nAdd a GitHub Actions workflow running type-check, biome (errors), and the\nunit suite on push/PR. Skip the whole real-upload integration suite\n(including its app-readiness beforeAll) unless ENABLE_REAL_UPLOAD_API_TEST\nis set, so the unit suite is hermetic in CI; the workflow sets it false.\nUpdate the remediation tracking doc.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T17:24:17Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T17:24:17Z",
+      "url": "https://github.com/musemvp/musemvp/commit/2d59832b9fa48ebfb6d86e4a9d8687883a04f4ed"
+    },
+    {
+      "sha": "70004b7",
+      "sha_full": "70004b76f8e86d7f8762374164cbff44ebdf2202",
+      "message": "feat(security): add baseline security response headers",
+      "message_full": "feat(security): add baseline security response headers\n\nAdd an async headers() block applying HSTS, X-Frame-Options=SAMEORIGIN,\nX-Content-Type-Options=nosniff, Referrer-Policy, and a restrictive\nPermissions-Policy to all routes. A nonce-based CSP is deferred to a\ndedicated, tested follow-up.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T17:24:17Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T17:24:17Z",
+      "url": "https://github.com/musemvp/musemvp/commit/70004b76f8e86d7f8762374164cbff44ebdf2202"
+    },
+    {
+      "sha": "cd2f6a2",
+      "sha_full": "cd2f6a27a34ae0a0ddf417186f75a984594a2bc0",
+      "message": "feat(api): add central error handler and request body limit",
+      "message_full": "feat(api): add central error handler and request body limit\n\nRegister app.onError so uncaught route/middleware errors are logged with\nmethod/path and return a consistent JSON envelope instead of an\nunlogged, internals-leaking default 500 (thrown HTTPExceptions keep their\nown response). Add a 1MB hono/body-limit; uploads use presigned URLs so\nAPI payloads stay small. Closes the body-size half of the rate/abuse gap.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T17:24:17Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T17:24:17Z",
+      "url": "https://github.com/musemvp/musemvp/commit/cd2f6a27a34ae0a0ddf417186f75a984594a2bc0"
+    },
+    {
+      "sha": "1b042d6",
+      "sha_full": "1b042d6719f7e8416b852eb6b5fa02aeddae58ee",
+      "message": "chore(security): scrub committed secrets in env example, add remediation doc",
+      "message_full": "chore(security): scrub committed secrets in env example, add remediation doc\n\nReplace real-format BETTER_AUTH_SECRET, Creem API key/webhook secret,\nand R2 credentials in the tracked .env.local.example with placeholders,\nand add the full audit remediation tracking doc.\n\nNOTE: the leaked values remain in git history -- they must be rotated\nand the history scrubbed separately.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T17:11:52Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T17:11:52Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1b042d6719f7e8416b852eb6b5fa02aeddae58ee"
+    },
+    {
+      "sha": "d556918",
+      "sha_full": "d556918c5f3c2a1656a180c633598b7f3442d989",
+      "message": "fix(newsletter): fix reflected XSS and forgeable unsubscribe tokens",
+      "message_full": "fix(newsletter): fix reflected XSS and forgeable unsubscribe tokens\n\nThe unsubscribe page interpolated the decrypted email straight into HTML\nvia c.html(), and the token used XOR with a hardcoded key, so an\nattacker could forge a token carrying an XSS payload and execute script\non the app origin.\n\nEscape the email before rendering, and replace the XOR scheme with\nHMAC-SHA256 signed tokens (Web Crypto; runs on Node and Workers) keyed\nby NEWSLETTER_TOKEN_SECRET (falling back to BETTER_AUTH_SECRET) with a\nconstant-time comparison. Add email-crypto and route XSS tests.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T17:11:52Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T17:11:52Z",
+      "url": "https://github.com/musemvp/musemvp/commit/d556918c5f3c2a1656a180c633598b7f3442d989"
+    },
+    {
+      "sha": "4baa557",
+      "sha_full": "4baa557fefc7126667bb25d3ece65168d46375d1",
+      "message": "fix(billing): require webhook secret in production for Creem and Stripe",
+      "message_full": "fix(billing): require webhook secret in production for Creem and Stripe\n\nCreem and Stripe getGatewayEvent verified the signature only when a\nwebhook secret was configured, falling back to JSON.parse on an\nunverified body otherwise. Combined with the public notify route, an\nunset (optional) secret let forged \"purchase succeeded\" events mint\nACTIVE billing contracts for any referenceId -- a payment bypass.\n\nMirror the existing Dodo guard: throw when NODE_ENV is production and no\nsecret is set. Add gateway security tests for the production guard,\nsignature mismatch, and the signed-acceptance path.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-18T17:11:52Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-18T17:11:52Z",
+      "url": "https://github.com/musemvp/musemvp/commit/4baa557fefc7126667bb25d3ece65168d46375d1"
+    },
+    {
       "sha": "2b88a52",
       "sha_full": "2b88a52d651dc4941681c27214beefefa15b2ad6",
       "message": "refactor(i18n): enforce exclusive use of `mvp.json` for derivative-product translations",
@@ -514,246 +754,6 @@
       },
       "committed_at": "2026-05-19T15:10:02Z",
       "url": "https://github.com/musemvp/musemvp/commit/7e3bf7de0e166a724b530b682c56fe7db5630bbf"
-    },
-    {
-      "sha": "d54e92d",
-      "sha_full": "d54e92d796eb0d77f86ee9ce85ba3b66d3ccf626",
-      "message": "Merge pull request #68 from musemvp/dependabot/npm_and_yarn/npm-all-4fe51c110b",
-      "message_full": "Merge pull request #68 from musemvp/dependabot/npm_and_yarn/npm-all-4fe51c110b\n\nchore(deps): bump the npm-all group across 1 directory with 18 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-19T15:04:35Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-19T15:04:35Z",
-      "url": "https://github.com/musemvp/musemvp/commit/d54e92d796eb0d77f86ee9ce85ba3b66d3ccf626"
-    },
-    {
-      "sha": "ee5c514",
-      "sha_full": "ee5c5144a501a72f7b941363859d094de3239d51",
-      "message": "chore(deps): bump the npm-all group across 1 directory with 18 updates",
-      "message_full": "chore(deps): bump the npm-all group across 1 directory with 18 updates\n\nBumps the npm-all group with 18 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@ai-sdk/anthropic](https://github.com/vercel/ai/tree/HEAD/packages/anthropic) | `3.0.77` | `3.0.78` |\n| [@ai-sdk/google](https://github.com/vercel/ai/tree/HEAD/packages/google) | `3.0.73` | `3.0.75` |\n| [@ai-sdk/openai](https://github.com/vercel/ai/tree/HEAD/packages/openai) | `3.0.63` | `3.0.64` |\n| [@ai-sdk/react](https://github.com/vercel/ai/tree/HEAD/packages/react) | `3.0.184` | `3.0.187` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.10.14` | `0.10.16` |\n| [@tanstack/react-query](https://github.com/TanStack/query/tree/HEAD/packages/react-query) | `5.100.10` | `5.100.11` |\n| [ai](https://github.com/vercel/ai/tree/HEAD/packages/ai) | `6.0.182` | `6.0.185` |\n| [date-fns](https://github.com/date-fns/date-fns) | `4.1.0` | `4.2.1` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `15.0.4` | `15.0.6` |\n| [hono](https://github.com/honojs/hono) | `4.12.18` | `4.12.19` |\n| [js-cookie](https://github.com/js-cookie/js-cookie) | `3.0.5` | `3.0.7` |\n| [motion](https://github.com/motiondivision/motion) | `12.38.0` | `12.39.0` |\n| [react-day-picker](https://github.com/gpbl/react-day-picker/tree/HEAD/packages/react-day-picker) | `10.0.0` | `10.0.1` |\n| [react-hook-form](https://github.com/react-hook-form/react-hook-form) | `7.75.0` | `7.76.0` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `25.7.0` | `25.9.0` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.13.1` | `6.14.1` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `6.1.4` | `6.1.5` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.91.0` | `4.92.0` |\n\n\n\nUpdates `@ai-sdk/anthropic` from 3.0.77 to 3.0.78\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/anthropic@3.0.78/packages/anthropic/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/anthropic@3.0.78/packages/anthropic)\n\nUpdates `@ai-sdk/google` from 3.0.73 to 3.0.75\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/google@3.0.75/packages/google/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/google@3.0.75/packages/google)\n\nUpdates `@ai-sdk/openai` from 3.0.63 to 3.0.64\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/openai@3.0.64/packages/openai/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/openai@3.0.64/packages/openai)\n\nUpdates `@ai-sdk/react` from 3.0.184 to 3.0.187\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/react@3.0.187/packages/react/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/react@3.0.187/packages/react)\n\nUpdates `@scalar/hono-api-reference` from 0.10.14 to 0.10.16\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `@tanstack/react-query` from 5.100.10 to 5.100.11\n- [Release notes](https://github.com/TanStack/query/releases)\n- [Changelog](https://github.com/TanStack/query/blob/main/packages/react-query/CHANGELOG.md)\n- [Commits](https://github.com/TanStack/query/commits/@tanstack/react-query@5.100.11/packages/react-query)\n\nUpdates `ai` from 6.0.182 to 6.0.185\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/ai@6.0.185/packages/ai/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/ai@6.0.185/packages/ai)\n\nUpdates `date-fns` from 4.1.0 to 4.2.1\n- [Release notes](https://github.com/date-fns/date-fns/releases)\n- [Changelog](https://github.com/date-fns/date-fns/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/date-fns/date-fns/compare/v4.1.0...v4.2.1)\n\nUpdates `fumadocs-mdx` from 15.0.4 to 15.0.6\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@15.0.4...fumadocs-mdx@15.0.6)\n\nUpdates `hono` from 4.12.18 to 4.12.19\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.12.18...v4.12.19)\n\nUpdates `js-cookie` from 3.0.5 to 3.0.7\n- [Release notes](https://github.com/js-cookie/js-cookie/releases)\n- [Commits](https://github.com/js-cookie/js-cookie/compare/v3.0.5...v3.0.7)\n\nUpdates `motion` from 12.38.0 to 12.39.0\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.38.0...v12.39.0)\n\nUpdates `react-day-picker` from 10.0.0 to 10.0.1\n- [Release notes](https://github.com/gpbl/react-day-picker/releases)\n- [Changelog](https://github.com/gpbl/react-day-picker/blob/main/packages/react-day-picker/CHANGELOG.md)\n- [Commits](https://github.com/gpbl/react-day-picker/commits/v10.0.1/packages/react-day-picker)\n\nUpdates `react-hook-form` from 7.75.0 to 7.76.0\n- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)\n- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.75.0...v7.76.0)\n\nUpdates `@types/node` from 25.7.0 to 25.9.0\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `knip` from 6.13.1 to 6.14.1\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.14.1/packages/knip)\n\nUpdates `react-email` from 6.1.4 to 6.1.5\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.1.5/packages/react-email)\n\nUpdates `wrangler` from 4.91.0 to 4.92.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.92.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@ai-sdk/anthropic\"\n  dependency-version: 3.0.78\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/google\"\n  dependency-version: 3.0.75\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/openai\"\n  dependency-version: 3.0.64\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/react\"\n  dependency-version: 3.0.187\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.10.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@tanstack/react-query\"\n  dependency-version: 5.100.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: ai\n  dependency-version: 6.0.185\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: date-fns\n  dependency-version: 4.2.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 15.0.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: js-cookie\n  dependency-version: 3.0.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.39.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-day-picker\n  dependency-version: 10.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-hook-form\n  dependency-version: 7.76.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 25.9.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.14.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.1.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.92.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-05-19T01:52:11Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-05-19T01:52:11Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ee5c5144a501a72f7b941363859d094de3239d51"
-    },
-    {
-      "sha": "51e9bfa",
-      "sha_full": "51e9bfae8e57a177a7d7687d95b54cedf793994f",
-      "message": "refactor(dependencies): remove unused AWS SDK packages",
-      "message_full": "refactor(dependencies): remove unused AWS SDK packages",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-18T01:44:08Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-18T01:44:08Z",
-      "url": "https://github.com/musemvp/musemvp/commit/51e9bfae8e57a177a7d7687d95b54cedf793994f"
-    },
-    {
-      "sha": "0ad2dad",
-      "sha_full": "0ad2dadd27084a17d9f0e52a7bfdf6f1fa45e97f",
-      "message": "refactor(admin-users): enhance pagination handling and page size normalization",
-      "message_full": "refactor(admin-users): enhance pagination handling and page size normalization\n\n- Introduced a normalization function for page size to ensure valid options are used.\n- Updated the pagination logic to reflect the normalized page size and improved handling of URL query parameters.\n- Refactored the component to reset the current page when the search term changes, enhancing user experience.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T15:27:06Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T15:27:06Z",
-      "url": "https://github.com/musemvp/musemvp/commit/0ad2dadd27084a17d9f0e52a7bfdf6f1fa45e97f"
-    },
-    {
-      "sha": "b895074",
-      "sha_full": "b89507415defaafe94135be551aee1332b80ad06",
-      "message": "refactor(database): improve validation for DATABASE_CONNECTION_STRATEGY",
-      "message_full": "refactor(database): improve validation for DATABASE_CONNECTION_STRATEGY\n\n- Enhanced the logic to ensure edge entry filenames align with the specified DATABASE_CONNECTION_STRATEGY.\n- Updated error handling to provide clearer feedback for unsupported strategies.\n- Clarified documentation regarding the behavior of filename checks in different build scenarios.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T09:14:43Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T09:14:43Z",
-      "url": "https://github.com/musemvp/musemvp/commit/b89507415defaafe94135be551aee1332b80ad06"
-    },
-    {
-      "sha": "cba89ab",
-      "sha_full": "cba89abf3d77d84764e8ea07247a5133db2de66c",
-      "message": "feat(middleware): add prebuild script for database strategy validation",
-      "message_full": "feat(middleware): add prebuild script for database strategy validation\n\n- Introduced a new `prebuild` script in `package.json` to assert database strategy edge files.\n- Updated documentation in `next-locale-edge-middleware.ts` to clarify the usage of `middleware.ts` and `proxy.ts` based on the active database connection strategy.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T09:08:33Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T09:08:33Z",
-      "url": "https://github.com/musemvp/musemvp/commit/cba89abf3d77d84764e8ea07247a5133db2de66c"
-    },
-    {
-      "sha": "c9ca4e6",
-      "sha_full": "c9ca4e67bef0d27d29764d5aa393490a3721e2ae",
-      "message": "refactor(i18n): replace routing configuration with centralized option",
-      "message_full": "refactor(i18n): replace routing configuration with centralized option\n\n- Updated the internationalization routing setup to utilize a new `defineRoutingOption` import, simplifying the routing configuration.\n- Removed the previous dependency on `config` for locale settings, enhancing maintainability and clarity in the routing logic.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T08:26:51Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T08:26:51Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c9ca4e67bef0d27d29764d5aa393490a3721e2ae"
-    },
-    {
-      "sha": "ef6f284",
-      "sha_full": "ef6f28482afbea61d53615e346ba28dee45da4e4",
-      "message": "refactor(middleware): remove deprecated matcher constant and update configuration",
-      "message_full": "refactor(middleware): remove deprecated matcher constant and update configuration\n\n- Eliminated the `NEXT_LOCALE_EDGE_MIDDLEWARE_MATCHER` constant from the locale edge middleware, simplifying imports.\n- Updated the matcher configuration in both `_proxy.ts` and `middleware.ts` to use a direct regex pattern for improved route handling consistency.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T07:51:14Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T07:51:14Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ef6f28482afbea61d53615e346ba28dee45da4e4"
-    },
-    {
-      "sha": "7b8361c",
-      "sha_full": "7b8361c3fa06bd861ce7c76e58ea31205214fb32",
-      "message": "refactor(middleware): simplify request handling with locale edge middleware",
-      "message_full": "refactor(middleware): simplify request handling with locale edge middleware\n\n- Replaced the existing middleware logic with a call to `handleNextLocaleEdgeRequest`, streamlining the request processing for localization.\n- Updated the matcher configuration to utilize `NEXT_LOCALE_EDGE_MIDDLEWARE_MATCHER` for improved route handling.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T07:46:46Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T07:46:46Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7b8361c3fa06bd861ce7c76e58ea31205214fb32"
-    },
-    {
-      "sha": "c2588d9",
-      "sha_full": "c2588d90d19c89f74b12d9003b1ecee48e6e96df",
-      "message": "chore(deps): update multiple dependencies for improved stability and features",
-      "message_full": "chore(deps): update multiple dependencies for improved stability and features\n\n- Bumped versions for several packages including `@ai-sdk/anthropic`, `@aws-sdk/client-s3`, and `tailwindcss` to enhance functionality and maintain compatibility.\n- Notable updates include `@ai-sdk/react` to 3.0.184 and `@better-auth/api-key` to 1.6.11, among others.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T07:34:56Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T07:34:56Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c2588d90d19c89f74b12d9003b1ecee48e6e96df"
-    },
-    {
-      "sha": "2c35841",
-      "sha_full": "2c3584106dda8944639fa16677f70776b843d83f",
-      "message": "refactor(i18n): enhance internationalization configuration",
-      "message_full": "refactor(i18n): enhance internationalization configuration\n\n- Updated the `AppI18nConfig` type to use a `Record` for locales, improving type safety and maintainability.\n- Introduced a new `AppLocaleBundle` type to encapsulate locale-specific properties, streamlining the configuration structure.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T07:06:37Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T07:06:37Z",
-      "url": "https://github.com/musemvp/musemvp/commit/2c3584106dda8944639fa16677f70776b843d83f"
-    },
-    {
-      "sha": "c897d9d",
-      "sha_full": "c897d9ddaee0fe6145958d6bd863d7606ae5d07c",
-      "message": "refactor(i18n): simplify internationalization configuration",
-      "message_full": "refactor(i18n): simplify internationalization configuration\n\n- Replaced the existing i18n configuration with a centralized `appI18nConfig` import for better maintainability and consistency across the application.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T06:49:09Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T06:49:09Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c897d9ddaee0fe6145958d6bd863d7606ae5d07c"
-    },
-    {
-      "sha": "e97d057",
-      "sha_full": "e97d0578d88a7d568e542713c3e01bb18dc9bc2a",
-      "message": "feat(storage): integrate s3mini for S3 client management",
-      "message_full": "feat(storage): integrate s3mini for S3 client management\n\n- Replaced AWS SDK S3 client with s3mini for improved S3 operations.\n- Updated package.json to include s3mini dependency.\n- Modified s3-client.ts to utilize s3mini for creating and managing S3 clients by bucket.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T06:45:41Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T06:45:41Z",
-      "url": "https://github.com/musemvp/musemvp/commit/e97d0578d88a7d568e542713c3e01bb18dc9bc2a"
-    },
-    {
-      "sha": "28260ca",
-      "sha_full": "28260ca161b74a5230f3e4323357936df993fe4e",
-      "message": "Merge pull request #65 from musemvp/dependabot/npm_and_yarn/npm-all-2236384183",
-      "message_full": "Merge pull request #65 from musemvp/dependabot/npm_and_yarn/npm-all-2236384183\n\nchore(deps): bump the npm-all group across 1 directory with 28 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T01:59:06Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T01:59:06Z",
-      "url": "https://github.com/musemvp/musemvp/commit/28260ca161b74a5230f3e4323357936df993fe4e"
-    },
-    {
-      "sha": "270cdfd",
-      "sha_full": "270cdfd02515e35c7aae628e03587a72b85b0c41",
-      "message": "chore(tests): enhance testing scripts in package.json",
-      "message_full": "chore(tests): enhance testing scripts in package.json\n\n- Added new test scripts for unit and API testing: `test:unit:ui`, `test:unit:watch`, `test:api:ui`, and `test:api:watch` to improve testing capabilities and flexibility.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-15T01:57:39Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-15T01:57:39Z",
-      "url": "https://github.com/musemvp/musemvp/commit/270cdfd02515e35c7aae628e03587a72b85b0c41"
-    },
-    {
-      "sha": "ba917f6",
-      "sha_full": "ba917f6e3e3321e0260f66b1b3f22e4ea297e65d",
-      "message": "chore(deps): bump the npm-all group across 1 directory with 28 updates",
-      "message_full": "chore(deps): bump the npm-all group across 1 directory with 28 updates\n\nBumps the npm-all group with 28 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@ai-sdk/anthropic](https://github.com/vercel/ai/tree/HEAD/packages/anthropic) | `3.0.76` | `3.0.77` |\n| [@ai-sdk/deepseek](https://github.com/vercel/ai/tree/HEAD/packages/deepseek) | `2.0.34` | `2.0.35` |\n| [@ai-sdk/google](https://github.com/vercel/ai/tree/HEAD/packages/google) | `3.0.70` | `3.0.73` |\n| [@ai-sdk/react](https://github.com/vercel/ai/tree/HEAD/packages/react) | `3.0.178` | `3.0.184` |\n| [@aws-sdk/client-s3](https://github.com/aws/aws-sdk-js-v3/tree/HEAD/clients/client-s3) | `3.1045.0` | `3.1046.0` |\n| [@aws-sdk/s3-request-presigner](https://github.com/aws/aws-sdk-js-v3/tree/HEAD/packages/s3-request-presigner) | `3.1045.0` | `3.1046.0` |\n| [@better-auth/api-key](https://github.com/better-auth/better-auth/tree/HEAD/packages/api-key) | `1.6.9` | `1.6.11` |\n| [@tanstack/react-query](https://github.com/TanStack/query/tree/HEAD/packages/react-query) | `5.100.9` | `5.100.10` |\n| [ai](https://github.com/vercel/ai/tree/HEAD/packages/ai) | `6.0.176` | `6.0.182` |\n| [better-auth](https://github.com/better-auth/better-auth/tree/HEAD/packages/better-auth) | `1.6.9` | `1.6.11` |\n| [fumadocs-core](https://github.com/fuma-nama/fumadocs) | `16.8.8` | `16.8.11` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `15.0.0` | `15.0.4` |\n| [fumadocs-ui](https://github.com/fuma-nama/fumadocs) | `16.8.8` | `16.8.11` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `1.14.0` | `1.16.0` |\n| [next-intl](https://github.com/amannn/next-intl) | `4.11.1` | `4.12.0` |\n| [tailwind-merge](https://github.com/dcastil/tailwind-merge) | `3.5.0` | `3.6.0` |\n| [use-intl](https://github.com/amannn/next-intl) | `4.11.1` | `4.12.0` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.4.14` | `2.4.15` |\n| [@opennextjs/cloudflare](https://github.com/opennextjs/opennextjs-cloudflare/tree/HEAD/packages/cloudflare) | `1.19.8` | `1.19.10` |\n| [@playwright/test](https://github.com/microsoft/playwright) | `1.59.1` | `1.60.0` |\n| [@tailwindcss/postcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/@tailwindcss-postcss) | `4.2.4` | `4.3.0` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `25.6.2` | `25.7.0` |\n| [@vitest/ui](https://github.com/vitest-dev/vitest/tree/HEAD/packages/ui) | `4.1.5` | `4.1.6` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.12.1` | `6.13.1` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `6.1.1` | `6.1.4` |\n| [tailwindcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/tailwindcss) | `4.2.4` | `4.3.0` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `4.1.5` | `4.1.6` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.90.0` | `4.91.0` |\n\n\n\nUpdates `@ai-sdk/anthropic` from 3.0.76 to 3.0.77\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/anthropic@3.0.77/packages/anthropic/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/anthropic@3.0.77/packages/anthropic)\n\nUpdates `@ai-sdk/deepseek` from 2.0.34 to 2.0.35\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/deepseek@2.0.35/packages/deepseek/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/deepseek@2.0.35/packages/deepseek)\n\nUpdates `@ai-sdk/google` from 3.0.70 to 3.0.73\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/google@3.0.73/packages/google/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/google@3.0.73/packages/google)\n\nUpdates `@ai-sdk/react` from 3.0.178 to 3.0.184\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/@ai-sdk/react@3.0.184/packages/react/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/@ai-sdk/react@3.0.184/packages/react)\n\nUpdates `@aws-sdk/client-s3` from 3.1045.0 to 3.1046.0\n- [Release notes](https://github.com/aws/aws-sdk-js-v3/releases)\n- [Changelog](https://github.com/aws/aws-sdk-js-v3/blob/main/clients/client-s3/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-js-v3/commits/v3.1046.0/clients/client-s3)\n\nUpdates `@aws-sdk/s3-request-presigner` from 3.1045.0 to 3.1046.0\n- [Release notes](https://github.com/aws/aws-sdk-js-v3/releases)\n- [Changelog](https://github.com/aws/aws-sdk-js-v3/blob/main/packages/s3-request-presigner/CHANGELOG.md)\n- [Commits](https://github.com/aws/aws-sdk-js-v3/commits/v3.1046.0/packages/s3-request-presigner)\n\nUpdates `@better-auth/api-key` from 1.6.9 to 1.6.11\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/api-key/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/@better-auth/api-key@1.6.11/packages/api-key)\n\nUpdates `@tanstack/react-query` from 5.100.9 to 5.100.10\n- [Release notes](https://github.com/TanStack/query/releases)\n- [Changelog](https://github.com/TanStack/query/blob/main/packages/react-query/CHANGELOG.md)\n- [Commits](https://github.com/TanStack/query/commits/HEAD/packages/react-query)\n\nUpdates `ai` from 6.0.176 to 6.0.182\n- [Release notes](https://github.com/vercel/ai/releases)\n- [Changelog](https://github.com/vercel/ai/blob/ai@6.0.182/packages/ai/CHANGELOG.md)\n- [Commits](https://github.com/vercel/ai/commits/ai@6.0.182/packages/ai)\n\nUpdates `better-auth` from 1.6.9 to 1.6.11\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/better-auth/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/better-auth@1.6.11/packages/better-auth)\n\nUpdates `fumadocs-core` from 16.8.8 to 16.8.11\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-core@16.8.8...fumadocs-core@16.8.11)\n\nUpdates `fumadocs-mdx` from 15.0.0 to 15.0.4\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@15.0.0...fumadocs-mdx@15.0.4)\n\nUpdates `fumadocs-ui` from 16.8.8 to 16.8.11\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-ui@16.8.8...fumadocs-ui@16.8.11)\n\nUpdates `lucide-react` from 1.14.0 to 1.16.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.16.0/packages/lucide-react)\n\nUpdates `next-intl` from 4.11.1 to 4.12.0\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.11.1...v4.12.0)\n\nUpdates `tailwind-merge` from 3.5.0 to 3.6.0\n- [Release notes](https://github.com/dcastil/tailwind-merge/releases)\n- [Commits](https://github.com/dcastil/tailwind-merge/compare/v3.5.0...v3.6.0)\n\nUpdates `use-intl` from 4.11.1 to 4.12.0\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.11.1...v4.12.0)\n\nUpdates `@biomejs/biome` from 2.4.14 to 2.4.15\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.4.15/packages/@biomejs/biome)\n\nUpdates `@opennextjs/cloudflare` from 1.19.8 to 1.19.10\n- [Release notes](https://github.com/opennextjs/opennextjs-cloudflare/releases)\n- [Changelog](https://github.com/opennextjs/opennextjs-cloudflare/blob/main/packages/cloudflare/CHANGELOG.md)\n- [Commits](https://github.com/opennextjs/opennextjs-cloudflare/commits/@opennextjs/cloudflare@1.19.10/packages/cloudflare)\n\nUpdates `@playwright/test` from 1.59.1 to 1.60.0\n- [Release notes](https://github.com/microsoft/playwright/releases)\n- [Commits](https://github.com/microsoft/playwright/compare/v1.59.1...v1.60.0)\n\nUpdates `@tailwindcss/postcss` from 4.2.4 to 4.3.0\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.0/packages/@tailwindcss-postcss)\n\nUpdates `@types/node` from 25.6.2 to 25.7.0\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@vitest/ui` from 4.1.5 to 4.1.6\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.6/packages/ui)\n\nUpdates `knip` from 6.12.1 to 6.13.1\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.13.1/packages/knip)\n\nUpdates `react-email` from 6.1.1 to 6.1.4\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.1.4/packages/react-email)\n\nUpdates `tailwindcss` from 4.2.4 to 4.3.0\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.0/packages/tailwindcss)\n\nUpdates `vitest` from 4.1.5 to 4.1.6\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.6/packages/vitest)\n\nUpdates `wrangler` from 4.90.0 to 4.91.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.91.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@ai-sdk/anthropic\"\n  dependency-version: 3.0.77\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/deepseek\"\n  dependency-version: 2.0.35\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/google\"\n  dependency-version: 3.0.73\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@ai-sdk/react\"\n  dependency-version: 3.0.184\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@aws-sdk/client-s3\"\n  dependency-version: 3.1046.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@aws-sdk/s3-request-presigner\"\n  dependency-version: 3.1046.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@better-auth/api-key\"\n  dependency-version: 1.6.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@tanstack/react-query\"\n  dependency-version: 5.100.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: ai\n  dependency-version: 6.0.182\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: better-auth\n  dependency-version: 1.6.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-core\n  dependency-version: 16.8.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 15.0.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-ui\n  dependency-version: 16.8.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.16.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: next-intl\n  dependency-version: 4.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: tailwind-merge\n  dependency-version: 3.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: use-intl\n  dependency-version: 4.12.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.4.15\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@opennextjs/cloudflare\"\n  dependency-version: 1.19.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@playwright/test\"\n  dependency-version: 1.60.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@tailwindcss/postcss\"\n  dependency-version: 4.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 25.7.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@vitest/ui\"\n  dependency-version: 4.1.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.13.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.1.4\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: tailwindcss\n  dependency-version: 4.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: vitest\n  dependency-version: 4.1.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.91.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-05-14T16:29:07Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-05-14T16:29:07Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ba917f6e3e3321e0260f66b1b3f22e4ea297e65d"
     }
   ]
 }

@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "40b3f26",
+      "sha_full": "40b3f265345373b32a03fc65afdb1b0819fcf37c",
+      "message": "feat(config): add CPU limit to wrangler configuration",
+      "message_full": "feat(config): add CPU limit to wrangler configuration\n\nIntroduce a new \"limits\" section in the wrangler.jsonc file to set a CPU time limit of 300,000 milliseconds, enhancing resource management for the application.\n\nCo-authored-by: wztlink1013 <wztlink1013@163.com>\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-25T05:25:26Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-25T05:25:26Z",
+      "url": "https://github.com/musemvp/musemvp/commit/40b3f265345373b32a03fc65afdb1b0819fcf37c"
+    },
+    {
       "sha": "0f938e9",
       "sha_full": "0f938e9bf68ca7c693080ef3d956e48460d28fa5",
       "message": "Merge pull request #94 from musemvp/fix/critical-security-audit",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-05-19T16:08:44Z",
       "url": "https://github.com/musemvp/musemvp/commit/a792093513e18bf56faff93d23028273b546b923"
-    },
-    {
-      "sha": "7e3bf7d",
-      "sha_full": "7e3bf7de0e166a724b530b682c56fe7db5630bbf",
-      "message": "feat(skills-lock): add new skills for Dodo Payments integration",
-      "message_full": "feat(skills-lock): add new skills for Dodo Payments integration\n\n- Introduced multiple new skills related to Dodo Payments, including billing-sdk, checkout-integration, credit-based-billing, best-practices, license-keys, subscription-integration, usage-based-billing, and webhook-integration.\n- Each skill includes source, sourceType, skillPath, and computedHash for integration.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-19T15:10:02Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-19T15:10:02Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7e3bf7de0e166a724b530b682c56fe7db5630bbf"
     }
   ]
 }

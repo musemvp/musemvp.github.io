@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "4d6fe97",
+      "sha_full": "4d6fe97679453cfc604047dc4c5f9846b47c4add",
+      "message": "Merge pull request #99 from musemvp/dependabot/npm_and_yarn/npm-all-d7f699dcfb",
+      "message_full": "Merge pull request #99 from musemvp/dependabot/npm_and_yarn/npm-all-d7f699dcfb\n\nchore(deps): bump the npm-all group with 29 updates",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-30T13:25:18Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-30T13:25:18Z",
+      "url": "https://github.com/musemvp/musemvp/commit/4d6fe97679453cfc604047dc4c5f9846b47c4add"
+    },
+    {
+      "sha": "7e20209",
+      "sha_full": "7e2020993f5d8d113fc8c8948f93b78b94c24238",
+      "message": "fix(auth): update cookie import for cookie@2 breaking change",
+      "message_full": "fix(auth): update cookie import for cookie@2 breaking change\n\nThe cookie package v2.0.0 renamed the parse export to parseCookie.\nUpdate the import in auth.ts to fix the Turbopack build failure.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-06-30T13:19:40Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-06-30T13:19:40Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7e2020993f5d8d113fc8c8948f93b78b94c24238"
+    },
+    {
+      "sha": "d2e78db",
+      "sha_full": "d2e78db6ecf70c9a648c51070db54adc97d9cb6f",
+      "message": "chore(deps): bump the npm-all group with 29 updates",
+      "message_full": "chore(deps): bump the npm-all group with 29 updates\n\nBumps the npm-all group with 29 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@better-auth/api-key](https://github.com/better-auth/better-auth/tree/HEAD/packages/api-key) | `1.6.20` | `1.6.23` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.11.4` | `0.11.6` |\n| [@tanstack/react-query](https://github.com/TanStack/query/tree/HEAD/packages/react-query) | `5.101.0` | `5.101.2` |\n| [@wrksz/themes](https://github.com/jakubwarkusz/themes) | `0.9.3` | `0.9.6` |\n| [better-auth](https://github.com/better-auth/better-auth/tree/HEAD/packages/better-auth) | `1.6.20` | `1.6.23` |\n| [cookie](https://github.com/jshttp/cookie) | `1.1.1` | `2.0.0` |\n| [dodopayments](https://github.com/dodopayments/dodopayments-typescript) | `2.39.1` | `2.40.1` |\n| [fumadocs-core](https://github.com/fuma-nama/fumadocs) | `16.10.5` | `16.10.7` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `15.0.12` | `15.0.13` |\n| [fumadocs-ui](https://github.com/fuma-nama/fumadocs) | `16.10.5` | `16.10.7` |\n| [hono](https://github.com/honojs/hono) | `4.12.26` | `4.12.27` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `1.21.0` | `1.22.0` |\n| [motion](https://github.com/motiondivision/motion) | `12.40.0` | `12.42.0` |\n| [nanoid](https://github.com/ai/nanoid) | `5.1.15` | `5.1.16` |\n| [recharts](https://github.com/recharts/recharts) | `3.8.1` | `3.9.0` |\n| [resend](https://github.com/resend/resend-node) | `6.14.0` | `6.16.0` |\n| [shiki](https://github.com/shikijs/shiki/tree/HEAD/packages/shiki) | `4.2.0` | `4.3.0` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.5.0` | `2.5.1` |\n| [@opennextjs/cloudflare](https://github.com/opennextjs/opennextjs-cloudflare/tree/HEAD/packages/cloudflare) | `1.19.11` | `1.20.1` |\n| [@playwright/test](https://github.com/microsoft/playwright) | `1.61.0` | `1.61.1` |\n| [@shikijs/rehype](https://github.com/shikijs/shiki/tree/HEAD/packages/rehype) | `4.2.0` | `4.3.0` |\n| [@tailwindcss/postcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/@tailwindcss-postcss) | `4.3.1` | `4.3.2` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.0.0` | `26.0.1` |\n| [autoprefixer](https://github.com/postcss/autoprefixer) | `10.5.0` | `10.5.2` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.17.2` | `6.23.0` |\n| [postcss](https://github.com/postcss/postcss) | `8.5.15` | `8.5.16` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `6.6.3` | `6.6.5` |\n| [tailwindcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/tailwindcss) | `4.3.1` | `4.3.2` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.103.0` | `4.105.0` |\n\n\nUpdates `@better-auth/api-key` from 1.6.20 to 1.6.23\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/api-key/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/v1.6.23/packages/api-key)\n\nUpdates `@scalar/hono-api-reference` from 0.11.4 to 0.11.6\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `@tanstack/react-query` from 5.101.0 to 5.101.2\n- [Release notes](https://github.com/TanStack/query/releases)\n- [Changelog](https://github.com/TanStack/query/blob/main/packages/react-query/CHANGELOG.md)\n- [Commits](https://github.com/TanStack/query/commits/@tanstack/react-query@5.101.2/packages/react-query)\n\nUpdates `@wrksz/themes` from 0.9.3 to 0.9.6\n- [Release notes](https://github.com/jakubwarkusz/themes/releases)\n- [Commits](https://github.com/jakubwarkusz/themes/compare/v0.9.3...v0.9.6)\n\nUpdates `better-auth` from 1.6.20 to 1.6.23\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/better-auth/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/v1.6.23/packages/better-auth)\n\nUpdates `cookie` from 1.1.1 to 2.0.0\n- [Release notes](https://github.com/jshttp/cookie/releases)\n- [Commits](https://github.com/jshttp/cookie/compare/v1.1.1...v2.0.0)\n\nUpdates `dodopayments` from 2.39.1 to 2.40.1\n- [Release notes](https://github.com/dodopayments/dodopayments-typescript/releases)\n- [Changelog](https://github.com/dodopayments/dodopayments-typescript/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/dodopayments/dodopayments-typescript/compare/v2.39.1...v2.40.1)\n\nUpdates `fumadocs-core` from 16.10.5 to 16.10.7\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs@16.10.5...fumadocs@16.10.7)\n\nUpdates `fumadocs-mdx` from 15.0.12 to 15.0.13\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@15.0.12...fumadocs-mdx@15.0.13)\n\nUpdates `fumadocs-ui` from 16.10.5 to 16.10.7\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs@16.10.5...fumadocs@16.10.7)\n\nUpdates `hono` from 4.12.26 to 4.12.27\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.12.26...v4.12.27)\n\nUpdates `lucide-react` from 1.21.0 to 1.22.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.22.0/packages/lucide-react)\n\nUpdates `motion` from 12.40.0 to 12.42.0\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.40.0...v12.42.0)\n\nUpdates `nanoid` from 5.1.15 to 5.1.16\n- [Release notes](https://github.com/ai/nanoid/releases)\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ai/nanoid/compare/5.1.15...5.1.16)\n\nUpdates `recharts` from 3.8.1 to 3.9.0\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.8.1...v3.9.0)\n\nUpdates `resend` from 6.14.0 to 6.16.0\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/compare/v6.14.0...v6.16.0)\n\nUpdates `shiki` from 4.2.0 to 4.3.0\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.3.0/packages/shiki)\n\nUpdates `@biomejs/biome` from 2.5.0 to 2.5.1\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.5.1/packages/@biomejs/biome)\n\nUpdates `@opennextjs/cloudflare` from 1.19.11 to 1.20.1\n- [Release notes](https://github.com/opennextjs/opennextjs-cloudflare/releases)\n- [Changelog](https://github.com/opennextjs/opennextjs-cloudflare/blob/main/packages/cloudflare/CHANGELOG.md)\n- [Commits](https://github.com/opennextjs/opennextjs-cloudflare/commits/@opennextjs/cloudflare@1.20.1/packages/cloudflare)\n\nUpdates `@playwright/test` from 1.61.0 to 1.61.1\n- [Release notes](https://github.com/microsoft/playwright/releases)\n- [Commits](https://github.com/microsoft/playwright/compare/v1.61.0...v1.61.1)\n\nUpdates `@shikijs/rehype` from 4.2.0 to 4.3.0\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.3.0/packages/rehype)\n\nUpdates `@tailwindcss/postcss` from 4.3.1 to 4.3.2\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.2/packages/@tailwindcss-postcss)\n\nUpdates `@types/node` from 26.0.0 to 26.0.1\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `autoprefixer` from 10.5.0 to 10.5.2\n- [Release notes](https://github.com/postcss/autoprefixer/releases)\n- [Changelog](https://github.com/postcss/autoprefixer/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/autoprefixer/compare/10.5.0...10.5.2)\n\nUpdates `knip` from 6.17.2 to 6.23.0\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.23.0/packages/knip)\n\nUpdates `postcss` from 8.5.15 to 8.5.16\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.15...8.5.16)\n\nUpdates `react-email` from 6.6.3 to 6.6.5\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.6.5/packages/react-email)\n\nUpdates `tailwindcss` from 4.3.1 to 4.3.2\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.2/packages/tailwindcss)\n\nUpdates `wrangler` from 4.103.0 to 4.105.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.105.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@better-auth/api-key\"\n  dependency-version: 1.6.23\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.11.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@tanstack/react-query\"\n  dependency-version: 5.101.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@wrksz/themes\"\n  dependency-version: 0.9.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: better-auth\n  dependency-version: 1.6.23\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: cookie\n  dependency-version: 2.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: dodopayments\n  dependency-version: 2.40.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-core\n  dependency-version: 16.10.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 15.0.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-ui\n  dependency-version: 16.10.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.27\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.22.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.42.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: nanoid\n  dependency-version: 5.1.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.9.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.16.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: shiki\n  dependency-version: 4.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@opennextjs/cloudflare\"\n  dependency-version: 1.20.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@playwright/test\"\n  dependency-version: 1.61.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@shikijs/rehype\"\n  dependency-version: 4.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@tailwindcss/postcss\"\n  dependency-version: 4.3.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 26.0.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: autoprefixer\n  dependency-version: 10.5.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.23.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: postcss\n  dependency-version: 8.5.16\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.6.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: tailwindcss\n  dependency-version: 4.3.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.105.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-06-30T02:33:11Z",
+        "github_login": "dependabot[bot]",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
+      },
+      "committed_at": "2026-06-30T02:33:11Z",
+      "url": "https://github.com/musemvp/musemvp/commit/d2e78db6ecf70c9a648c51070db54adc97d9cb6f"
+    },
+    {
       "sha": "4095875",
       "sha_full": "4095875b563bb581ac1c11c19214a870d1b8eb48",
       "message": "Merge pull request #97 from musemvp/dependabot/npm_and_yarn/npm-all-8af64652fe",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-05-25T08:05:22Z",
       "url": "https://github.com/musemvp/musemvp/commit/bc8ce527116e71a2977ac76c4c86066cb73a04e8"
-    },
-    {
-      "sha": "98a7aa9",
-      "sha_full": "98a7aa9576b1714edb9cdffcf383e0c8d52ab059",
-      "message": "feat(user-create): add batch user creation and interactive prompts for user setup",
-      "message_full": "feat(user-create): add batch user creation and interactive prompts for user setup\nfeat(data-table): improve row count display in pagination component\nfix(admin-users): set total row count for manual pagination",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-25T03:33:24Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-25T03:33:24Z",
-      "url": "https://github.com/musemvp/musemvp/commit/98a7aa9576b1714edb9cdffcf383e0c8d52ab059"
-    },
-    {
-      "sha": "36d5576",
-      "sha_full": "36d5576ecfcc4fd2e44bc7b6e9f36e5dda83ab1a",
-      "message": "Remove obsolete skills: deleted Better Auth best practices, security best practices, and brainstorming skills documentation files to streamline the project and eliminate outdated content.",
-      "message_full": "Remove obsolete skills: deleted Better Auth best practices, security best practices, and brainstorming skills documentation files to streamline the project and eliminate outdated content.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-20T03:09:08Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-20T03:09:08Z",
-      "url": "https://github.com/musemvp/musemvp/commit/36d5576ecfcc4fd2e44bc7b6e9f36e5dda83ab1a"
-    },
-    {
-      "sha": "b1a3905",
-      "sha_full": "b1a390528cf477be322a8cc4d8fe33153a7a87dc",
-      "message": "Merge pull request #69 from musemvp/codex/dodo-payments-gateway",
-      "message_full": "Merge pull request #69 from musemvp/codex/dodo-payments-gateway\n\nfeat(billing): integrate Dodo Payments gateway into Muse Billing",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-20T01:41:46Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-20T01:41:46Z",
-      "url": "https://github.com/musemvp/musemvp/commit/b1a390528cf477be322a8cc4d8fe33153a7a87dc"
     }
   ]
 }

@@ -6,6 +6,36 @@
   },
   "commits": [
     {
+      "sha": "6cff4a9",
+      "sha_full": "6cff4a9225cbd4ea9d5ae2345b6c1214a8cea871",
+      "message": "Merge pull request #100 from musemvp/dependabot/npm_and_yarn/npm-all-c21a70ee7d",
+      "message_full": "Merge pull request #100 from musemvp/dependabot/npm_and_yarn/npm-all-c21a70ee7d\n\nchore(deps): bump the npm-all group with 7 updates",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-01T03:30:02Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-01T03:30:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6cff4a9225cbd4ea9d5ae2345b6c1214a8cea871"
+    },
+    {
+      "sha": "1eb83de",
+      "sha_full": "1eb83defd72f08804e3a49cd59214cbe3f653bdd",
+      "message": "chore(deps): bump the npm-all group with 7 updates",
+      "message_full": "chore(deps): bump the npm-all group with 7 updates\n\nBumps the npm-all group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@hono/standard-validator](https://github.com/honojs/middleware/tree/HEAD/packages/standard-validator) | `0.2.2` | `0.2.3` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.11.6` | `0.11.7` |\n| [motion](https://github.com/motiondivision/motion) | `12.42.0` | `12.42.1` |\n| [next-intl](https://github.com/amannn/next-intl) | `4.13.0` | `4.13.1` |\n| [nuqs](https://github.com/47ng/nuqs/tree/HEAD/packages/nuqs) | `2.8.9` | `2.9.0` |\n| [recharts](https://github.com/recharts/recharts) | `3.9.0` | `3.9.1` |\n| [use-intl](https://github.com/amannn/next-intl) | `4.13.0` | `4.13.1` |\n\n\nUpdates `@hono/standard-validator` from 0.2.2 to 0.2.3\n- [Release notes](https://github.com/honojs/middleware/releases)\n- [Changelog](https://github.com/honojs/middleware/blob/main/packages/standard-validator/CHANGELOG.md)\n- [Commits](https://github.com/honojs/middleware/commits/@hono/standard-validator@0.2.3/packages/standard-validator)\n\nUpdates `@scalar/hono-api-reference` from 0.11.6 to 0.11.7\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `motion` from 12.42.0 to 12.42.1\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.42.0...v12.42.1)\n\nUpdates `next-intl` from 4.13.0 to 4.13.1\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.13.0...v4.13.1)\n\nUpdates `nuqs` from 2.8.9 to 2.9.0\n- [Release notes](https://github.com/47ng/nuqs/releases)\n- [Commits](https://github.com/47ng/nuqs/commits/v2.9.0/packages/nuqs)\n\nUpdates `recharts` from 3.9.0 to 3.9.1\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.9.0...v3.9.1)\n\nUpdates `use-intl` from 4.13.0 to 4.13.1\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.13.0...v4.13.1)\n\n---\nupdated-dependencies:\n- dependency-name: \"@hono/standard-validator\"\n  dependency-version: 0.2.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.11.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.42.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: next-intl\n  dependency-version: 4.13.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: nuqs\n  dependency-version: 2.9.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.9.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: use-intl\n  dependency-version: 4.13.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-06-30T16:01:02Z",
+        "github_login": "dependabot[bot]",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
+      },
+      "committed_at": "2026-06-30T16:01:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1eb83defd72f08804e3a49cd59214cbe3f653bdd"
+    },
+    {
       "sha": "4d6fe97",
       "sha_full": "4d6fe97679453cfc604047dc4c5f9846b47c4add",
       "message": "Merge pull request #99 from musemvp/dependabot/npm_and_yarn/npm-all-d7f699dcfb",
@@ -724,36 +754,6 @@
       },
       "committed_at": "2026-05-26T13:52:40Z",
       "url": "https://github.com/musemvp/musemvp/commit/2b0b26b36356a78cc86070c1c9e9c47d3b334db3"
-    },
-    {
-      "sha": "bf63b44",
-      "sha_full": "bf63b44776fa318462f1606eb352fc142db31122",
-      "message": "fix(config): update Discord invite link to new URL",
-      "message_full": "fix(config): update Discord invite link to new URL",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-26T06:56:42Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-26T06:56:42Z",
-      "url": "https://github.com/musemvp/musemvp/commit/bf63b44776fa318462f1606eb352fc142db31122"
-    },
-    {
-      "sha": "bc8ce52",
-      "sha_full": "bc8ce527116e71a2977ac76c4c86066cb73a04e8",
-      "message": "feat(billing): implement direct checkout mode and related configurations",
-      "message_full": "feat(billing): implement direct checkout mode and related configurations\n\n- Added support for direct checkout mode in the billing settings, allowing users to be redirected to the payment provider's portal.\n- Introduced a new `DirectCheckoutBillingNotice` component to inform users about the external management of their subscriptions.\n- Updated the configuration to include direct checkout URLs and checkout mode resolution logic.\n- Enhanced the billing product catalog to support direct checkout URLs for various plans.\n- Added translations for direct checkout notices in English and Chinese.\n- Implemented unit tests for the checkout mode resolution logic.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-25T08:05:22Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-25T08:05:22Z",
-      "url": "https://github.com/musemvp/musemvp/commit/bc8ce527116e71a2977ac76c4c86066cb73a04e8"
     }
   ]
 }

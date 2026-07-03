@@ -6,6 +6,111 @@
   },
   "commits": [
     {
+      "sha": "18b723b",
+      "sha_full": "18b723b20d38f2b43f20fce6d3cb518a1f4c2b7c",
+      "message": "Merge pull request #102 from musemvp/feat/storage-asset-management",
+      "message_full": "Merge pull request #102 from musemvp/feat/storage-asset-management\n\nFeat/storage asset management",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-02T11:28:25Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-02T11:28:25Z",
+      "url": "https://github.com/musemvp/musemvp/commit/18b723b20d38f2b43f20fce6d3cb518a1f4c2b7c"
+    },
+    {
+      "sha": "3fe9775",
+      "sha_full": "3fe977547f56cfd10b28af41473586db89b1d72a",
+      "message": "feat(assets): enhance asset preview functionality in AssetActionsMenu",
+      "message_full": "feat(assets): enhance asset preview functionality in AssetActionsMenu\n\n- Integrated user session check to restrict preview access for unauthenticated users.\n- Updated preview handling to directly open asset URLs if they are valid.\n- Constructed preview URLs using a proxy prefix for user-specific assets.\n\nThis improves the user experience by ensuring only authorized users can access asset previews and streamlining the preview process.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-02T11:25:31Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-02T11:25:31Z",
+      "url": "https://github.com/musemvp/musemvp/commit/3fe977547f56cfd10b28af41473586db89b1d72a"
+    },
+    {
+      "sha": "94c8cea",
+      "sha_full": "94c8cea61bd528035d0e66c249678db0f7ca6427",
+      "message": "feat(storage): add storage asset management settings page",
+      "message_full": "feat(storage): add storage asset management settings page\n\n- Add /api/assets Hono routes (list, usage, download-url, bulk delete)\n  with per-user key prefix enforcement and traversal-safe key validation\n- Extend s3mini storage client with paged listing, capped full listing,\n  bulk delete, and signed GET download URLs\n- Add /app/settings/storage page (fills the reserved storage settings\n  slot) with asset table, preview/download, selection-based bulk delete,\n  and storage-not-configured empty state\n- Register sidebar and profile dropdown navigation entries using the\n  existing settings.menu.account.storage label\n- Add settings.account.storage i18n copy for en and zh\n- Cover key validation, prefix scoping, and disposition sanitizing with\n  unit tests; extend session-guard contract and member-routes e2e smoke\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-02T09:45:02Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-02T09:45:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/94c8cea61bd528035d0e66c249678db0f7ca6427"
+    },
+    {
+      "sha": "0ead901",
+      "sha_full": "0ead9019935fbb944702b01cbd0e0d6ca3aa6c19",
+      "message": "feat(api-keys): enhance API key management interface",
+      "message_full": "feat(api-keys): enhance API key management interface\n\n- Added a new API key actions menu for managing and deleting keys.\n- Introduced a table view for displaying API keys with relevant details.\n- Implemented a dialog for testing API keys with user feedback on validation results.\n- Updated translations for English and Chinese to reflect new UI elements and actions.\n\nThis update improves the user experience for managing API keys in the settings section.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-02T08:11:16Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-02T08:11:16Z",
+      "url": "https://github.com/musemvp/musemvp/commit/0ead9019935fbb944702b01cbd0e0d6ca3aa6c19"
+    },
+    {
+      "sha": "650652e",
+      "sha_full": "650652eaca246d005ed87ed6ef1e3e529fb5be04",
+      "message": "refactor(auth): improve layout of password input and forgot password link in LoginFormMailOTP",
+      "message_full": "refactor(auth): improve layout of password input and forgot password link in LoginFormMailOTP\n\nUpdated the LoginFormMailOTP component to enhance the user interface by adjusting the layout of the password input field and repositioning the \"Forgot Password\" link for better accessibility and usability. The link is now positioned absolutely within the form item for a cleaner design.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-02T07:49:49Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-02T07:49:49Z",
+      "url": "https://github.com/musemvp/musemvp/commit/650652eaca246d005ed87ed6ef1e3e529fb5be04"
+    },
+    {
+      "sha": "ae92181",
+      "sha_full": "ae921817d5536f136ce6d9b8021e27699b0e675e",
+      "message": "Merge pull request #101 from musemvp/dependabot/npm_and_yarn/npm-all-364e0f0f42",
+      "message_full": "Merge pull request #101 from musemvp/dependabot/npm_and_yarn/npm-all-364e0f0f42\n\nchore(deps): bump the npm-all group with 33 updates",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-02T05:42:50Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-02T05:42:50Z",
+      "url": "https://github.com/musemvp/musemvp/commit/ae921817d5536f136ce6d9b8021e27699b0e675e"
+    },
+    {
+      "sha": "54ca5fb",
+      "sha_full": "54ca5fb67bd24362aaf7ab153f594b50027f2c81",
+      "message": "chore(deps): bump the npm-all group with 33 updates",
+      "message_full": "chore(deps): bump the npm-all group with 33 updates\n\nBumps the npm-all group with 33 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@radix-ui/react-accordion](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/accordion) | `1.2.14` | `1.2.15` |\n| [@radix-ui/react-alert-dialog](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/alert-dialog) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-aspect-ratio](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/aspect-ratio) | `1.1.10` | `1.1.11` |\n| [@radix-ui/react-avatar](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/avatar) | `1.2.0` | `1.2.1` |\n| [@radix-ui/react-checkbox](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/checkbox) | `1.3.5` | `1.3.6` |\n| [@radix-ui/react-collapsible](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/collapsible) | `1.1.14` | `1.1.15` |\n| [@radix-ui/react-context-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/context-menu) | `2.3.1` | `2.3.2` |\n| [@radix-ui/react-dialog](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/dialog) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-dropdown-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/dropdown-menu) | `2.1.18` | `2.1.19` |\n| [@radix-ui/react-hover-card](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/hover-card) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-label](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/label) | `2.1.10` | `2.1.11` |\n| [@radix-ui/react-menubar](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/menubar) | `1.1.18` | `1.1.19` |\n| [@radix-ui/react-navigation-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/navigation-menu) | `1.2.16` | `1.2.17` |\n| [@radix-ui/react-popover](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/popover) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-progress](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/progress) | `1.1.10` | `1.1.11` |\n| [@radix-ui/react-radio-group](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/radio-group) | `1.4.1` | `1.4.2` |\n| [@radix-ui/react-scroll-area](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/scroll-area) | `1.2.12` | `1.2.13` |\n| [@radix-ui/react-select](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/select) | `2.3.1` | `2.3.2` |\n| [@radix-ui/react-separator](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/separator) | `1.1.10` | `1.1.11` |\n| [@radix-ui/react-slider](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/slider) | `1.4.1` | `1.4.2` |\n| [@radix-ui/react-switch](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/switch) | `1.3.1` | `1.3.2` |\n| [@radix-ui/react-tabs](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/tabs) | `1.1.15` | `1.1.16` |\n| [@radix-ui/react-toggle](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/toggle) | `1.1.12` | `1.1.13` |\n| [@radix-ui/react-toggle-group](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/toggle-group) | `1.1.13` | `1.1.14` |\n| [@radix-ui/react-tooltip](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/tooltip) | `1.2.10` | `1.2.11` |\n| [@wrksz/themes](https://github.com/jakubwarkusz/themes) | `0.9.6` | `0.9.7` |\n| [cookie](https://github.com/jshttp/cookie) | `2.0.0` | `2.0.1` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `1.22.0` | `1.23.0` |\n| [motion](https://github.com/motiondivision/motion) | `12.42.1` | `12.42.2` |\n| [radix-ui](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/radix-ui) | `1.6.0` | `1.6.1` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.5.1` | `2.5.2` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.0.1` | `26.1.0` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.105.0` | `4.106.0` |\n\n\nUpdates `@radix-ui/react-accordion` from 1.2.14 to 1.2.15\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/accordion/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/accordion)\n\nUpdates `@radix-ui/react-alert-dialog` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/alert-dialog/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/alert-dialog)\n\nUpdates `@radix-ui/react-aspect-ratio` from 1.1.10 to 1.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/aspect-ratio/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/aspect-ratio)\n\nUpdates `@radix-ui/react-avatar` from 1.2.0 to 1.2.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/avatar/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/avatar)\n\nUpdates `@radix-ui/react-checkbox` from 1.3.5 to 1.3.6\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/checkbox/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/checkbox)\n\nUpdates `@radix-ui/react-collapsible` from 1.1.14 to 1.1.15\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/collapsible/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/collapsible)\n\nUpdates `@radix-ui/react-context-menu` from 2.3.1 to 2.3.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/context-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/context-menu)\n\nUpdates `@radix-ui/react-dialog` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/dialog/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/dialog)\n\nUpdates `@radix-ui/react-dropdown-menu` from 2.1.18 to 2.1.19\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/dropdown-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/dropdown-menu)\n\nUpdates `@radix-ui/react-hover-card` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/hover-card/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/hover-card)\n\nUpdates `@radix-ui/react-label` from 2.1.10 to 2.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/label/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/label)\n\nUpdates `@radix-ui/react-menubar` from 1.1.18 to 1.1.19\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/menubar/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/menubar)\n\nUpdates `@radix-ui/react-navigation-menu` from 1.2.16 to 1.2.17\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/navigation-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/navigation-menu)\n\nUpdates `@radix-ui/react-popover` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/popover/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/popover)\n\nUpdates `@radix-ui/react-progress` from 1.1.10 to 1.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/progress/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/progress)\n\nUpdates `@radix-ui/react-radio-group` from 1.4.1 to 1.4.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/radio-group/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/radio-group)\n\nUpdates `@radix-ui/react-scroll-area` from 1.2.12 to 1.2.13\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/scroll-area/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/scroll-area)\n\nUpdates `@radix-ui/react-select` from 2.3.1 to 2.3.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/select/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/select)\n\nUpdates `@radix-ui/react-separator` from 1.1.10 to 1.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/separator/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/separator)\n\nUpdates `@radix-ui/react-slider` from 1.4.1 to 1.4.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/slider/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/slider)\n\nUpdates `@radix-ui/react-switch` from 1.3.1 to 1.3.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/switch/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/switch)\n\nUpdates `@radix-ui/react-tabs` from 1.1.15 to 1.1.16\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/tabs/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/tabs)\n\nUpdates `@radix-ui/react-toggle` from 1.1.12 to 1.1.13\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/toggle/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/toggle)\n\nUpdates `@radix-ui/react-toggle-group` from 1.1.13 to 1.1.14\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/toggle-group/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/toggle-group)\n\nUpdates `@radix-ui/react-tooltip` from 1.2.10 to 1.2.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/tooltip/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/tooltip)\n\nUpdates `@wrksz/themes` from 0.9.6 to 0.9.7\n- [Release notes](https://github.com/jakubwarkusz/themes/releases)\n- [Commits](https://github.com/jakubwarkusz/themes/compare/v0.9.6...v0.9.7)\n\nUpdates `cookie` from 2.0.0 to 2.0.1\n- [Release notes](https://github.com/jshttp/cookie/releases)\n- [Commits](https://github.com/jshttp/cookie/compare/v2.0.0...v2.0.1)\n\nUpdates `lucide-react` from 1.22.0 to 1.23.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.23.0/packages/lucide-react)\n\nUpdates `motion` from 12.42.1 to 12.42.2\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.42.1...v12.42.2)\n\nUpdates `radix-ui` from 1.6.0 to 1.6.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/radix-ui/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/radix-ui)\n\nUpdates `@biomejs/biome` from 2.5.1 to 2.5.2\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.5.2/packages/@biomejs/biome)\n\nUpdates `@types/node` from 26.0.1 to 26.1.0\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `wrangler` from 4.105.0 to 4.106.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.106.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@radix-ui/react-accordion\"\n  dependency-version: 1.2.15\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-alert-dialog\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-aspect-ratio\"\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-avatar\"\n  dependency-version: 1.2.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-checkbox\"\n  dependency-version: 1.3.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-collapsible\"\n  dependency-version: 1.1.15\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-context-menu\"\n  dependency-version: 2.3.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-dialog\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-dropdown-menu\"\n  dependency-version: 2.1.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-hover-card\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-label\"\n  dependency-version: 2.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-menubar\"\n  dependency-version: 1.1.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-navigation-menu\"\n  dependency-version: 1.2.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-popover\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-progress\"\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-radio-group\"\n  dependency-version: 1.4.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-scroll-area\"\n  dependency-version: 1.2.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-select\"\n  dependency-version: 2.3.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-separator\"\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-slider\"\n  dependency-version: 1.4.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-switch\"\n  dependency-version: 1.3.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-tabs\"\n  dependency-version: 1.1.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-toggle\"\n  dependency-version: 1.1.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-toggle-group\"\n  dependency-version: 1.1.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-tooltip\"\n  dependency-version: 1.2.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@wrksz/themes\"\n  dependency-version: 0.9.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: cookie\n  dependency-version: 2.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.42.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: radix-ui\n  dependency-version: 1.6.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.5.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 26.1.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.106.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-07-01T16:16:49Z",
+        "github_login": "dependabot[bot]",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
+      },
+      "committed_at": "2026-07-01T16:16:49Z",
+      "url": "https://github.com/musemvp/musemvp/commit/54ca5fb67bd24362aaf7ab153f594b50027f2c81"
+    },
+    {
       "sha": "6cff4a9",
       "sha_full": "6cff4a9225cbd4ea9d5ae2345b6c1214a8cea871",
       "message": "Merge pull request #100 from musemvp/dependabot/npm_and_yarn/npm-all-c21a70ee7d",
@@ -649,111 +754,6 @@
       },
       "committed_at": "2026-05-30T14:46:35Z",
       "url": "https://github.com/musemvp/musemvp/commit/f0de366777a8ee9ce940860909446ef24a30b360"
-    },
-    {
-      "sha": "8af4df7",
-      "sha_full": "8af4df763707310576a1a55d74e9490cb9a8a9fc",
-      "message": "feat(header): add Discord button to header and update configuration",
-      "message_full": "feat(header): add Discord button to header and update configuration\n\n- Introduced a new `HeaderDiscordButton` component for displaying a Discord link in both desktop and mobile headers.\n- Updated `headerConfig` in the configuration to include a `showDiscord` option.\n- Modified `SwitchHeader`, `HeaderDesktopControls`, and `HeaderMobileMenu` components to conditionally render the Discord button based on the new configuration.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-30T13:10:36Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-30T13:10:36Z",
-      "url": "https://github.com/musemvp/musemvp/commit/8af4df763707310576a1a55d74e9490cb9a8a9fc"
-    },
-    {
-      "sha": "c43e6fb",
-      "sha_full": "c43e6fb369bfbfc1d37f7c580c36b13ac2c2967f",
-      "message": "feat(dependencies): add embla-carousel-autoplay package version 8.6.0 to enhance carousel functionality",
-      "message_full": "feat(dependencies): add embla-carousel-autoplay package version 8.6.0 to enhance carousel functionality",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-29T18:50:13Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-29T18:50:13Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c43e6fb369bfbfc1d37f7c580c36b13ac2c2967f"
-    },
-    {
-      "sha": "b7e1493",
-      "sha_full": "b7e149380e28a798a52969cd7378f42f243bf633",
-      "message": "Merge pull request #75 from musemvp/feat/muse-subscribe-settings",
-      "message_full": "Merge pull request #75 from musemvp/feat/muse-subscribe-settings\n\nfeat: add museSubscribeEnabled user preference and subscriptions settings",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-27T07:57:59Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-27T07:57:59Z",
-      "url": "https://github.com/musemvp/musemvp/commit/b7e149380e28a798a52969cd7378f42f243bf633"
-    },
-    {
-      "sha": "fe95b3b",
-      "sha_full": "fe95b3b54b519c2695251b51eb953f5db8d1c8a9",
-      "message": "feat(admin): show museSubscribeEnabled column with filter on users list",
-      "message_full": "feat(admin): show museSubscribeEnabled column with filter on users list\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-27T06:59:33Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-27T06:59:33Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fe95b3b54b519c2695251b51eb953f5db8d1c8a9"
-    },
-    {
-      "sha": "3146cde",
-      "sha_full": "3146cde150758d3983c332a719b77805cf987b7f",
-      "message": "feat(settings): add museSubscribeEnabled and subscriptions page",
-      "message_full": "feat(settings): add museSubscribeEnabled and subscriptions page\n\n- Add muse_subscribe_enabled column (default true) to user schema\n- Register museSubscribeEnabled in Better Auth additionalFields\n- Add /app/settings/subscriptions route with toggle form\n- Wire subscriptions nav item in sidebar, fortress layout, and profile menu\n- Add en/zh i18n strings for subscriptions settings\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-27T06:28:21Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-27T06:28:21Z",
-      "url": "https://github.com/musemvp/musemvp/commit/3146cde150758d3983c332a719b77805cf987b7f"
-    },
-    {
-      "sha": "c5b8509",
-      "sha_full": "c5b8509a9d0445064a47dcda91488f3c4bcffeb2",
-      "message": "feat(i18n): refactor locale handling to use enum and improve default locale resolution",
-      "message_full": "feat(i18n): refactor locale handling to use enum and improve default locale resolution\n\n- Changed `AppLocaleCode` from a type to an enum for better type safety.\n- Introduced a new `APP_LOCALE_VALUES` set to validate locale values.\n- Updated `appI18nConfig` to use enum values for locale keys.\n- Implemented `resolveDefaultLocale` function to determine the default locale from environment variables, defaulting to English if invalid.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-26T14:06:28Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-26T14:06:28Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c5b8509a9d0445064a47dcda91488f3c4bcffeb2"
-    },
-    {
-      "sha": "2b0b26b",
-      "sha_full": "2b0b26b36356a78cc86070c1c9e9c47d3b334db3",
-      "message": "feat(icon): update favicon and icon assets with new designs and sizes",
-      "message_full": "feat(icon): update favicon and icon assets with new designs and sizes",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-05-26T13:52:40Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-05-26T13:52:40Z",
-      "url": "https://github.com/musemvp/musemvp/commit/2b0b26b36356a78cc86070c1c9e9c47d3b334db3"
     }
   ]
 }

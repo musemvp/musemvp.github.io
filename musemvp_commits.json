@@ -6,6 +6,36 @@
   },
   "commits": [
     {
+      "sha": "daf233f",
+      "sha_full": "daf233f69c3760766c65030cc6d3d14d078163b9",
+      "message": "Merge pull request #105 from musemvp/dependabot/npm_and_yarn/npm-all-15d5fac3c3",
+      "message_full": "Merge pull request #105 from musemvp/dependabot/npm_and_yarn/npm-all-15d5fac3c3\n\nchore(deps): bump the npm-all group with 8 updates",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-07-07T06:28:09Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-07-07T06:28:09Z",
+      "url": "https://github.com/musemvp/musemvp/commit/daf233f69c3760766c65030cc6d3d14d078163b9"
+    },
+    {
+      "sha": "a51805a",
+      "sha_full": "a51805a51868aba6024c2edb5d5ce3d3115c5c4d",
+      "message": "chore(deps): bump the npm-all group with 8 updates",
+      "message_full": "chore(deps): bump the npm-all group with 8 updates\n\nBumps the npm-all group with 8 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dodopayments](https://github.com/dodopayments/dodopayments-typescript) | `2.40.1` | `2.42.0` |\n| [hono](https://github.com/honojs/hono) | `4.12.27` | `4.12.28` |\n| [hono-openapi](https://github.com/rhinobase/hono-openapi) | `1.3.0` | `1.3.1` |\n| [react-hook-form](https://github.com/react-hook-form/react-hook-form) | `7.80.0` | `7.81.0` |\n| [recharts](https://github.com/recharts/recharts) | `3.9.1` | `3.9.2` |\n| [resend](https://github.com/resend/resend-node) | `6.16.0` | `6.17.1` |\n| [@vitest/ui](https://github.com/vitest-dev/vitest/tree/HEAD/packages/ui) | `4.1.9` | `4.1.10` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `4.1.9` | `4.1.10` |\n\n\nUpdates `dodopayments` from 2.40.1 to 2.42.0\n- [Release notes](https://github.com/dodopayments/dodopayments-typescript/releases)\n- [Changelog](https://github.com/dodopayments/dodopayments-typescript/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/dodopayments/dodopayments-typescript/compare/v2.40.1...v2.42.0)\n\nUpdates `hono` from 4.12.27 to 4.12.28\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.12.27...v4.12.28)\n\nUpdates `hono-openapi` from 1.3.0 to 1.3.1\n- [Release notes](https://github.com/rhinobase/hono-openapi/releases)\n- [Commits](https://github.com/rhinobase/hono-openapi/commits)\n\nUpdates `react-hook-form` from 7.80.0 to 7.81.0\n- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)\n- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.80.0...v7.81.0)\n\nUpdates `recharts` from 3.9.1 to 3.9.2\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.9.1...v3.9.2)\n\nUpdates `resend` from 6.16.0 to 6.17.1\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/compare/v6.16.0...v6.17.1)\n\nUpdates `@vitest/ui` from 4.1.9 to 4.1.10\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.10/packages/ui)\n\nUpdates `vitest` from 4.1.9 to 4.1.10\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.10/packages/vitest)\n\n---\nupdated-dependencies:\n- dependency-name: dodopayments\n  dependency-version: 2.42.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.28\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: hono-openapi\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-hook-form\n  dependency-version: 7.81.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.9.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.17.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@vitest/ui\"\n  dependency-version: 4.1.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: vitest\n  dependency-version: 4.1.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2026-07-06T16:03:01Z",
+        "github_login": "dependabot[bot]",
+        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
+      },
+      "committed_at": "2026-07-06T16:03:01Z",
+      "url": "https://github.com/musemvp/musemvp/commit/a51805a51868aba6024c2edb5d5ce3d3115c5c4d"
+    },
+    {
       "sha": "fea8a17",
       "sha_full": "fea8a17c2d1064e6b9406fdb985bd5bda029d0a5",
       "message": "Merge pull request #104 from musemvp/dependabot/npm_and_yarn/npm-all-03b45e5bf4",
@@ -724,36 +754,6 @@
       },
       "committed_at": "2026-06-07T16:37:42Z",
       "url": "https://github.com/musemvp/musemvp/commit/eec4963150f9b248608daed7c47225a6516b6a34"
-    },
-    {
-      "sha": "5856230",
-      "sha_full": "5856230ee286f8c05867cc9ed61d5f79d1a5cfe7",
-      "message": "style(user-columns): add rounded-md class to UserAvatar for improved styling",
-      "message_full": "style(user-columns): add rounded-md class to UserAvatar for improved styling\n\n- Updated UserAvatar component in user-columns to include a rounded-md class for better visual presentation.\n- Removed unnecessary DropdownMenuSeparator from UserActionsMenu for cleaner UI.\n\nCo-authored-by: wztlink1013 <wztlink1013@163.com>\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-07T16:20:13Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-07T16:20:13Z",
-      "url": "https://github.com/musemvp/musemvp/commit/5856230ee286f8c05867cc9ed61d5f79d1a5cfe7"
-    },
-    {
-      "sha": "ea7d3a9",
-      "sha_full": "ea7d3a90f0378fe7ba877cf6608e5cc7aa3b2c32",
-      "message": "fix(setup): enhance form validation and button state in SetupStep1 component",
-      "message_full": "fix(setup): enhance form validation and button state in SetupStep1 component\n\n- Updated the form schema to trim whitespace from the name input before validation.\n- Added a disabled state to the submit button based on form validity and submission status.\n\nCo-authored-by: wztlink1013 <wztlink1013@163.com>\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-07T16:14:01Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-07T16:14:01Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ea7d3a90f0378fe7ba877cf6608e5cc7aa3b2c32"
     }
   ]
 }

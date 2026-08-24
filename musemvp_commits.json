@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "c1a6841",
+      "sha_full": "c1a6841488428a8fec37385e300235f803bc3183",
+      "message": "chore(env): add default locale to example environment variables",
+      "message_full": "chore(env): add default locale to example environment variables\n\nThis commit updates the .env.local.example file to include a new environment variable for the default locale, enhancing the configuration options available for developers.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-08-23T16:13:30Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-08-23T16:13:30Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c1a6841488428a8fec37385e300235f803bc3183"
+    },
+    {
+      "sha": "2519eac",
+      "sha_full": "2519eaca9d88682e7686badde2b07f905ac990fd",
+      "message": "fix(contact-form): update subject line for clarity",
+      "message_full": "fix(contact-form): update subject line for clarity",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-08-23T10:06:06Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-08-23T10:06:06Z",
+      "url": "https://github.com/musemvp/musemvp/commit/2519eaca9d88682e7686badde2b07f905ac990fd"
+    },
+    {
+      "sha": "7e0983a",
+      "sha_full": "7e0983a036de39db9a03f7803b4406d605fff2d8",
+      "message": "feat(settings): implement admin settings management and database schema for application settings",
+      "message_full": "feat(settings): implement admin settings management and database schema for application settings\n\nThis commit introduces a new admin settings management feature, allowing for the retrieval and updating of application settings through a dedicated API. It includes the addition of a new `app_setting` table in the database schema to store settings, along with corresponding queries for listing, upserting, and deleting settings. The frontend has been updated to integrate with this new functionality, enhancing the overall configuration capabilities for administrators.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-08-23T09:40:30Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-08-23T09:40:30Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7e0983a036de39db9a03f7803b4406d605fff2d8"
+    },
+    {
       "sha": "fe9f622",
       "sha_full": "fe9f622e1d0b1f854a22e3fc71b01c47b5f22c52",
       "message": "chore(env): update example environment variables for Waffo pricing plans",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-06-18T19:25:50Z",
       "url": "https://github.com/musemvp/musemvp/commit/0479d2043f63782b9a31cfac143dd4fbd14e7c10"
-    },
-    {
-      "sha": "4e0edd2",
-      "sha_full": "4e0edd2352e2cc96d622f8e4a916c6e5085e0eeb",
-      "message": "test(e2e): serve a production build via Playwright webServer + retries",
-      "message_full": "test(e2e): serve a production build via Playwright webServer + retries\n\nThe e2e suite previously required a hand-started `next dev --turbo`\nserver. Under sustained load that dev server's Turbopack worker pool\ncrashes (EPIPE / \"Jest worker exceeding retry limit\"), returning 500s on\n/api/** that surfaced as flaky auth failures (e.g. change-password and\nreset-password re-login).\n\nAdd a Playwright webServer that builds and serves a compiled production\napp (`pnpm build && pnpm start`), which has no dev-worker pool and is both\nstable and much faster. Locally an already-running server is reused; CI\nbuilds fresh. Add retries (CI 2 / local 1) as a flaky safety net.\n\n`next start` is unsupported with `output: standalone`, so gate the\nstandalone output behind E2E_DISABLE_STANDALONE, which the webServer sets\nalongside DATABASE_CONNECTION_STRATEGY=database_url_first.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-18T19:09:21Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-18T19:09:21Z",
-      "url": "https://github.com/musemvp/musemvp/commit/4e0edd2352e2cc96d622f8e4a916c6e5085e0eeb"
-    },
-    {
-      "sha": "081cf61",
-      "sha_full": "081cf617cfb29b1b6e2e67331558e1b7cd172045",
-      "message": "fix(settings): drop nested <main>; harden settings e2e asserts",
-      "message_full": "fix(settings): drop nested <main>; harden settings e2e asserts\n\nThe settings layout rendered a <main> inside the app shell's <main>\n(invalid nested landmark). Use a plain container so there is a single\n<main> per page.\n\nDuring streaming SSR a hidden buffer copy of a settings page can briefly\ncoexist with the rendered one, so getByTestId(...).toBeVisible() hit a\nPlaywright strict-mode violation (2 matches). Scope the settings-page\nassertions to the visible instance, and assert the change-password\nsuccess via the locale-independent sonner success toast instead of a\nhardcoded English string.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-18T18:36:57Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-18T18:36:57Z",
-      "url": "https://github.com/musemvp/musemvp/commit/081cf617cfb29b1b6e2e67331558e1b7cd172045"
-    },
-    {
-      "sha": "15d3101",
-      "sha_full": "15d31018b93c468c7ca833d4803c595b67baf0ca",
-      "message": "test(billing): cover the webhook entitlement-grant chain",
-      "message_full": "test(billing): cover the webhook entitlement-grant chain\n\nAdd unit coverage for the previously untested money/access spine:\n- persistContractSnapshot: create/update/skip paths, and the cross-user\n  guard that refuses to overwrite an existing contract's userId with a\n  spoofed event referenceId (logs a warning, keeps the owner).\n- handleGatewayWebhook: persists only when the event carries a snapshot,\n  ignores snapshot-less events, throws when the gateway is not enabled.\n- entitlement resolution: getLatestMuseBillingContractsByIdentity dedup /\n  latest-wins, and getMuseAccessByUserId active-contract gating.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-18T18:36:57Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-18T18:36:57Z",
-      "url": "https://github.com/musemvp/musemvp/commit/15d31018b93c468c7ca833d4803c595b67baf0ca"
     }
   ]
 }

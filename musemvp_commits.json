@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "940b810",
+      "sha_full": "940b810e6ab5e89927d7ba629fe93ae63d79ad91",
+      "message": "chore(docs): remove outdated security audit and admin user ban design documents",
+      "message_full": "chore(docs): remove outdated security audit and admin user ban design documents\n\nThis commit deletes the `security-audit-2026-06-remediation.md` and `2026-04-25-admin-user-ban-design.md` files, which are no longer relevant to the current project scope. This cleanup helps maintain an organized documentation structure and ensures that only up-to-date information is available for developers.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T05:23:16Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T05:23:16Z",
+      "url": "https://github.com/musemvp/musemvp/commit/940b810e6ab5e89927d7ba629fe93ae63d79ad91"
+    },
+    {
+      "sha": "5a0916a",
+      "sha_full": "5a0916a5cae160c700567e3700d071000bd0c981",
+      "message": "feat(config): update wrangler configuration for compatibility and routing",
+      "message_full": "feat(config): update wrangler configuration for compatibility and routing\n\nThis commit enhances the `wrangler.jsonc` configuration by updating the compatibility date to 2026-09-30 and adding necessary compatibility flags. It also introduces a custom route for the domain `demo.musemvp.com`, while refining existing settings for better deployment management.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T05:21:59Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T05:21:59Z",
+      "url": "https://github.com/musemvp/musemvp/commit/5a0916a5cae160c700567e3700d071000bd0c981"
+    },
+    {
+      "sha": "804e842",
+      "sha_full": "804e842f19d59e67f4fc6e72daea9e2e4d9c8e7f",
+      "message": "feat(config): add Next.js configuration with security headers and output settings",
+      "message_full": "feat(config): add Next.js configuration with security headers and output settings\n\nThis commit introduces a new `next.config.ts` file that configures Next.js with baseline security headers and output settings for standalone builds. It also integrates MDX and internationalization plugins, enhancing the application's configuration capabilities. Additionally, the `postcss.config.mjs` file is added for Tailwind CSS support, and several scripts are updated or removed to streamline the build process.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T03:49:03Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T03:49:03Z",
+      "url": "https://github.com/musemvp/musemvp/commit/804e842f19d59e67f4fc6e72daea9e2e4d9c8e7f"
+    },
+    {
       "sha": "c1a6841",
       "sha_full": "c1a6841488428a8fec37385e300235f803bc3183",
       "message": "chore(env): add default locale to example environment variables",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-06-19T08:31:24Z",
       "url": "https://github.com/musemvp/musemvp/commit/bcf06e632423cae3fdb76c6f59be29ae3ea8df45"
-    },
-    {
-      "sha": "32df5aa",
-      "sha_full": "32df5aa8c55aa6871cf0e802c96575cac59f1142",
-      "message": "feat(app): add App Router error boundaries",
-      "message_full": "feat(app): add App Router error boundaries\n\nAdd a self-contained root global-error.tsx (its own <html>/<body> and\ninline styles, since it replaces all providers) plus segment error.tsx\nfor the signed-in app and public landing trees, sharing an ErrorState\nfallback with retry + home actions. Localized copy lives in the errors\nnamespace (en/zh). Previously an uncaught render error fell through to\nNext.js's bare default page with no recovery.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-19T08:31:24Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-19T08:31:24Z",
-      "url": "https://github.com/musemvp/musemvp/commit/32df5aa8c55aa6871cf0e802c96575cac59f1142"
-    },
-    {
-      "sha": "6f7c687",
-      "sha_full": "6f7c68733ec9997d1b18b792d57e609017646622",
-      "message": "fix(auth): surface email delivery failures instead of silent success",
-      "message_full": "fix(auth): surface email delivery failures instead of silent success\n\nAuth callbacks awaited sendEmail but ignored its boolean result, so a\nfailed OTP / magic-link / password-reset send still reported success to\nthe client while the user received nothing. Route the auth sends through\nsendAuthEmailOrThrow, which throws on failure so Better Auth surfaces a\nreal error. sendEmail's contract for newsletter/contact is unchanged.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-19T08:31:23Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-19T08:31:23Z",
-      "url": "https://github.com/musemvp/musemvp/commit/6f7c68733ec9997d1b18b792d57e609017646622"
-    },
-    {
-      "sha": "0479d20",
-      "sha_full": "0479d2043f63782b9a31cfac143dd4fbd14e7c10",
-      "message": "chore: add .claude/settings.local.json to .gitignore for personal settings",
-      "message_full": "chore: add .claude/settings.local.json to .gitignore for personal settings",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-18T19:25:50Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-18T19:25:50Z",
-      "url": "https://github.com/musemvp/musemvp/commit/0479d2043f63782b9a31cfac143dd4fbd14e7c10"
     }
   ]
 }

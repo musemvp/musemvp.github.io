@@ -6,6 +6,66 @@
   },
   "commits": [
     {
+      "sha": "fa68e0e",
+      "sha_full": "fa68e0efeb61a0a839fbcf4f5549dec545898024",
+      "message": "refactor(storage): streamline resolveAvatarsFileProxyUrl function signature",
+      "message_full": "refactor(storage): streamline resolveAvatarsFileProxyUrl function signature\n\nThis commit simplifies the function signature of `resolveAvatarsFileProxyUrl` by consolidating the parameter declaration into a single line. This change enhances code readability without altering the function's behavior.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T07:44:23Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T07:44:23Z",
+      "url": "https://github.com/musemvp/musemvp/commit/fa68e0efeb61a0a839fbcf4f5549dec545898024"
+    },
+    {
+      "sha": "64df2bb",
+      "sha_full": "64df2bb54ad0ee746e5d0ba5dba8b508068b6d47",
+      "message": "feat(auth): integrate Google One Tap authentication into landing and auth layouts",
+      "message_full": "feat(auth): integrate Google One Tap authentication into landing and auth layouts\n\nThis commit adds the Google One Tap component to both the landing page and auth layouts, enhancing the user authentication experience. Additionally, it refactors the LoginFormMailOTP component to remove the direct use of Google One Tap hooks, streamlining the authentication process. The SessionProvider component is updated to improve session handling, ensuring a more efficient user session management.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T07:32:42Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T07:32:42Z",
+      "url": "https://github.com/musemvp/musemvp/commit/64df2bb54ad0ee746e5d0ba5dba8b508068b6d47"
+    },
+    {
+      "sha": "9800d44",
+      "sha_full": "9800d44f881a5d70e52102bedb5b28d41435bc41",
+      "message": "feat(captcha, newsletter): integrate Turnstile captcha and newsletter signing secret management",
+      "message_full": "feat(captcha, newsletter): integrate Turnstile captcha and newsletter signing secret management\n\nThis commit introduces the integration of Cloudflare Turnstile for captcha functionality in the password reset process, enhancing security. It also implements a new newsletter signing secret management system, allowing for the configuration of a dedicated signing secret for newsletter tokens. Updates include modifications to the environment configuration, API routes, and frontend components to support these features, improving overall application security and user experience.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T07:00:13Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T07:00:13Z",
+      "url": "https://github.com/musemvp/musemvp/commit/9800d44f881a5d70e52102bedb5b28d41435bc41"
+    },
+    {
+      "sha": "c6cfcc8",
+      "sha_full": "c6cfcc801dc4b23c148e893180065b1c531aec47",
+      "message": "feat(auth): implement custom session handling with avatar proxy URL support",
+      "message_full": "feat(auth): implement custom session handling with avatar proxy URL support\n\nThis commit introduces a custom session handling mechanism in the authentication process, allowing the inclusion of an avatar proxy URL in the session data. The changes involve updates to the auth middleware, session context, and various components to utilize the new avatar proxy URL, enhancing the user experience by providing a dynamic avatar URL based on the session configuration. Additionally, the configuration and schema have been updated to accommodate this new feature.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-09-30T06:29:25Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-09-30T06:29:25Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c6cfcc801dc4b23c148e893180065b1c531aec47"
+    },
+    {
       "sha": "940b810",
       "sha_full": "940b810e6ab5e89927d7ba629fe93ae63d79ad91",
       "message": "chore(docs): remove outdated security audit and admin user ban design documents",
@@ -694,66 +754,6 @@
       },
       "committed_at": "2026-06-22T16:25:31Z",
       "url": "https://github.com/musemvp/musemvp/commit/b8fdb7f4d65dcb5cb7761fd1576140e2b8b85ff1"
-    },
-    {
-      "sha": "0f938e9",
-      "sha_full": "0f938e9bf68ca7c693080ef3d956e48460d28fa5",
-      "message": "Merge pull request #94 from musemvp/fix/critical-security-audit",
-      "message_full": "Merge pull request #94 from musemvp/fix/critical-security-audit\n\nSecurity hardening + cross-cutting resilience + test coverage (audit remediation)",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-19T11:03:33Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-19T11:03:33Z",
-      "url": "https://github.com/musemvp/musemvp/commit/0f938e9bf68ca7c693080ef3d956e48460d28fa5"
-    },
-    {
-      "sha": "9ad4236",
-      "sha_full": "9ad4236346114674076f6320815f508353aef079",
-      "message": "fix(ci): provide placeholder DB/auth env for the unit test job",
-      "message_full": "fix(ci): provide placeholder DB/auth env for the unit test job\n\nThe unit job failed with \"No database connection string available\"\nbecause importing the Better Auth test utils (via the skipped real-upload\nintegration test) eagerly constructs the auth instance at module load,\nwhich needs a connection string present. Unit tests are fully mocked and\nnever connect, so provide placeholder DATABASE_URL / BETTER_AUTH_SECRET /\nstrategy values for the job.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-19T09:17:27Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-19T09:17:27Z",
-      "url": "https://github.com/musemvp/musemvp/commit/9ad4236346114674076f6320815f508353aef079"
-    },
-    {
-      "sha": "7086b5d",
-      "sha_full": "7086b5d63e3ebb7402f0d85bbf9aab6cc8888e94",
-      "message": "fix(ci): generate Fumadocs .source via postinstall",
-      "message_full": "fix(ci): generate Fumadocs .source via postinstall\n\nCI type-check failed on a fresh checkout because the gitignored Fumadocs\n`.source` artifacts (the `collections/*` modules and generated PageData\ntypes) were never generated -- locally they exist only because dev/build\nhad run. Add a `postinstall: fumadocs-mdx` script so `pnpm install`\ngenerates them everywhere (CI and fresh clones), resolving the\n\"Cannot find module 'collections/server'\" and \"Property ... does not\nexist on DocMethods & PageData\" type-check errors.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-19T09:12:07Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-19T09:12:07Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7086b5d63e3ebb7402f0d85bbf9aab6cc8888e94"
-    },
-    {
-      "sha": "bcf06e6",
-      "sha_full": "bcf06e632423cae3fdb76c6f59be29ae3ea8df45",
-      "message": "feat(env): validate the server environment at startup",
-      "message_full": "feat(env): validate the server environment at startup\n\nAdd a Zod-based validator run from instrumentation.ts register().\nWarnings are always logged (an enabled gateway missing its webhook\nsecret, database_url_first without DATABASE_URL, resend without\nRESEND_API_KEY); a missing BETTER_AUTH_SECRET throws only in a production\nruntime (never during next build, dev, or on valid setups) so\nmisconfiguration fails fast instead of mid-request. Unit-tested for both\nissue collection and the throw / no-throw paths.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-19T08:31:24Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-19T08:31:24Z",
-      "url": "https://github.com/musemvp/musemvp/commit/bcf06e632423cae3fdb76c6f59be29ae3ea8df45"
     }
   ]
 }

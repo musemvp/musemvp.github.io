@@ -6,6 +6,471 @@
   },
   "commits": [
     {
+      "sha": "10ab8d7",
+      "sha_full": "10ab8d725e7ec964962bbda050c514ff18f84992",
+      "message": "chore: update pnpm configuration and add patch for @opennextjs/cloudflare",
+      "message_full": "chore: update pnpm configuration and add patch for @opennextjs/cloudflare\n\nModified pnpm-lock.yaml and pnpm-workspace.yaml to include a patch for @opennextjs/cloudflare@1.20.9, ensuring compatibility with the current setup. Updated the configuration format for package paths and dependencies for consistency. Added a note in open-next.config.ts regarding the patch removal after the upgrade.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T17:34:23Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T17:34:23Z",
+      "url": "https://github.com/musemvp/musemvp/commit/10ab8d725e7ec964962bbda050c514ff18f84992"
+    },
+    {
+      "sha": "7a7564d",
+      "sha_full": "7a7564da95e9106696c0cbb9bc6d14057489f207",
+      "message": "chore: clean up .env.example by removing outdated storage section",
+      "message_full": "chore: clean up .env.example by removing outdated storage section\n\nRemoved the commented-out storage section from the .env.example file in the web-cloudflare application to streamline the configuration and eliminate unnecessary clutter.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T17:22:35Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T17:22:35Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7a7564da95e9106696c0cbb9bc6d14057489f207"
+    },
+    {
+      "sha": "6b06656",
+      "sha_full": "6b06656a1e1d5b45dca8cfb8e6dcb8bb5b944fd3",
+      "message": "chore: update contact form email address in environment files",
+      "message_full": "chore: update contact form email address in environment files\n\nChanged the contact form submission email address from \"yourself@example.com\" to \"support@example.com\" in both .env.example files for the web and web-cloudflare applications.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T16:55:59Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T16:55:59Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6b06656a1e1d5b45dca8cfb8e6dcb8bb5b944fd3"
+    },
+    {
+      "sha": "5dc1a1c",
+      "sha_full": "5dc1a1c91de425d8800a1c55d27836e2d7addc10",
+      "message": "chore: update configuration for demo environment",
+      "message_full": "chore: update configuration for demo environment\n\nChanged the project name, database name, and bucket name in wrangler.jsonc and d1-migrations.ts to reflect the new demo environment setup. Updated the route pattern accordingly.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T16:50:43Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T16:50:43Z",
+      "url": "https://github.com/musemvp/musemvp/commit/5dc1a1c91de425d8800a1c55d27836e2d7addc10"
+    },
+    {
+      "sha": "0143440",
+      "sha_full": "0143440ddce6b7e70346da0913df4e22ed615444",
+      "message": "Merge pull request #147 from musemvp/refactor/pnpm-monorepo",
+      "message_full": "Merge pull request #147 from musemvp/refactor/pnpm-monorepo\n\nrefactor: split MuseMVP into a pnpm workspace",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T16:39:49Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T16:39:49Z",
+      "url": "https://github.com/musemvp/musemvp/commit/0143440ddce6b7e70346da0913df4e22ed615444"
+    },
+    {
+      "sha": "850cdb2",
+      "sha_full": "850cdb204cb2220c8496ac65f445f0749f8062dc",
+      "message": "refactor: enhance appDir and writeAppEnv functions to accept a custom root directory",
+      "message_full": "refactor: enhance appDir and writeAppEnv functions to accept a custom root directory\n\nUpdated the appDir function to take a root parameter for better flexibility. Modified the writeAppEnv function to use this new parameter, ensuring correct file paths for .env.local and .dev.vars. Added tests for writeAppEnv to validate behavior with and without existing environment variables.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T16:31:54Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T16:31:54Z",
+      "url": "https://github.com/musemvp/musemvp/commit/850cdb204cb2220c8496ac65f445f0749f8062dc"
+    },
+    {
+      "sha": "585f056",
+      "sha_full": "585f056e5ab27b938f3c52c77bfe6caa302c69e9",
+      "message": "refactor: update mock imports in asset and avatar upload service tests",
+      "message_full": "refactor: update mock imports in asset and avatar upload service tests\n\nChanged the mock import path from \"@/lib/integration-env\" to \"@/server/storage\" in both assets.service.test.ts and avatar-upload.service.test.ts to reflect the new module structure.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T16:25:41Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T16:25:41Z",
+      "url": "https://github.com/musemvp/musemvp/commit/585f056e5ab27b938f3c52c77bfe6caa302c69e9"
+    },
+    {
+      "sha": "9c5a43a",
+      "sha_full": "9c5a43af8942258b55c02d09626ded96bab90382",
+      "message": "fix: invoke the Cloudflare deploy script and boot without email tokens",
+      "message_full": "fix: invoke the Cloudflare deploy script and boot without email tokens\n\npnpm treats deploy as its own command, and missing Email Sending credentials should not take the public site down.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T15:55:29Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T15:55:29Z",
+      "url": "https://github.com/musemvp/musemvp/commit/9c5a43af8942258b55c02d09626ded96bab90382"
+    },
+    {
+      "sha": "df3a9b8",
+      "sha_full": "df3a9b85a2644ef25ef5c014f05de88c6d511c1f",
+      "message": "feat: run the Cloudflare app on D1, R2, and Cloudflare Email",
+      "message_full": "feat: run the Cloudflare app on D1, R2, and Cloudflare Email\n\nKeep the Node app on Postgres, S3, and Resend, and serve the Worker at cloudflare.musemvp.com.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T15:52:27Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T15:52:27Z",
+      "url": "https://github.com/musemvp/musemvp/commit/df3a9b85a2644ef25ef5c014f05de88c6d511c1f"
+    },
+    {
+      "sha": "de5bb68",
+      "sha_full": "de5bb68593ae81d09f847a073ebfe1c3d62b7255",
+      "message": "chore: remove vendored frontend and React agent skills",
+      "message_full": "chore: remove vendored frontend and React agent skills\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T14:17:59Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T14:17:59Z",
+      "url": "https://github.com/musemvp/musemvp/commit/de5bb68593ae81d09f847a073ebfe1c3d62b7255"
+    },
+    {
+      "sha": "e73c407",
+      "sha_full": "e73c4074e655c417d4667d02777afafeec7d8166",
+      "message": "chore: bump Next.js and load database env through dotenv",
+      "message_full": "chore: bump Next.js and load database env through dotenv\n\nKeep Next 16.4 and related packages aligned, run drizzle commands with apps/web/.env.local, and force Better Auth test helpers on during tests.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T14:12:17Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T14:12:17Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e73c4074e655c417d4667d02777afafeec7d8166"
+    },
+    {
+      "sha": "b622b73",
+      "sha_full": "b622b7331b3bc0384989060888576859b775011e",
+      "message": "chore: shrink the pnpm catalog to shared dependencies",
+      "message_full": "chore: shrink the pnpm catalog to shared dependencies\n\nKeep React 19 on a named catalog so those packages stay aligned.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T13:22:55Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T13:22:55Z",
+      "url": "https://github.com/musemvp/musemvp/commit/b622b7331b3bc0384989060888576859b775011e"
+    },
+    {
+      "sha": "a8fdaae",
+      "sha_full": "a8fdaae76f73101212e0c73c0c265e62ea8c6537",
+      "message": "refactor: improve component imports and type handling across multiple modules",
+      "message_full": "refactor: improve component imports and type handling across multiple modules\n\n- Updated the AnalyticsScript component to simplify the rendering of the Baidu Tongji script.\n- Introduced a helper function to check for Blob types in FumadocsRichMdxComponents.\n- Enhanced type handling for Cropper and QRCode components in CropImageDialog and TwoFactorBlock, respectively.\n- Adjusted OTPInput context usage in the input-otp component for better type safety.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-08T02:16:05Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-08T02:16:05Z",
+      "url": "https://github.com/musemvp/musemvp/commit/a8fdaae76f73101212e0c73c0c265e62ea8c6537"
+    },
+    {
+      "sha": "3344d76",
+      "sha_full": "3344d76c5c922cdfef11d553ecde142df10c9a14",
+      "message": "chore: remove pnpm-monorepo-refactor documentation file",
+      "message_full": "chore: remove pnpm-monorepo-refactor documentation file\n\nDeleted the pnpm-monorepo-refactor.md file, which contained implementation details for the monorepo structure and environment configurations.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T17:00:09Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T17:00:09Z",
+      "url": "https://github.com/musemvp/musemvp/commit/3344d76c5c922cdfef11d553ecde142df10c9a14"
+    },
+    {
+      "sha": "b34871b",
+      "sha_full": "b34871b900513b43f470d824d12cc42de39890f4",
+      "message": "refactor: move the Workers app to apps/web-cloudflare",
+      "message_full": "refactor: move the Workers app to apps/web-cloudflare\n\nThe directory now sits beside apps/web. The package name stays @musemvp/cloudflare.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T16:55:38Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T16:55:38Z",
+      "url": "https://github.com/musemvp/musemvp/commit/b34871b900513b43f470d824d12cc42de39890f4"
+    },
+    {
+      "sha": "b70e75d",
+      "sha_full": "b70e75d823710e7f1cfec1280c34da16a69bc3c0",
+      "message": "feat: seed local admin and user accounts for browser tests",
+      "message_full": "feat: seed local admin and user accounts for browser tests\n\npnpm db:seed creates local_admin@musemvp.com and local_user@musemvp.com so later browser checks can start from known accounts.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T16:44:59Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T16:44:59Z",
+      "url": "https://github.com/musemvp/musemvp/commit/b70e75d823710e7f1cfec1280c34da16a69bc3c0"
+    },
+    {
+      "sha": "91b20ad",
+      "sha_full": "91b20adb7eb6c96e611d9314b481bc3a2737c66e",
+      "message": "fix: resolve Drizzle paths from the database package",
+      "message_full": "fix: resolve Drizzle paths from the database package\n\nRoot commands such as pnpm db:migrate could not see the migrations when those paths were relative to the repo root.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T16:26:02Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T16:26:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/91b20adb7eb6c96e611d9314b481bc3a2737c66e"
+    },
+    {
+      "sha": "e8914c3",
+      "sha_full": "e8914c333ec85546ddc5f7b298a447af718b3e2b",
+      "message": "refactor: start the template from one initial migration",
+      "message_full": "refactor: start the template from one initial migration\n\nDrop the upgrade-only settings export, drizzle aliases, and leftover env fallbacks so a fresh checkout uses the current schema.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T16:11:08Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T16:11:08Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e8914c333ec85546ddc5f7b298a447af718b3e2b"
+    },
+    {
+      "sha": "1ab8134",
+      "sha_full": "1ab8134ce71ef865cb6dceaf62aee4508a1d56eb",
+      "message": "docs: document the monorepo layout and test-driven workflow",
+      "message_full": "docs: document the monorepo layout and test-driven workflow\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:37:46Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:37:46Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1ab8134ce71ef865cb6dceaf62aee4508a1d56eb"
+    },
+    {
+      "sha": "bc1c6e3",
+      "sha_full": "bc1c6e3f3aa76be1bb6f756e5325b24fc7082939",
+      "message": "ci: run turbo workspace, type, coverage, parity, and app builds",
+      "message_full": "ci: run turbo workspace, type, coverage, parity, and app builds\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:35:51Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:35:51Z",
+      "url": "https://github.com/musemvp/musemvp/commit/bc1c6e3f3aa76be1bb6f756e5325b24fc7082939"
+    },
+    {
+      "sha": "9f8fe34",
+      "sha_full": "9f8fe34144ba57ec8f07a14ac178ebe5e38969a1",
+      "message": "feat: add muse:init, muse:doctor, and local Postgres compose",
+      "message_full": "feat: add muse:init, muse:doctor, and local Postgres compose\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:32:57Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:32:57Z",
+      "url": "https://github.com/musemvp/musemvp/commit/9f8fe34144ba57ec8f07a14ac178ebe5e38969a1"
+    },
+    {
+      "sha": "2c03ee7",
+      "sha_full": "2c03ee744182298590c5480104628b997ac3e270",
+      "message": "test: add the testing package, coverage floors, and Cloudflare browser project",
+      "message_full": "test: add the testing package, coverage floors, and Cloudflare browser project\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:30:46Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:30:46Z",
+      "url": "https://github.com/musemvp/musemvp/commit/2c03ee744182298590c5480104628b997ac3e270"
+    },
+    {
+      "sha": "48492d3",
+      "sha_full": "48492d33d20d2b32d4c0625ecdf50c813e1fcc67",
+      "message": "refactor: split the Cloudflare app from the Node app",
+      "message_full": "refactor: split the Cloudflare app from the Node app\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:26:49Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:26:49Z",
+      "url": "https://github.com/musemvp/musemvp/commit/48492d33d20d2b32d4c0625ecdf50c813e1fcc67"
+    },
+    {
+      "sha": "3f1644f",
+      "sha_full": "3f1644f62d075121828d3fa884a720ed24255d68",
+      "message": "refactor: move configuration into environment schemas",
+      "message_full": "refactor: move configuration into environment schemas\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:17:02Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:17:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/3f1644f62d075121828d3fa884a720ed24255d68"
+    },
+    {
+      "sha": "eb35209",
+      "sha_full": "eb35209a653af859a02ca7c519813778969a3e62",
+      "message": "refactor: extract auth and api composition root",
+      "message_full": "refactor: extract auth and api composition root\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:05:41Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:05:41Z",
+      "url": "https://github.com/musemvp/musemvp/commit/eb35209a653af859a02ca7c519813778969a3e62"
+    },
+    {
+      "sha": "7fd77fa",
+      "sha_full": "7fd77fae44e31a708a6a4eca7b508e006084c84b",
+      "message": "refactor: extract storage, mail, and billing packages",
+      "message_full": "refactor: extract storage, mail, and billing packages\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T15:01:36Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T15:01:36Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7fd77fae44e31a708a6a4eca7b508e006084c84b"
+    },
+    {
+      "sha": "a1d3e2b",
+      "sha_full": "a1d3e2b06c4bf800a7fa749b87aa8c5be6befa07",
+      "message": "refactor: extract the database package and query drivers",
+      "message_full": "refactor: extract the database package and query drivers\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T14:53:07Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T14:53:07Z",
+      "url": "https://github.com/musemvp/musemvp/commit/a1d3e2b06c4bf800a7fa749b87aa8c5be6befa07"
+    },
+    {
+      "sha": "90d569a",
+      "sha_full": "90d569a5164d1bb5b573636d200dc7ae357e7e95",
+      "message": "refactor: extract shared, ui, config, and i18n packages",
+      "message_full": "refactor: extract shared, ui, config, and i18n packages\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T14:46:45Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T14:46:45Z",
+      "url": "https://github.com/musemvp/musemvp/commit/90d569a5164d1bb5b573636d200dc7ae357e7e95"
+    },
+    {
+      "sha": "04e6f92",
+      "sha_full": "04e6f9235974250c5512b923ed8d490b3b545d7c",
+      "message": "refactor: read payment and storage secrets from environment variables",
+      "message_full": "refactor: read payment and storage secrets from environment variables\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T14:32:29Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T14:32:29Z",
+      "url": "https://github.com/musemvp/musemvp/commit/04e6f9235974250c5512b923ed8d490b3b545d7c"
+    },
+    {
+      "sha": "ebd73ea",
+      "sha_full": "ebd73ea83221fb4104f8e425ce2bebcfee18e937",
+      "message": "refactor: move the Next.js app into a pnpm workspace",
+      "message_full": "refactor: move the Next.js app into a pnpm workspace\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T14:25:51Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T14:25:51Z",
+      "url": "https://github.com/musemvp/musemvp/commit/ebd73ea83221fb4104f8e425ce2bebcfee18e937"
+    },
+    {
+      "sha": "55fa4a8",
+      "sha_full": "55fa4a8a7477ad58b8f6de248f262e0873fcd3bd",
+      "message": "docs: record the pnpm monorepo refactor spec and baseline",
+      "message_full": "docs: record the pnpm monorepo refactor spec and baseline\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-07T14:17:07Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-07T14:17:07Z",
+      "url": "https://github.com/musemvp/musemvp/commit/55fa4a8a7477ad58b8f6de248f262e0873fcd3bd"
+    },
+    {
       "sha": "fa68e0e",
       "sha_full": "fa68e0efeb61a0a839fbcf4f5549dec545898024",
       "message": "refactor(storage): streamline resolveAvatarsFileProxyUrl function signature",
@@ -289,471 +754,6 @@
       },
       "committed_at": "2026-08-22T09:27:44Z",
       "url": "https://github.com/musemvp/musemvp/commit/ee95a3b2b4296d1604dc419e30498ab6e7a13bf4"
-    },
-    {
-      "sha": "29c76d9",
-      "sha_full": "29c76d9ca81d9ae20100f9c94a491f0af8214000",
-      "message": "refactor(config): drop public page switches for AI customization",
-      "message_full": "refactor(config): drop public page switches for AI customization\n\nHeader, footer, and legal pages are now ordinary components and MDX files, so later customizers can edit them directly instead of toggling a visibility matrix.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T08:42:37Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T08:42:37Z",
-      "url": "https://github.com/musemvp/musemvp/commit/29c76d9ca81d9ae20100f9c94a491f0af8214000"
-    },
-    {
-      "sha": "31f0354",
-      "sha_full": "31f0354aeec970a430184a4cb0c0b4e8ffb45df5",
-      "message": "test: document landing journeys and drop stale ai-chat helpers",
-      "message_full": "test: document landing journeys and drop stale ai-chat helpers\n\nUpdate the browser journey map for sequential public routes, remove leftover conversation helpers, and scope the change-password form locator to the visible settings page.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T06:37:56Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T06:37:56Z",
-      "url": "https://github.com/musemvp/musemvp/commit/31f0354aeec970a430184a4cb0c0b4e8ffb45df5"
-    },
-    {
-      "sha": "f15a7bd",
-      "sha_full": "f15a7bd29b36f01b692a1611d2c28162a65cee17",
-      "message": "fix(auth): add account.issuer for Better Auth 1.7",
-      "message_full": "fix(auth): add account.issuer for Better Auth 1.7\n\nBetter Auth 1.7 identifies accounts by the unique (issuer, accountId) pair. Credential inserts now write local:credential, and the single 0000 baseline is regenerated so the squash stays one migration.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T06:37:45Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T06:37:45Z",
-      "url": "https://github.com/musemvp/musemvp/commit/f15a7bd29b36f01b692a1611d2c28162a65cee17"
-    },
-    {
-      "sha": "be93986",
-      "sha_full": "be93986ec5d48ad3c3b01ed5898c49de40e734c6",
-      "message": "docs: document sequential landing composition and TypeScript 7",
-      "message_full": "docs: document sequential landing composition and TypeScript 7\n\nRewrite landing-page-map and related skills for route-file composition. Drop PLACEHOLDER/systemShowConfig guidance except custom-legal.ts. Align AGENTS.md and README.md with TypeScript 7.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T06:02:30Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T06:02:30Z",
-      "url": "https://github.com/musemvp/musemvp/commit/be93986ec5d48ad3c3b01ed5898c49de40e734c6"
-    },
-    {
-      "sha": "4570f71",
-      "sha_full": "4570f7180b612ec459d5a765dec6d11692edd3c2",
-      "message": "feat(assets): replace hero and OG images with Flora generations",
-      "message_full": "feat(assets): replace hero and OG images with Flora generations\n\nWarm terracotta SaaS dashboard mocks for light/dark hero shots, plus a matching Open Graph card at public/favicons/og.png. Features stay Lucide icons.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T05:52:18Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T05:52:18Z",
-      "url": "https://github.com/musemvp/musemvp/commit/4570f7180b612ec459d5a765dec6d11692edd3c2"
-    },
-    {
-      "sha": "833319e",
-      "sha_full": "833319eaa177658d3c3836c5eacff5b583da5b0f",
-      "message": "feat(changelog): replace zigzag cards with a sticky timeline",
-      "message_full": "feat(changelog): replace zigzag cards with a sticky timeline\n\nMatch the official site three-column layout (type badge, rail, notes) while keeping Fumadocs entries and moving the expand label into changelog.json.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T05:45:29Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T05:45:29Z",
-      "url": "https://github.com/musemvp/musemvp/commit/833319eaa177658d3c3836c5eacff5b583da5b0f"
-    },
-    {
-      "sha": "fe41083",
-      "sha_full": "fe410834b51e347d645490df47ba939e36ca94d5",
-      "message": "refactor(landing): compose public routes and soften home sections",
-      "message_full": "refactor(landing): compose public routes and soften home sections\n\nDrop PLACEHOLDER switches on the six public routes, hide landing pricing inside PricingSection, and restyle Hero, Features, CTA, FAQ, and Newsletter around large rounded cards. Public copy stays in home/faq/newsletter namespaces; the unused mvp.json type import is gone.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T05:44:18Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T05:44:18Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fe410834b51e347d645490df47ba939e36ca94d5"
-    },
-    {
-      "sha": "9f03137",
-      "sha_full": "9f03137427878b8b7301a6ed12bcd109b1a47bfe",
-      "message": "style: soften theme radius, warmth, and landing corners",
-      "message_full": "style: soften theme radius, warmth, and landing corners\n\nRaise --radius to 0.875rem, lift terracotta primary chroma, replace the hard 3px shadows with layered warm shadows, fade the landing grid, and drop stylistic rounded-none on public surfaces.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T05:38:02Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T05:38:02Z",
-      "url": "https://github.com/musemvp/musemvp/commit/9f03137427878b8b7301a6ed12bcd109b1a47bfe"
-    },
-    {
-      "sha": "fba3993",
-      "sha_full": "fba3993025f01239d5257d56ec3d0e65be6d51d0",
-      "message": "chore(db): squash Drizzle migrations into a single baseline",
-      "message_full": "chore(db): squash Drizzle migrations into a single baseline\n\nReplace the six historical SQL files with one 0000 snapshot generated from schema.ts. Fresh local migrate now creates muse_billing_contract, apikey.config_id, and user.muse_subscribe_enabled with no leftover ai_chat tables.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T05:35:04Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T05:35:04Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fba3993025f01239d5257d56ec3d0e65be6d51d0"
-    },
-    {
-      "sha": "4c16e36",
-      "sha_full": "4c16e3621f8ad971ff25e2b3982e4cacf2100ab5",
-      "message": "chore(deps): apply PR 127 upgrades and fix breaking APIs",
-      "message_full": "chore(deps): apply PR 127 upgrades and fix breaking APIs\n\nMove pnpm overrides and onlyBuiltDependencies into pnpm-workspace.yaml, align engines.node to >=22, and pair better-auth with api-key at 1.7.1. Adapt TanStack Table v9 through a legacy compatibility layer, handle Better Auth 1.7 email/TOTP API changes, and pin a single @better-auth/core for TypeScript.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T05:32:23Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T05:32:23Z",
-      "url": "https://github.com/musemvp/musemvp/commit/4c16e3621f8ad971ff25e2b3982e4cacf2100ab5"
-    },
-    {
-      "sha": "daf233f",
-      "sha_full": "daf233f69c3760766c65030cc6d3d14d078163b9",
-      "message": "Merge pull request #105 from musemvp/dependabot/npm_and_yarn/npm-all-15d5fac3c3",
-      "message_full": "Merge pull request #105 from musemvp/dependabot/npm_and_yarn/npm-all-15d5fac3c3\n\nchore(deps): bump the npm-all group with 8 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-07T06:28:09Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-07T06:28:09Z",
-      "url": "https://github.com/musemvp/musemvp/commit/daf233f69c3760766c65030cc6d3d14d078163b9"
-    },
-    {
-      "sha": "a51805a",
-      "sha_full": "a51805a51868aba6024c2edb5d5ce3d3115c5c4d",
-      "message": "chore(deps): bump the npm-all group with 8 updates",
-      "message_full": "chore(deps): bump the npm-all group with 8 updates\n\nBumps the npm-all group with 8 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dodopayments](https://github.com/dodopayments/dodopayments-typescript) | `2.40.1` | `2.42.0` |\n| [hono](https://github.com/honojs/hono) | `4.12.27` | `4.12.28` |\n| [hono-openapi](https://github.com/rhinobase/hono-openapi) | `1.3.0` | `1.3.1` |\n| [react-hook-form](https://github.com/react-hook-form/react-hook-form) | `7.80.0` | `7.81.0` |\n| [recharts](https://github.com/recharts/recharts) | `3.9.1` | `3.9.2` |\n| [resend](https://github.com/resend/resend-node) | `6.16.0` | `6.17.1` |\n| [@vitest/ui](https://github.com/vitest-dev/vitest/tree/HEAD/packages/ui) | `4.1.9` | `4.1.10` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `4.1.9` | `4.1.10` |\n\n\nUpdates `dodopayments` from 2.40.1 to 2.42.0\n- [Release notes](https://github.com/dodopayments/dodopayments-typescript/releases)\n- [Changelog](https://github.com/dodopayments/dodopayments-typescript/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/dodopayments/dodopayments-typescript/compare/v2.40.1...v2.42.0)\n\nUpdates `hono` from 4.12.27 to 4.12.28\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.12.27...v4.12.28)\n\nUpdates `hono-openapi` from 1.3.0 to 1.3.1\n- [Release notes](https://github.com/rhinobase/hono-openapi/releases)\n- [Commits](https://github.com/rhinobase/hono-openapi/commits)\n\nUpdates `react-hook-form` from 7.80.0 to 7.81.0\n- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)\n- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.80.0...v7.81.0)\n\nUpdates `recharts` from 3.9.1 to 3.9.2\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.9.1...v3.9.2)\n\nUpdates `resend` from 6.16.0 to 6.17.1\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/compare/v6.16.0...v6.17.1)\n\nUpdates `@vitest/ui` from 4.1.9 to 4.1.10\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.10/packages/ui)\n\nUpdates `vitest` from 4.1.9 to 4.1.10\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.10/packages/vitest)\n\n---\nupdated-dependencies:\n- dependency-name: dodopayments\n  dependency-version: 2.42.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.28\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: hono-openapi\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-hook-form\n  dependency-version: 7.81.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.9.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.17.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@vitest/ui\"\n  dependency-version: 4.1.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: vitest\n  dependency-version: 4.1.10\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-07-06T16:03:01Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-07-06T16:03:01Z",
-      "url": "https://github.com/musemvp/musemvp/commit/a51805a51868aba6024c2edb5d5ce3d3115c5c4d"
-    },
-    {
-      "sha": "fea8a17",
-      "sha_full": "fea8a17c2d1064e6b9406fdb985bd5bda029d0a5",
-      "message": "Merge pull request #104 from musemvp/dependabot/npm_and_yarn/npm-all-03b45e5bf4",
-      "message_full": "Merge pull request #104 from musemvp/dependabot/npm_and_yarn/npm-all-03b45e5bf4\n\nchore(deps): bump the npm-all group with 5 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-05T03:55:34Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-05T03:55:34Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fea8a17c2d1064e6b9406fdb985bd5bda029d0a5"
-    },
-    {
-      "sha": "7184eb6",
-      "sha_full": "7184eb68a78eba983b463c8bba7993faf2f7215d",
-      "message": "chore(deps): bump the npm-all group with 5 updates",
-      "message_full": "chore(deps): bump the npm-all group with 5 updates\n\nBumps the npm-all group with 5 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@react-email/render](https://github.com/resend/react-email/tree/HEAD/packages/render) | `2.0.9` | `2.0.10` |\n| [shiki](https://github.com/shikijs/shiki/tree/HEAD/packages/shiki) | `4.3.0` | `4.3.1` |\n| [@shikijs/rehype](https://github.com/shikijs/shiki/tree/HEAD/packages/rehype) | `4.3.0` | `4.3.1` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `6.6.5` | `6.6.6` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.106.0` | `4.107.0` |\n\n\nUpdates `@react-email/render` from 2.0.9 to 2.0.10\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/render/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/@react-email/render@2.0.10/packages/render)\n\nUpdates `shiki` from 4.3.0 to 4.3.1\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.3.1/packages/shiki)\n\nUpdates `@shikijs/rehype` from 4.3.0 to 4.3.1\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.3.1/packages/rehype)\n\nUpdates `react-email` from 6.6.5 to 6.6.6\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.6.6/packages/react-email)\n\nUpdates `wrangler` from 4.106.0 to 4.107.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.107.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@react-email/render\"\n  dependency-version: 2.0.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: shiki\n  dependency-version: 4.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@shikijs/rehype\"\n  dependency-version: 4.3.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.6.6\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.107.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-07-03T16:00:09Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-07-03T16:00:09Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7184eb68a78eba983b463c8bba7993faf2f7215d"
-    },
-    {
-      "sha": "8c1c7f3",
-      "sha_full": "8c1c7f3766b12b263f6ecea7c44f7bec0b8b9bce",
-      "message": "Merge pull request #103 from musemvp/dependabot/npm_and_yarn/npm-all-1d62d70b83",
-      "message_full": "Merge pull request #103 from musemvp/dependabot/npm_and_yarn/npm-all-1d62d70b83\n\nchore(deps): bump the npm-all group with 5 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-03T09:50:56Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-03T09:50:56Z",
-      "url": "https://github.com/musemvp/musemvp/commit/8c1c7f3766b12b263f6ecea7c44f7bec0b8b9bce"
-    },
-    {
-      "sha": "b127c4c",
-      "sha_full": "b127c4ce6d0a69763f0427fbd80bee84c641c3cf",
-      "message": "chore(deps): bump the npm-all group with 5 updates",
-      "message_full": "chore(deps): bump the npm-all group with 5 updates\n\nBumps the npm-all group with 5 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@next/third-parties](https://github.com/vercel/next.js/tree/HEAD/packages/third-parties) | `16.2.9` | `16.2.10` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.11.7` | `0.11.8` |\n| [next](https://github.com/vercel/next.js) | `16.2.9` | `16.2.10` |\n| [react-easy-crop](https://github.com/ValentinH/react-easy-crop) | `6.0.2` | `6.1.0` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.23.0` | `6.24.0` |\n\n\nUpdates `@next/third-parties` from 16.2.9 to 16.2.10\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Commits](https://github.com/vercel/next.js/commits/v16.2.10/packages/third-parties)\n\nUpdates `@scalar/hono-api-reference` from 0.11.7 to 0.11.8\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `next` from 16.2.9 to 16.2.10\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Commits](https://github.com/vercel/next.js/compare/v16.2.9...v16.2.10)\n\nUpdates `react-easy-crop` from 6.0.2 to 6.1.0\n- [Release notes](https://github.com/ValentinH/react-easy-crop/releases)\n- [Commits](https://github.com/ValentinH/react-easy-crop/compare/v6.0.2...v6.1.0)\n\nUpdates `knip` from 6.23.0 to 6.24.0\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.24.0/packages/knip)\n\n---\nupdated-dependencies:\n- dependency-name: \"@next/third-parties\"\n  dependency-version: 16.2.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.11.8\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: next\n  dependency-version: 16.2.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-easy-crop\n  dependency-version: 6.1.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.24.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-07-02T16:00:48Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-07-02T16:00:48Z",
-      "url": "https://github.com/musemvp/musemvp/commit/b127c4ce6d0a69763f0427fbd80bee84c641c3cf"
-    },
-    {
-      "sha": "18b723b",
-      "sha_full": "18b723b20d38f2b43f20fce6d3cb518a1f4c2b7c",
-      "message": "Merge pull request #102 from musemvp/feat/storage-asset-management",
-      "message_full": "Merge pull request #102 from musemvp/feat/storage-asset-management\n\nFeat/storage asset management",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-02T11:28:25Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-02T11:28:25Z",
-      "url": "https://github.com/musemvp/musemvp/commit/18b723b20d38f2b43f20fce6d3cb518a1f4c2b7c"
-    },
-    {
-      "sha": "3fe9775",
-      "sha_full": "3fe977547f56cfd10b28af41473586db89b1d72a",
-      "message": "feat(assets): enhance asset preview functionality in AssetActionsMenu",
-      "message_full": "feat(assets): enhance asset preview functionality in AssetActionsMenu\n\n- Integrated user session check to restrict preview access for unauthenticated users.\n- Updated preview handling to directly open asset URLs if they are valid.\n- Constructed preview URLs using a proxy prefix for user-specific assets.\n\nThis improves the user experience by ensuring only authorized users can access asset previews and streamlining the preview process.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-02T11:25:31Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-02T11:25:31Z",
-      "url": "https://github.com/musemvp/musemvp/commit/3fe977547f56cfd10b28af41473586db89b1d72a"
-    },
-    {
-      "sha": "94c8cea",
-      "sha_full": "94c8cea61bd528035d0e66c249678db0f7ca6427",
-      "message": "feat(storage): add storage asset management settings page",
-      "message_full": "feat(storage): add storage asset management settings page\n\n- Add /api/assets Hono routes (list, usage, download-url, bulk delete)\n  with per-user key prefix enforcement and traversal-safe key validation\n- Extend s3mini storage client with paged listing, capped full listing,\n  bulk delete, and signed GET download URLs\n- Add /app/settings/storage page (fills the reserved storage settings\n  slot) with asset table, preview/download, selection-based bulk delete,\n  and storage-not-configured empty state\n- Register sidebar and profile dropdown navigation entries using the\n  existing settings.menu.account.storage label\n- Add settings.account.storage i18n copy for en and zh\n- Cover key validation, prefix scoping, and disposition sanitizing with\n  unit tests; extend session-guard contract and member-routes e2e smoke\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-02T09:45:02Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-02T09:45:02Z",
-      "url": "https://github.com/musemvp/musemvp/commit/94c8cea61bd528035d0e66c249678db0f7ca6427"
-    },
-    {
-      "sha": "0ead901",
-      "sha_full": "0ead9019935fbb944702b01cbd0e0d6ca3aa6c19",
-      "message": "feat(api-keys): enhance API key management interface",
-      "message_full": "feat(api-keys): enhance API key management interface\n\n- Added a new API key actions menu for managing and deleting keys.\n- Introduced a table view for displaying API keys with relevant details.\n- Implemented a dialog for testing API keys with user feedback on validation results.\n- Updated translations for English and Chinese to reflect new UI elements and actions.\n\nThis update improves the user experience for managing API keys in the settings section.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-02T08:11:16Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-02T08:11:16Z",
-      "url": "https://github.com/musemvp/musemvp/commit/0ead9019935fbb944702b01cbd0e0d6ca3aa6c19"
-    },
-    {
-      "sha": "650652e",
-      "sha_full": "650652eaca246d005ed87ed6ef1e3e529fb5be04",
-      "message": "refactor(auth): improve layout of password input and forgot password link in LoginFormMailOTP",
-      "message_full": "refactor(auth): improve layout of password input and forgot password link in LoginFormMailOTP\n\nUpdated the LoginFormMailOTP component to enhance the user interface by adjusting the layout of the password input field and repositioning the \"Forgot Password\" link for better accessibility and usability. The link is now positioned absolutely within the form item for a cleaner design.\n\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-02T07:49:49Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-02T07:49:49Z",
-      "url": "https://github.com/musemvp/musemvp/commit/650652eaca246d005ed87ed6ef1e3e529fb5be04"
-    },
-    {
-      "sha": "ae92181",
-      "sha_full": "ae921817d5536f136ce6d9b8021e27699b0e675e",
-      "message": "Merge pull request #101 from musemvp/dependabot/npm_and_yarn/npm-all-364e0f0f42",
-      "message_full": "Merge pull request #101 from musemvp/dependabot/npm_and_yarn/npm-all-364e0f0f42\n\nchore(deps): bump the npm-all group with 33 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-02T05:42:50Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-02T05:42:50Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ae921817d5536f136ce6d9b8021e27699b0e675e"
-    },
-    {
-      "sha": "54ca5fb",
-      "sha_full": "54ca5fb67bd24362aaf7ab153f594b50027f2c81",
-      "message": "chore(deps): bump the npm-all group with 33 updates",
-      "message_full": "chore(deps): bump the npm-all group with 33 updates\n\nBumps the npm-all group with 33 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@radix-ui/react-accordion](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/accordion) | `1.2.14` | `1.2.15` |\n| [@radix-ui/react-alert-dialog](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/alert-dialog) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-aspect-ratio](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/aspect-ratio) | `1.1.10` | `1.1.11` |\n| [@radix-ui/react-avatar](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/avatar) | `1.2.0` | `1.2.1` |\n| [@radix-ui/react-checkbox](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/checkbox) | `1.3.5` | `1.3.6` |\n| [@radix-ui/react-collapsible](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/collapsible) | `1.1.14` | `1.1.15` |\n| [@radix-ui/react-context-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/context-menu) | `2.3.1` | `2.3.2` |\n| [@radix-ui/react-dialog](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/dialog) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-dropdown-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/dropdown-menu) | `2.1.18` | `2.1.19` |\n| [@radix-ui/react-hover-card](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/hover-card) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-label](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/label) | `2.1.10` | `2.1.11` |\n| [@radix-ui/react-menubar](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/menubar) | `1.1.18` | `1.1.19` |\n| [@radix-ui/react-navigation-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/navigation-menu) | `1.2.16` | `1.2.17` |\n| [@radix-ui/react-popover](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/popover) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-progress](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/progress) | `1.1.10` | `1.1.11` |\n| [@radix-ui/react-radio-group](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/radio-group) | `1.4.1` | `1.4.2` |\n| [@radix-ui/react-scroll-area](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/scroll-area) | `1.2.12` | `1.2.13` |\n| [@radix-ui/react-select](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/select) | `2.3.1` | `2.3.2` |\n| [@radix-ui/react-separator](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/separator) | `1.1.10` | `1.1.11` |\n| [@radix-ui/react-slider](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/slider) | `1.4.1` | `1.4.2` |\n| [@radix-ui/react-switch](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/switch) | `1.3.1` | `1.3.2` |\n| [@radix-ui/react-tabs](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/tabs) | `1.1.15` | `1.1.16` |\n| [@radix-ui/react-toggle](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/toggle) | `1.1.12` | `1.1.13` |\n| [@radix-ui/react-toggle-group](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/toggle-group) | `1.1.13` | `1.1.14` |\n| [@radix-ui/react-tooltip](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/tooltip) | `1.2.10` | `1.2.11` |\n| [@wrksz/themes](https://github.com/jakubwarkusz/themes) | `0.9.6` | `0.9.7` |\n| [cookie](https://github.com/jshttp/cookie) | `2.0.0` | `2.0.1` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `1.22.0` | `1.23.0` |\n| [motion](https://github.com/motiondivision/motion) | `12.42.1` | `12.42.2` |\n| [radix-ui](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/radix-ui) | `1.6.0` | `1.6.1` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.5.1` | `2.5.2` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.0.1` | `26.1.0` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.105.0` | `4.106.0` |\n\n\nUpdates `@radix-ui/react-accordion` from 1.2.14 to 1.2.15\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/accordion/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/accordion)\n\nUpdates `@radix-ui/react-alert-dialog` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/alert-dialog/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/alert-dialog)\n\nUpdates `@radix-ui/react-aspect-ratio` from 1.1.10 to 1.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/aspect-ratio/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/aspect-ratio)\n\nUpdates `@radix-ui/react-avatar` from 1.2.0 to 1.2.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/avatar/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/avatar)\n\nUpdates `@radix-ui/react-checkbox` from 1.3.5 to 1.3.6\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/checkbox/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/checkbox)\n\nUpdates `@radix-ui/react-collapsible` from 1.1.14 to 1.1.15\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/collapsible/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/collapsible)\n\nUpdates `@radix-ui/react-context-menu` from 2.3.1 to 2.3.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/context-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/context-menu)\n\nUpdates `@radix-ui/react-dialog` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/dialog/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/dialog)\n\nUpdates `@radix-ui/react-dropdown-menu` from 2.1.18 to 2.1.19\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/dropdown-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/dropdown-menu)\n\nUpdates `@radix-ui/react-hover-card` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/hover-card/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/hover-card)\n\nUpdates `@radix-ui/react-label` from 2.1.10 to 2.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/label/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/label)\n\nUpdates `@radix-ui/react-menubar` from 1.1.18 to 1.1.19\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/menubar/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/menubar)\n\nUpdates `@radix-ui/react-navigation-menu` from 1.2.16 to 1.2.17\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/navigation-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/navigation-menu)\n\nUpdates `@radix-ui/react-popover` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/popover/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/popover)\n\nUpdates `@radix-ui/react-progress` from 1.1.10 to 1.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/progress/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/progress)\n\nUpdates `@radix-ui/react-radio-group` from 1.4.1 to 1.4.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/radio-group/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/radio-group)\n\nUpdates `@radix-ui/react-scroll-area` from 1.2.12 to 1.2.13\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/scroll-area/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/scroll-area)\n\nUpdates `@radix-ui/react-select` from 2.3.1 to 2.3.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/select/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/select)\n\nUpdates `@radix-ui/react-separator` from 1.1.10 to 1.1.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/separator/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/separator)\n\nUpdates `@radix-ui/react-slider` from 1.4.1 to 1.4.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/slider/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/slider)\n\nUpdates `@radix-ui/react-switch` from 1.3.1 to 1.3.2\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/switch/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/switch)\n\nUpdates `@radix-ui/react-tabs` from 1.1.15 to 1.1.16\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/tabs/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/tabs)\n\nUpdates `@radix-ui/react-toggle` from 1.1.12 to 1.1.13\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/toggle/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/toggle)\n\nUpdates `@radix-ui/react-toggle-group` from 1.1.13 to 1.1.14\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/toggle-group/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/toggle-group)\n\nUpdates `@radix-ui/react-tooltip` from 1.2.10 to 1.2.11\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/tooltip/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/tooltip)\n\nUpdates `@wrksz/themes` from 0.9.6 to 0.9.7\n- [Release notes](https://github.com/jakubwarkusz/themes/releases)\n- [Commits](https://github.com/jakubwarkusz/themes/compare/v0.9.6...v0.9.7)\n\nUpdates `cookie` from 2.0.0 to 2.0.1\n- [Release notes](https://github.com/jshttp/cookie/releases)\n- [Commits](https://github.com/jshttp/cookie/compare/v2.0.0...v2.0.1)\n\nUpdates `lucide-react` from 1.22.0 to 1.23.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.23.0/packages/lucide-react)\n\nUpdates `motion` from 12.42.1 to 12.42.2\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.42.1...v12.42.2)\n\nUpdates `radix-ui` from 1.6.0 to 1.6.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/radix-ui/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/radix-ui)\n\nUpdates `@biomejs/biome` from 2.5.1 to 2.5.2\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.5.2/packages/@biomejs/biome)\n\nUpdates `@types/node` from 26.0.1 to 26.1.0\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `wrangler` from 4.105.0 to 4.106.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.106.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@radix-ui/react-accordion\"\n  dependency-version: 1.2.15\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-alert-dialog\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-aspect-ratio\"\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-avatar\"\n  dependency-version: 1.2.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-checkbox\"\n  dependency-version: 1.3.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-collapsible\"\n  dependency-version: 1.1.15\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-context-menu\"\n  dependency-version: 2.3.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-dialog\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-dropdown-menu\"\n  dependency-version: 2.1.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-hover-card\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-label\"\n  dependency-version: 2.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-menubar\"\n  dependency-version: 1.1.19\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-navigation-menu\"\n  dependency-version: 1.2.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-popover\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-progress\"\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-radio-group\"\n  dependency-version: 1.4.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-scroll-area\"\n  dependency-version: 1.2.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-select\"\n  dependency-version: 2.3.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-separator\"\n  dependency-version: 1.1.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-slider\"\n  dependency-version: 1.4.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-switch\"\n  dependency-version: 1.3.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-tabs\"\n  dependency-version: 1.1.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-toggle\"\n  dependency-version: 1.1.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-toggle-group\"\n  dependency-version: 1.1.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-tooltip\"\n  dependency-version: 1.2.11\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@wrksz/themes\"\n  dependency-version: 0.9.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: cookie\n  dependency-version: 2.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.23.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.42.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: radix-ui\n  dependency-version: 1.6.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.5.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 26.1.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.106.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-07-01T16:16:49Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-07-01T16:16:49Z",
-      "url": "https://github.com/musemvp/musemvp/commit/54ca5fb67bd24362aaf7ab153f594b50027f2c81"
-    },
-    {
-      "sha": "6cff4a9",
-      "sha_full": "6cff4a9225cbd4ea9d5ae2345b6c1214a8cea871",
-      "message": "Merge pull request #100 from musemvp/dependabot/npm_and_yarn/npm-all-c21a70ee7d",
-      "message_full": "Merge pull request #100 from musemvp/dependabot/npm_and_yarn/npm-all-c21a70ee7d\n\nchore(deps): bump the npm-all group with 7 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-07-01T03:30:02Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-07-01T03:30:02Z",
-      "url": "https://github.com/musemvp/musemvp/commit/6cff4a9225cbd4ea9d5ae2345b6c1214a8cea871"
-    },
-    {
-      "sha": "1eb83de",
-      "sha_full": "1eb83defd72f08804e3a49cd59214cbe3f653bdd",
-      "message": "chore(deps): bump the npm-all group with 7 updates",
-      "message_full": "chore(deps): bump the npm-all group with 7 updates\n\nBumps the npm-all group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@hono/standard-validator](https://github.com/honojs/middleware/tree/HEAD/packages/standard-validator) | `0.2.2` | `0.2.3` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.11.6` | `0.11.7` |\n| [motion](https://github.com/motiondivision/motion) | `12.42.0` | `12.42.1` |\n| [next-intl](https://github.com/amannn/next-intl) | `4.13.0` | `4.13.1` |\n| [nuqs](https://github.com/47ng/nuqs/tree/HEAD/packages/nuqs) | `2.8.9` | `2.9.0` |\n| [recharts](https://github.com/recharts/recharts) | `3.9.0` | `3.9.1` |\n| [use-intl](https://github.com/amannn/next-intl) | `4.13.0` | `4.13.1` |\n\n\nUpdates `@hono/standard-validator` from 0.2.2 to 0.2.3\n- [Release notes](https://github.com/honojs/middleware/releases)\n- [Changelog](https://github.com/honojs/middleware/blob/main/packages/standard-validator/CHANGELOG.md)\n- [Commits](https://github.com/honojs/middleware/commits/@hono/standard-validator@0.2.3/packages/standard-validator)\n\nUpdates `@scalar/hono-api-reference` from 0.11.6 to 0.11.7\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `motion` from 12.42.0 to 12.42.1\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.42.0...v12.42.1)\n\nUpdates `next-intl` from 4.13.0 to 4.13.1\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.13.0...v4.13.1)\n\nUpdates `nuqs` from 2.8.9 to 2.9.0\n- [Release notes](https://github.com/47ng/nuqs/releases)\n- [Commits](https://github.com/47ng/nuqs/commits/v2.9.0/packages/nuqs)\n\nUpdates `recharts` from 3.9.0 to 3.9.1\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.9.0...v3.9.1)\n\nUpdates `use-intl` from 4.13.0 to 4.13.1\n- [Release notes](https://github.com/amannn/next-intl/releases)\n- [Changelog](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/amannn/next-intl/compare/v4.13.0...v4.13.1)\n\n---\nupdated-dependencies:\n- dependency-name: \"@hono/standard-validator\"\n  dependency-version: 0.2.3\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.11.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.42.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: next-intl\n  dependency-version: 4.13.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: nuqs\n  dependency-version: 2.9.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.9.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: use-intl\n  dependency-version: 4.13.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-06-30T16:01:02Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-06-30T16:01:02Z",
-      "url": "https://github.com/musemvp/musemvp/commit/1eb83defd72f08804e3a49cd59214cbe3f653bdd"
-    },
-    {
-      "sha": "4d6fe97",
-      "sha_full": "4d6fe97679453cfc604047dc4c5f9846b47c4add",
-      "message": "Merge pull request #99 from musemvp/dependabot/npm_and_yarn/npm-all-d7f699dcfb",
-      "message_full": "Merge pull request #99 from musemvp/dependabot/npm_and_yarn/npm-all-d7f699dcfb\n\nchore(deps): bump the npm-all group with 29 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-30T13:25:18Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-30T13:25:18Z",
-      "url": "https://github.com/musemvp/musemvp/commit/4d6fe97679453cfc604047dc4c5f9846b47c4add"
-    },
-    {
-      "sha": "7e20209",
-      "sha_full": "7e2020993f5d8d113fc8c8948f93b78b94c24238",
-      "message": "fix(auth): update cookie import for cookie@2 breaking change",
-      "message_full": "fix(auth): update cookie import for cookie@2 breaking change\n\nThe cookie package v2.0.0 renamed the parse export to parseCookie.\nUpdate the import in auth.ts to fix the Turbopack build failure.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-30T13:19:40Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-30T13:19:40Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7e2020993f5d8d113fc8c8948f93b78b94c24238"
-    },
-    {
-      "sha": "d2e78db",
-      "sha_full": "d2e78db6ecf70c9a648c51070db54adc97d9cb6f",
-      "message": "chore(deps): bump the npm-all group with 29 updates",
-      "message_full": "chore(deps): bump the npm-all group with 29 updates\n\nBumps the npm-all group with 29 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@better-auth/api-key](https://github.com/better-auth/better-auth/tree/HEAD/packages/api-key) | `1.6.20` | `1.6.23` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.11.4` | `0.11.6` |\n| [@tanstack/react-query](https://github.com/TanStack/query/tree/HEAD/packages/react-query) | `5.101.0` | `5.101.2` |\n| [@wrksz/themes](https://github.com/jakubwarkusz/themes) | `0.9.3` | `0.9.6` |\n| [better-auth](https://github.com/better-auth/better-auth/tree/HEAD/packages/better-auth) | `1.6.20` | `1.6.23` |\n| [cookie](https://github.com/jshttp/cookie) | `1.1.1` | `2.0.0` |\n| [dodopayments](https://github.com/dodopayments/dodopayments-typescript) | `2.39.1` | `2.40.1` |\n| [fumadocs-core](https://github.com/fuma-nama/fumadocs) | `16.10.5` | `16.10.7` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `15.0.12` | `15.0.13` |\n| [fumadocs-ui](https://github.com/fuma-nama/fumadocs) | `16.10.5` | `16.10.7` |\n| [hono](https://github.com/honojs/hono) | `4.12.26` | `4.12.27` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `1.21.0` | `1.22.0` |\n| [motion](https://github.com/motiondivision/motion) | `12.40.0` | `12.42.0` |\n| [nanoid](https://github.com/ai/nanoid) | `5.1.15` | `5.1.16` |\n| [recharts](https://github.com/recharts/recharts) | `3.8.1` | `3.9.0` |\n| [resend](https://github.com/resend/resend-node) | `6.14.0` | `6.16.0` |\n| [shiki](https://github.com/shikijs/shiki/tree/HEAD/packages/shiki) | `4.2.0` | `4.3.0` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.5.0` | `2.5.1` |\n| [@opennextjs/cloudflare](https://github.com/opennextjs/opennextjs-cloudflare/tree/HEAD/packages/cloudflare) | `1.19.11` | `1.20.1` |\n| [@playwright/test](https://github.com/microsoft/playwright) | `1.61.0` | `1.61.1` |\n| [@shikijs/rehype](https://github.com/shikijs/shiki/tree/HEAD/packages/rehype) | `4.2.0` | `4.3.0` |\n| [@tailwindcss/postcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/@tailwindcss-postcss) | `4.3.1` | `4.3.2` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `26.0.0` | `26.0.1` |\n| [autoprefixer](https://github.com/postcss/autoprefixer) | `10.5.0` | `10.5.2` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.17.2` | `6.23.0` |\n| [postcss](https://github.com/postcss/postcss) | `8.5.15` | `8.5.16` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `6.6.3` | `6.6.5` |\n| [tailwindcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/tailwindcss) | `4.3.1` | `4.3.2` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.103.0` | `4.105.0` |\n\n\nUpdates `@better-auth/api-key` from 1.6.20 to 1.6.23\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/api-key/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/v1.6.23/packages/api-key)\n\nUpdates `@scalar/hono-api-reference` from 0.11.4 to 0.11.6\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `@tanstack/react-query` from 5.101.0 to 5.101.2\n- [Release notes](https://github.com/TanStack/query/releases)\n- [Changelog](https://github.com/TanStack/query/blob/main/packages/react-query/CHANGELOG.md)\n- [Commits](https://github.com/TanStack/query/commits/@tanstack/react-query@5.101.2/packages/react-query)\n\nUpdates `@wrksz/themes` from 0.9.3 to 0.9.6\n- [Release notes](https://github.com/jakubwarkusz/themes/releases)\n- [Commits](https://github.com/jakubwarkusz/themes/compare/v0.9.3...v0.9.6)\n\nUpdates `better-auth` from 1.6.20 to 1.6.23\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/better-auth/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/v1.6.23/packages/better-auth)\n\nUpdates `cookie` from 1.1.1 to 2.0.0\n- [Release notes](https://github.com/jshttp/cookie/releases)\n- [Commits](https://github.com/jshttp/cookie/compare/v1.1.1...v2.0.0)\n\nUpdates `dodopayments` from 2.39.1 to 2.40.1\n- [Release notes](https://github.com/dodopayments/dodopayments-typescript/releases)\n- [Changelog](https://github.com/dodopayments/dodopayments-typescript/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/dodopayments/dodopayments-typescript/compare/v2.39.1...v2.40.1)\n\nUpdates `fumadocs-core` from 16.10.5 to 16.10.7\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs@16.10.5...fumadocs@16.10.7)\n\nUpdates `fumadocs-mdx` from 15.0.12 to 15.0.13\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@15.0.12...fumadocs-mdx@15.0.13)\n\nUpdates `fumadocs-ui` from 16.10.5 to 16.10.7\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs@16.10.5...fumadocs@16.10.7)\n\nUpdates `hono` from 4.12.26 to 4.12.27\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.12.26...v4.12.27)\n\nUpdates `lucide-react` from 1.21.0 to 1.22.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.22.0/packages/lucide-react)\n\nUpdates `motion` from 12.40.0 to 12.42.0\n- [Changelog](https://github.com/motiondivision/motion/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/motiondivision/motion/compare/v12.40.0...v12.42.0)\n\nUpdates `nanoid` from 5.1.15 to 5.1.16\n- [Release notes](https://github.com/ai/nanoid/releases)\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ai/nanoid/compare/5.1.15...5.1.16)\n\nUpdates `recharts` from 3.8.1 to 3.9.0\n- [Release notes](https://github.com/recharts/recharts/releases)\n- [Changelog](https://github.com/recharts/recharts/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/recharts/recharts/compare/v3.8.1...v3.9.0)\n\nUpdates `resend` from 6.14.0 to 6.16.0\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/compare/v6.14.0...v6.16.0)\n\nUpdates `shiki` from 4.2.0 to 4.3.0\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.3.0/packages/shiki)\n\nUpdates `@biomejs/biome` from 2.5.0 to 2.5.1\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.5.1/packages/@biomejs/biome)\n\nUpdates `@opennextjs/cloudflare` from 1.19.11 to 1.20.1\n- [Release notes](https://github.com/opennextjs/opennextjs-cloudflare/releases)\n- [Changelog](https://github.com/opennextjs/opennextjs-cloudflare/blob/main/packages/cloudflare/CHANGELOG.md)\n- [Commits](https://github.com/opennextjs/opennextjs-cloudflare/commits/@opennextjs/cloudflare@1.20.1/packages/cloudflare)\n\nUpdates `@playwright/test` from 1.61.0 to 1.61.1\n- [Release notes](https://github.com/microsoft/playwright/releases)\n- [Commits](https://github.com/microsoft/playwright/compare/v1.61.0...v1.61.1)\n\nUpdates `@shikijs/rehype` from 4.2.0 to 4.3.0\n- [Release notes](https://github.com/shikijs/shiki/releases)\n- [Commits](https://github.com/shikijs/shiki/commits/v4.3.0/packages/rehype)\n\nUpdates `@tailwindcss/postcss` from 4.3.1 to 4.3.2\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.2/packages/@tailwindcss-postcss)\n\nUpdates `@types/node` from 26.0.0 to 26.0.1\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `autoprefixer` from 10.5.0 to 10.5.2\n- [Release notes](https://github.com/postcss/autoprefixer/releases)\n- [Changelog](https://github.com/postcss/autoprefixer/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/autoprefixer/compare/10.5.0...10.5.2)\n\nUpdates `knip` from 6.17.2 to 6.23.0\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.23.0/packages/knip)\n\nUpdates `postcss` from 8.5.15 to 8.5.16\n- [Release notes](https://github.com/postcss/postcss/releases)\n- [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss/compare/8.5.15...8.5.16)\n\nUpdates `react-email` from 6.6.3 to 6.6.5\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.6.5/packages/react-email)\n\nUpdates `tailwindcss` from 4.3.1 to 4.3.2\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.2/packages/tailwindcss)\n\nUpdates `wrangler` from 4.103.0 to 4.105.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.105.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@better-auth/api-key\"\n  dependency-version: 1.6.23\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.11.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@tanstack/react-query\"\n  dependency-version: 5.101.2\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@wrksz/themes\"\n  dependency-version: 0.9.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: better-auth\n  dependency-version: 1.6.23\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: cookie\n  dependency-version: 2.0.0\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: dodopayments\n  dependency-version: 2.40.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-core\n  dependency-version: 16.10.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 15.0.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-ui\n  dependency-version: 16.10.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.27\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.22.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: motion\n  dependency-version: 12.42.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: nanoid\n  dependency-version: 5.1.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: recharts\n  dependency-version: 3.9.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.16.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: shiki\n  dependency-version: 4.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.5.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@opennextjs/cloudflare\"\n  dependency-version: 1.20.1\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@playwright/test\"\n  dependency-version: 1.61.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@shikijs/rehype\"\n  dependency-version: 4.3.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@tailwindcss/postcss\"\n  dependency-version: 4.3.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 26.0.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: autoprefixer\n  dependency-version: 10.5.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.23.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: postcss\n  dependency-version: 8.5.16\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.6.5\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: tailwindcss\n  dependency-version: 4.3.2\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.105.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-06-30T02:33:11Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-06-30T02:33:11Z",
-      "url": "https://github.com/musemvp/musemvp/commit/d2e78db6ecf70c9a648c51070db54adc97d9cb6f"
-    },
-    {
-      "sha": "4095875",
-      "sha_full": "4095875b563bb581ac1c11c19214a870d1b8eb48",
-      "message": "Merge pull request #97 from musemvp/dependabot/npm_and_yarn/npm-all-8af64652fe",
-      "message_full": "Merge pull request #97 from musemvp/dependabot/npm_and_yarn/npm-all-8af64652fe\n\nchore(deps): bump the npm-all group across 1 directory with 56 updates",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-26T09:24:15Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-26T09:24:15Z",
-      "url": "https://github.com/musemvp/musemvp/commit/4095875b563bb581ac1c11c19214a870d1b8eb48"
-    },
-    {
-      "sha": "40b3f26",
-      "sha_full": "40b3f265345373b32a03fc65afdb1b0819fcf37c",
-      "message": "feat(config): add CPU limit to wrangler configuration",
-      "message_full": "feat(config): add CPU limit to wrangler configuration\n\nIntroduce a new \"limits\" section in the wrangler.jsonc file to set a CPU time limit of 300,000 milliseconds, enhancing resource management for the application.\n\nCo-authored-by: wztlink1013 <wztlink1013@163.com>\nCo-authored-by: Cursor Agent <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-06-25T05:25:26Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-06-25T05:25:26Z",
-      "url": "https://github.com/musemvp/musemvp/commit/40b3f265345373b32a03fc65afdb1b0819fcf37c"
-    },
-    {
-      "sha": "b8fdb7f",
-      "sha_full": "b8fdb7f4d65dcb5cb7761fd1576140e2b8b85ff1",
-      "message": "chore(deps): bump the npm-all group across 1 directory with 56 updates",
-      "message_full": "chore(deps): bump the npm-all group across 1 directory with 56 updates\n\nBumps the npm-all group with 56 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@better-auth/api-key](https://github.com/better-auth/better-auth/tree/HEAD/packages/api-key) | `1.6.15` | `1.6.20` |\n| [@next/third-parties](https://github.com/vercel/next.js/tree/HEAD/packages/third-parties) | `16.2.7` | `16.2.9` |\n| [@radix-ui/react-accordion](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/accordion) | `1.2.13` | `1.2.14` |\n| [@radix-ui/react-alert-dialog](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/alert-dialog) | `1.1.16` | `1.1.17` |\n| [@radix-ui/react-aspect-ratio](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/aspect-ratio) | `1.1.9` | `1.1.10` |\n| [@radix-ui/react-avatar](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/avatar) | `1.1.12` | `1.2.0` |\n| [@radix-ui/react-checkbox](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/checkbox) | `1.3.4` | `1.3.5` |\n| [@radix-ui/react-collapsible](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/collapsible) | `1.1.13` | `1.1.14` |\n| [@radix-ui/react-context-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/context-menu) | `2.3.0` | `2.3.1` |\n| [@radix-ui/react-dialog](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/dialog) | `1.1.16` | `1.1.17` |\n| [@radix-ui/react-dropdown-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/dropdown-menu) | `2.1.17` | `2.1.18` |\n| [@radix-ui/react-hover-card](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/hover-card) | `1.1.16` | `1.1.17` |\n| [@radix-ui/react-label](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/label) | `2.1.9` | `2.1.10` |\n| [@radix-ui/react-menubar](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/menubar) | `1.1.17` | `1.1.18` |\n| [@radix-ui/react-navigation-menu](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/navigation-menu) | `1.2.15` | `1.2.16` |\n| [@radix-ui/react-popover](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/popover) | `1.1.16` | `1.1.17` |\n| [@radix-ui/react-progress](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/progress) | `1.1.9` | `1.1.10` |\n| [@radix-ui/react-radio-group](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/radio-group) | `1.4.0` | `1.4.1` |\n| [@radix-ui/react-scroll-area](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/scroll-area) | `1.2.11` | `1.2.12` |\n| [@radix-ui/react-select](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/select) | `2.3.0` | `2.3.1` |\n| [@radix-ui/react-separator](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/separator) | `1.1.9` | `1.1.10` |\n| [@radix-ui/react-slider](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/slider) | `1.4.0` | `1.4.1` |\n| [@radix-ui/react-slot](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/slot) | `1.2.5` | `1.3.0` |\n| [@radix-ui/react-switch](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/switch) | `1.3.0` | `1.3.1` |\n| [@radix-ui/react-tabs](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/tabs) | `1.1.14` | `1.1.15` |\n| [@radix-ui/react-toggle](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/toggle) | `1.1.11` | `1.1.12` |\n| [@radix-ui/react-toggle-group](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/toggle-group) | `1.1.12` | `1.1.13` |\n| [@radix-ui/react-tooltip](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/tooltip) | `1.2.9` | `1.2.10` |\n| [@react-email/render](https://github.com/resend/react-email/tree/HEAD/packages/render) | `2.0.8` | `2.0.9` |\n| [@scalar/hono-api-reference](https://github.com/scalar/scalar/tree/HEAD/integrations/hono) | `0.11.1` | `0.11.4` |\n| [better-auth](https://github.com/better-auth/better-auth/tree/HEAD/packages/better-auth) | `1.6.15` | `1.6.20` |\n| [dodopayments](https://github.com/dodopayments/dodopayments-typescript) | `2.36.0` | `2.39.1` |\n| [fumadocs-core](https://github.com/fuma-nama/fumadocs) | `16.9.3` | `16.10.5` |\n| [fumadocs-mdx](https://github.com/fuma-nama/fumadocs) | `15.0.11` | `15.0.12` |\n| [fumadocs-ui](https://github.com/fuma-nama/fumadocs) | `16.9.3` | `16.10.5` |\n| [hono](https://github.com/honojs/hono) | `4.12.25` | `4.12.26` |\n| [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react) | `1.17.0` | `1.21.0` |\n| [nanoid](https://github.com/ai/nanoid) | `5.1.11` | `5.1.15` |\n| [next](https://github.com/vercel/next.js) | `16.2.7` | `16.2.9` |\n| [radix-ui](https://github.com/radix-ui/primitives/tree/HEAD/packages/react/radix-ui) | `1.5.0` | `1.6.0` |\n| [react-easy-crop](https://github.com/ValentinH/react-easy-crop) | `5.5.7` | `6.0.2` |\n| [react-hook-form](https://github.com/react-hook-form/react-hook-form) | `7.78.0` | `7.80.0` |\n| [react-use](https://github.com/streamich/react-use) | `17.6.0` | `17.6.1` |\n| [resend](https://github.com/resend/resend-node) | `6.12.4` | `6.14.0` |\n| [uuid](https://github.com/uuidjs/uuid) | `14.0.0` | `14.0.1` |\n| [@biomejs/biome](https://github.com/biomejs/biome/tree/HEAD/packages/@biomejs/biome) | `2.4.16` | `2.5.0` |\n| [@playwright/test](https://github.com/microsoft/playwright) | `1.60.0` | `1.61.0` |\n| [@tailwindcss/postcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/@tailwindcss-postcss) | `4.3.0` | `4.3.1` |\n| [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) | `25.9.2` | `26.0.0` |\n| [@vitest/ui](https://github.com/vitest-dev/vitest/tree/HEAD/packages/ui) | `4.1.8` | `4.1.9` |\n| [knip](https://github.com/webpro-nl/knip/tree/HEAD/packages/knip) | `6.16.1` | `6.17.2` |\n| [react-email](https://github.com/resend/react-email/tree/HEAD/packages/react-email) | `6.6.0` | `6.6.3` |\n| [sass](https://github.com/sass/dart-sass) | `1.100.0` | `1.101.0` |\n| [tailwindcss](https://github.com/tailwindlabs/tailwindcss/tree/HEAD/packages/tailwindcss) | `4.3.0` | `4.3.1` |\n| [vitest](https://github.com/vitest-dev/vitest/tree/HEAD/packages/vitest) | `4.1.8` | `4.1.9` |\n| [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler) | `4.99.0` | `4.103.0` |\n\n\n\nUpdates `@better-auth/api-key` from 1.6.15 to 1.6.20\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/api-key/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/v1.6.20/packages/api-key)\n\nUpdates `@next/third-parties` from 16.2.7 to 16.2.9\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)\n- [Commits](https://github.com/vercel/next.js/commits/v16.2.9/packages/third-parties)\n\nUpdates `@radix-ui/react-accordion` from 1.2.13 to 1.2.14\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/accordion/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/accordion)\n\nUpdates `@radix-ui/react-alert-dialog` from 1.1.16 to 1.1.17\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/alert-dialog/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/alert-dialog)\n\nUpdates `@radix-ui/react-aspect-ratio` from 1.1.9 to 1.1.10\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/aspect-ratio/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/aspect-ratio)\n\nUpdates `@radix-ui/react-avatar` from 1.1.12 to 1.2.0\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/avatar/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/avatar)\n\nUpdates `@radix-ui/react-checkbox` from 1.3.4 to 1.3.5\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/checkbox/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/checkbox)\n\nUpdates `@radix-ui/react-collapsible` from 1.1.13 to 1.1.14\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/collapsible/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/collapsible)\n\nUpdates `@radix-ui/react-context-menu` from 2.3.0 to 2.3.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/context-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/context-menu)\n\nUpdates `@radix-ui/react-dialog` from 1.1.16 to 1.1.17\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/dialog/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/dialog)\n\nUpdates `@radix-ui/react-dropdown-menu` from 2.1.17 to 2.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/dropdown-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/dropdown-menu)\n\nUpdates `@radix-ui/react-hover-card` from 1.1.16 to 1.1.17\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/hover-card/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/hover-card)\n\nUpdates `@radix-ui/react-label` from 2.1.9 to 2.1.10\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/label/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/label)\n\nUpdates `@radix-ui/react-menubar` from 1.1.17 to 1.1.18\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/menubar/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/menubar)\n\nUpdates `@radix-ui/react-navigation-menu` from 1.2.15 to 1.2.16\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/navigation-menu/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/navigation-menu)\n\nUpdates `@radix-ui/react-popover` from 1.1.16 to 1.1.17\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/popover/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/popover)\n\nUpdates `@radix-ui/react-progress` from 1.1.9 to 1.1.10\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/progress/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/progress)\n\nUpdates `@radix-ui/react-radio-group` from 1.4.0 to 1.4.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/radio-group/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/radio-group)\n\nUpdates `@radix-ui/react-scroll-area` from 1.2.11 to 1.2.12\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/scroll-area/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/scroll-area)\n\nUpdates `@radix-ui/react-select` from 2.3.0 to 2.3.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/select/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/select)\n\nUpdates `@radix-ui/react-separator` from 1.1.9 to 1.1.10\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/separator/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/separator)\n\nUpdates `@radix-ui/react-slider` from 1.4.0 to 1.4.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/slider/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/slider)\n\nUpdates `@radix-ui/react-slot` from 1.2.5 to 1.3.0\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/slot/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/slot)\n\nUpdates `@radix-ui/react-switch` from 1.3.0 to 1.3.1\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/switch/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/switch)\n\nUpdates `@radix-ui/react-tabs` from 1.1.14 to 1.1.15\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/tabs/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/tabs)\n\nUpdates `@radix-ui/react-toggle` from 1.1.11 to 1.1.12\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/toggle/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/toggle)\n\nUpdates `@radix-ui/react-toggle-group` from 1.1.12 to 1.1.13\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/toggle-group/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/toggle-group)\n\nUpdates `@radix-ui/react-tooltip` from 1.2.9 to 1.2.10\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/tooltip/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/tooltip)\n\nUpdates `@react-email/render` from 2.0.8 to 2.0.9\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/render/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/@react-email/render@2.0.9/packages/render)\n\nUpdates `@scalar/hono-api-reference` from 0.11.1 to 0.11.4\n- [Release notes](https://github.com/scalar/scalar/releases)\n- [Changelog](https://github.com/scalar/scalar/blob/main/integrations/hono/CHANGELOG.md)\n- [Commits](https://github.com/scalar/scalar/commits/HEAD/integrations/hono)\n\nUpdates `better-auth` from 1.6.15 to 1.6.20\n- [Release notes](https://github.com/better-auth/better-auth/releases)\n- [Changelog](https://github.com/better-auth/better-auth/blob/main/packages/better-auth/CHANGELOG.md)\n- [Commits](https://github.com/better-auth/better-auth/commits/v1.6.20/packages/better-auth)\n\nUpdates `dodopayments` from 2.36.0 to 2.39.1\n- [Release notes](https://github.com/dodopayments/dodopayments-typescript/releases)\n- [Changelog](https://github.com/dodopayments/dodopayments-typescript/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/dodopayments/dodopayments-typescript/compare/v2.36.0...v2.39.1)\n\nUpdates `fumadocs-core` from 16.9.3 to 16.10.5\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-core@16.9.3...fumadocs@16.10.5)\n\nUpdates `fumadocs-mdx` from 15.0.11 to 15.0.12\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-mdx@15.0.11...fumadocs-mdx@15.0.12)\n\nUpdates `fumadocs-ui` from 16.9.3 to 16.10.5\n- [Release notes](https://github.com/fuma-nama/fumadocs/releases)\n- [Commits](https://github.com/fuma-nama/fumadocs/compare/fumadocs-ui@16.9.3...fumadocs@16.10.5)\n\nUpdates `hono` from 4.12.25 to 4.12.26\n- [Release notes](https://github.com/honojs/hono/releases)\n- [Commits](https://github.com/honojs/hono/compare/v4.12.25...v4.12.26)\n\nUpdates `lucide-react` from 1.17.0 to 1.21.0\n- [Release notes](https://github.com/lucide-icons/lucide/releases)\n- [Commits](https://github.com/lucide-icons/lucide/commits/1.21.0/packages/lucide-react)\n\nUpdates `nanoid` from 5.1.11 to 5.1.15\n- [Release notes](https://github.com/ai/nanoid/releases)\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/ai/nanoid/compare/5.1.11...5.1.15)\n\nUpdates `next` from 16.2.7 to 16.2.9\n- [Release notes](https://github.com/vercel/next.js/releases)\n- [Changelog](https://github.com/vercel/next.js/blob/canary/release.js)\n- [Commits](https://github.com/vercel/next.js/compare/v16.2.7...v16.2.9)\n\nUpdates `radix-ui` from 1.5.0 to 1.6.0\n- [Changelog](https://github.com/radix-ui/primitives/blob/main/packages/react/radix-ui/CHANGELOG.md)\n- [Commits](https://github.com/radix-ui/primitives/commits/HEAD/packages/react/radix-ui)\n\nUpdates `react-easy-crop` from 5.5.7 to 6.0.2\n- [Release notes](https://github.com/ValentinH/react-easy-crop/releases)\n- [Commits](https://github.com/ValentinH/react-easy-crop/compare/v5.5.7...v6.0.2)\n\nUpdates `react-hook-form` from 7.78.0 to 7.80.0\n- [Release notes](https://github.com/react-hook-form/react-hook-form/releases)\n- [Changelog](https://github.com/react-hook-form/react-hook-form/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/react-hook-form/react-hook-form/compare/v7.78.0...v7.80.0)\n\nUpdates `react-use` from 17.6.0 to 17.6.1\n- [Release notes](https://github.com/streamich/react-use/releases)\n- [Changelog](https://github.com/streamich/react-use/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/streamich/react-use/compare/v17.6.0...v17.6.1)\n\nUpdates `resend` from 6.12.4 to 6.14.0\n- [Release notes](https://github.com/resend/resend-node/releases)\n- [Commits](https://github.com/resend/resend-node/commits)\n\nUpdates `uuid` from 14.0.0 to 14.0.1\n- [Release notes](https://github.com/uuidjs/uuid/releases)\n- [Changelog](https://github.com/uuidjs/uuid/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/uuidjs/uuid/compare/v14.0.0...v14.0.1)\n\nUpdates `@biomejs/biome` from 2.4.16 to 2.5.0\n- [Release notes](https://github.com/biomejs/biome/releases)\n- [Changelog](https://github.com/biomejs/biome/blob/main/packages/@biomejs/biome/CHANGELOG.md)\n- [Commits](https://github.com/biomejs/biome/commits/@biomejs/biome@2.5.0/packages/@biomejs/biome)\n\nUpdates `@playwright/test` from 1.60.0 to 1.61.0\n- [Release notes](https://github.com/microsoft/playwright/releases)\n- [Commits](https://github.com/microsoft/playwright/compare/v1.60.0...v1.61.0)\n\nUpdates `@tailwindcss/postcss` from 4.3.0 to 4.3.1\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.1/packages/@tailwindcss-postcss)\n\nUpdates `@types/node` from 25.9.2 to 26.0.0\n- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)\n- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)\n\nUpdates `@vitest/ui` from 4.1.8 to 4.1.9\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.9/packages/ui)\n\nUpdates `knip` from 6.16.1 to 6.17.2\n- [Release notes](https://github.com/webpro-nl/knip/releases)\n- [Commits](https://github.com/webpro-nl/knip/commits/knip@6.17.2/packages/knip)\n\nUpdates `react-email` from 6.6.0 to 6.6.3\n- [Release notes](https://github.com/resend/react-email/releases)\n- [Changelog](https://github.com/resend/react-email/blob/canary/packages/react-email/CHANGELOG.md)\n- [Commits](https://github.com/resend/react-email/commits/react-email@6.6.3/packages/react-email)\n\nUpdates `sass` from 1.100.0 to 1.101.0\n- [Release notes](https://github.com/sass/dart-sass/releases)\n- [Changelog](https://github.com/sass/dart-sass/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/sass/dart-sass/compare/1.100.0...1.101.0)\n\nUpdates `tailwindcss` from 4.3.0 to 4.3.1\n- [Release notes](https://github.com/tailwindlabs/tailwindcss/releases)\n- [Changelog](https://github.com/tailwindlabs/tailwindcss/blob/main/CHANGELOG.md)\n- [Commits](https://github.com/tailwindlabs/tailwindcss/commits/v4.3.1/packages/tailwindcss)\n\nUpdates `vitest` from 4.1.8 to 4.1.9\n- [Release notes](https://github.com/vitest-dev/vitest/releases)\n- [Changelog](https://github.com/vitest-dev/vitest/blob/main/docs/releases.md)\n- [Commits](https://github.com/vitest-dev/vitest/commits/v4.1.9/packages/vitest)\n\nUpdates `wrangler` from 4.99.0 to 4.103.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.103.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@better-auth/api-key\"\n  dependency-version: 1.6.20\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@next/third-parties\"\n  dependency-version: 16.2.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-accordion\"\n  dependency-version: 1.2.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-alert-dialog\"\n  dependency-version: 1.1.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-aspect-ratio\"\n  dependency-version: 1.1.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-avatar\"\n  dependency-version: 1.2.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-checkbox\"\n  dependency-version: 1.3.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-collapsible\"\n  dependency-version: 1.1.14\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-context-menu\"\n  dependency-version: 2.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-dialog\"\n  dependency-version: 1.1.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-dropdown-menu\"\n  dependency-version: 2.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-hover-card\"\n  dependency-version: 1.1.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-label\"\n  dependency-version: 2.1.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-menubar\"\n  dependency-version: 1.1.18\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-navigation-menu\"\n  dependency-version: 1.2.16\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-popover\"\n  dependency-version: 1.1.17\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-progress\"\n  dependency-version: 1.1.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-radio-group\"\n  dependency-version: 1.4.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-scroll-area\"\n  dependency-version: 1.2.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-select\"\n  dependency-version: 2.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-separator\"\n  dependency-version: 1.1.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-slider\"\n  dependency-version: 1.4.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-slot\"\n  dependency-version: 1.3.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-switch\"\n  dependency-version: 1.3.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-tabs\"\n  dependency-version: 1.1.15\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-toggle\"\n  dependency-version: 1.1.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-toggle-group\"\n  dependency-version: 1.1.13\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@radix-ui/react-tooltip\"\n  dependency-version: 1.2.10\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@react-email/render\"\n  dependency-version: 2.0.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@scalar/hono-api-reference\"\n  dependency-version: 0.11.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: better-auth\n  dependency-version: 1.6.20\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: dodopayments\n  dependency-version: 2.39.1\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-core\n  dependency-version: 16.10.5\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: fumadocs-mdx\n  dependency-version: 15.0.12\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: fumadocs-ui\n  dependency-version: 16.10.5\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: hono\n  dependency-version: 4.12.26\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: lucide-react\n  dependency-version: 1.21.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: nanoid\n  dependency-version: 5.1.15\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: next\n  dependency-version: 16.2.9\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: radix-ui\n  dependency-version: 1.6.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-easy-crop\n  dependency-version: 6.0.2\n  dependency-type: direct:production\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: react-hook-form\n  dependency-version: 7.80.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-use\n  dependency-version: 17.6.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: resend\n  dependency-version: 6.14.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: uuid\n  dependency-version: 14.0.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@biomejs/biome\"\n  dependency-version: 2.5.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@playwright/test\"\n  dependency-version: 1.61.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: \"@tailwindcss/postcss\"\n  dependency-version: 4.3.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: \"@types/node\"\n  dependency-version: 26.0.0\n  dependency-type: direct:development\n  update-type: version-update:semver-major\n  dependency-group: npm-all\n- dependency-name: \"@vitest/ui\"\n  dependency-version: 4.1.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: knip\n  dependency-version: 6.17.2\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: react-email\n  dependency-version: 6.6.3\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: sass\n  dependency-version: 1.101.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n- dependency-name: tailwindcss\n  dependency-version: 4.3.1\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: vitest\n  dependency-version: 4.1.9\n  dependency-type: direct:development\n  update-type: version-update:semver-patch\n  dependency-group: npm-all\n- dependency-name: wrangler\n  dependency-version: 4.103.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: npm-all\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>",
-      "author": {
-        "name": "dependabot[bot]",
-        "email": "49699333+dependabot[bot]@users.noreply.github.com",
-        "date": "2026-06-22T16:25:31Z",
-        "github_login": "dependabot[bot]",
-        "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4"
-      },
-      "committed_at": "2026-06-22T16:25:31Z",
-      "url": "https://github.com/musemvp/musemvp/commit/b8fdb7f4d65dcb5cb7761fd1576140e2b8b85ff1"
     }
   ]
 }

@@ -6,6 +6,96 @@
   },
   "commits": [
     {
+      "sha": "e986446",
+      "sha_full": "e986446415f33d3f311666323fb2b724444df0e4",
+      "message": "fix: serve the default locale at the EdgeOne site root",
+      "message_full": "fix: serve the default locale at the EdgeOne site root\n\nRedirecting / to /en fights as-needed locale routing and loops RSC requests.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-09T09:15:53Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-09T09:15:53Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e986446415f33d3f311666323fb2b724444df0e4"
+    },
+    {
+      "sha": "6a2fe5c",
+      "sha_full": "6a2fe5c2565a660ab341b547e5d3f9d9f6f0adc1",
+      "message": "fix: skip the second Fumadocs init during EdgeOne builds",
+      "message_full": "fix: skip the second Fumadocs init during EdgeOne builds\n\nNext reloads source.config.mjs with a cache-bust query that Node cannot resolve.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-09T08:57:00Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-09T08:57:00Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6a2fe5c2565a660ab341b547e5d3f9d9f6f0adc1"
+    },
+    {
+      "sha": "7b40c3a",
+      "sha_full": "7b40c3ae1cdddf0570d4b3f30cb7bb58afe97071",
+      "message": "fix: generate MDX output and lower EdgeOne build memory",
+      "message_full": "fix: generate MDX output and lower EdgeOne build memory\n\nFumadocs .source is not in git, and the CI builder was killed after webpack compiled.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-09T08:40:21Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-09T08:40:21Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7b40c3ae1cdddf0570d4b3f30cb7bb58afe97071"
+    },
+    {
+      "sha": "c19ed83",
+      "sha_full": "c19ed830708cd41af71c690c7b5e8bc8d127eee7",
+      "message": "fix: install pnpm on EdgeOne CI with npx",
+      "message_full": "fix: install pnpm on EdgeOne CI with npx\n\nNode 22.11.0's bundled Corepack rejects the current pnpm release signature.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-09T08:30:55Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-09T08:30:55Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c19ed830708cd41af71c690c7b5e8bc8d127eee7"
+    },
+    {
+      "sha": "6f9fc37",
+      "sha_full": "6f9fc37bb8a5583bbef467cea33f73a51afb96f2",
+      "message": "fix: install pnpm on EdgeOne CI without corepack enable",
+      "message_full": "fix: install pnpm on EdgeOne CI without corepack enable\n\nThe build image cannot write shims into /usr/local/bin.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-09T08:18:44Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-09T08:18:44Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6f9fc37bb8a5583bbef467cea33f73a51afb96f2"
+    },
+    {
+      "sha": "97628dd",
+      "sha_full": "97628dd3a6d5b163a0c61b7321d73d50e85d402b",
+      "message": "feat: add a dedicated EdgeOne app for mainland deployment",
+      "message_full": "feat: add a dedicated EdgeOne app for mainland deployment\n\nKeep EdgeOne routing and deploy files out of the Vercel and Cloudflare apps.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-09T08:05:11Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-09T08:05:11Z",
+      "url": "https://github.com/musemvp/musemvp/commit/97628dd3a6d5b163a0c61b7321d73d50e85d402b"
+    },
+    {
       "sha": "10ab8d7",
       "sha_full": "10ab8d725e7ec964962bbda050c514ff18f84992",
       "message": "chore: update pnpm configuration and add patch for @opennextjs/cloudflare",
@@ -664,96 +754,6 @@
       },
       "committed_at": "2026-08-22T13:58:25Z",
       "url": "https://github.com/musemvp/musemvp/commit/93b3d02306acffa9f7dce6e69e1a49b1a327d201"
-    },
-    {
-      "sha": "fa1852e",
-      "sha_full": "fa1852e611c1f41791302756734613ffa743a5bb",
-      "message": "Merge pull request #128 from musemvp/refactor/template-refresh",
-      "message_full": "Merge pull request #128 from musemvp/refactor/template-refresh\n\nRefactor landing components, update dependencies, and enhance styles",
-      "author": {
-        "name": "尼采般地抒情",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T11:41:30Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T11:41:30Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fa1852e611c1f41791302756734613ffa743a5bb"
-    },
-    {
-      "sha": "29866ef",
-      "sha_full": "29866efb7f400ba40c34a5071d7609b976ec1ef5",
-      "message": "chore(database): update migration exclusions in biome.json and format schema.ts",
-      "message_full": "chore(database): update migration exclusions in biome.json and format schema.ts\n\nAdd exclusion for database migrations in biome.json to streamline build processes. Additionally, format the unique index definition in schema.ts for improved readability.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T11:39:20Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T11:39:20Z",
-      "url": "https://github.com/musemvp/musemvp/commit/29866efb7f400ba40c34a5071d7609b976ec1ef5"
-    },
-    {
-      "sha": "6842dc3",
-      "sha_full": "6842dc3d6cabc54ed0f9ac5a0a9038ec7a950ce9",
-      "message": "refactor(landing): simplify Hero component by removing unused highlights",
-      "message_full": "refactor(landing): simplify Hero component by removing unused highlights\n\nEliminate unnecessary icon highlights from the Hero component, streamlining the code and improving maintainability. The component now focuses on essential elements while retaining its core functionality.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T11:30:26Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T11:30:26Z",
-      "url": "https://github.com/musemvp/musemvp/commit/6842dc3d6cabc54ed0f9ac5a0a9038ec7a950ce9"
-    },
-    {
-      "sha": "cc27777",
-      "sha_full": "cc2777736b172db19d061665e13a2eb656d16e22",
-      "message": "refactor(i18n): merge translation namespaces into default.json",
-      "message_full": "refactor(i18n): merge translation namespaces into default.json\n\nKeep template copy in one default.json per locale and overlay empty mvp.json so derivative products do not edit upstream strings.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T11:29:50Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T11:29:50Z",
-      "url": "https://github.com/musemvp/musemvp/commit/cc2777736b172db19d061665e13a2eb656d16e22"
-    },
-    {
-      "sha": "6d71f03",
-      "sha_full": "6d71f03cc12497700c6e88e4134085091fc188a8",
-      "message": "feat(billing): add Waffo Pancake as a Muse Billing gateway",
-      "message_full": "feat(billing): add Waffo Pancake as a Muse Billing gateway\n\nKeep checkout, webhooks, and access on the existing adapter path so Waffo can be enabled alongside Creem, Stripe, and Dodo.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T10:55:58Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T10:55:58Z",
-      "url": "https://github.com/musemvp/musemvp/commit/6d71f03cc12497700c6e88e4134085091fc188a8"
-    },
-    {
-      "sha": "ee95a3b",
-      "sha_full": "ee95a3b2b4296d1604dc419e30498ab6e7a13bf4",
-      "message": "style(landing): center public layouts and drop discount codes",
-      "message_full": "style(landing): center public layouts and drop discount codes\n\nHero, FAQ, and inner marketing pages now match a centered shell, the header is a solid top bar without the demo dropdown, and pricing stays in one row without a discount-code path.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T09:27:44Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T09:27:44Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ee95a3b2b4296d1604dc419e30498ab6e7a13bf4"
     }
   ]
 }

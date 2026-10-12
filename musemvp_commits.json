@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "85730ea",
+      "sha_full": "85730ea6d7cc6d0d8653b2569b1c4a729dbd56b9",
+      "message": "revert: drop the immature EdgeOne app from main",
+      "message_full": "revert: drop the immature EdgeOne app from main\n\nKeep the EdgeOne deployment on feat/web-edgeone until it is ready for the stable line.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-12T02:18:23Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-12T02:18:23Z",
+      "url": "https://github.com/musemvp/musemvp/commit/85730ea6d7cc6d0d8653b2569b1c4a729dbd56b9"
+    },
+    {
       "sha": "e986446",
       "sha_full": "e986446415f33d3f311666323fb2b724444df0e4",
       "message": "fix: serve the default locale at the EdgeOne site root",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-08-22T14:15:28Z",
       "url": "https://github.com/musemvp/musemvp/commit/d332cd3701f831f746c5f31aee1d5821d53a1122"
-    },
-    {
-      "sha": "93b3d02",
-      "sha_full": "93b3d02306acffa9f7dce6e69e1a49b1a327d201",
-      "message": "refactor(layout): consolidate SaaS shell structure and enhance app home overview",
-      "message_full": "refactor(layout): consolidate SaaS shell structure and enhance app home overview\n\nThis update refines the layout for the signed-in SaaS application by consolidating the shell structure into a single layout component. The `layoutType` configuration has been removed, and the app now utilizes a unified `AppLayout`. Additionally, the app home overview has been introduced, providing users with a snapshot of their account status, including billing and security features. Various components have been added or modified to support this new structure, improving the overall user experience and maintainability.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T13:58:25Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T13:58:25Z",
-      "url": "https://github.com/musemvp/musemvp/commit/93b3d02306acffa9f7dce6e69e1a49b1a327d201"
     }
   ]
 }

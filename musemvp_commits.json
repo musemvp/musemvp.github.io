@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "d5cbcba",
+      "sha_full": "d5cbcbaa2828c2d0cac1002cdd24a33aa9f442d7",
+      "message": "docs: align commercial license and Complete delivery",
+      "message_full": "docs: align commercial license and Complete delivery",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-13T11:48:47Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-13T11:48:47Z",
+      "url": "https://github.com/musemvp/musemvp/commit/d5cbcbaa2828c2d0cac1002cdd24a33aa9f442d7"
+    },
+    {
       "sha": "85730ea",
       "sha_full": "85730ea6d7cc6d0d8653b2569b1c4a729dbd56b9",
       "message": "revert: drop the immature EdgeOne app from main",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-08-22T15:03:52Z",
       "url": "https://github.com/musemvp/musemvp/commit/fe9f622e1d0b1f854a22e3fc71b01c47b5f22c52"
-    },
-    {
-      "sha": "d332cd3",
-      "sha_full": "d332cd3701f831f746c5f31aee1d5821d53a1122",
-      "message": "chore(skills): remove deprecated skills and update skill paths",
-      "message_full": "chore(skills): remove deprecated skills and update skill paths\n\nThis commit deletes several outdated skills, including \"better-auth-best-practices,\" \"better-auth-security-best-practices,\" \"billing-sdk,\" and \"brainstorming.\" The skills-lock.json file has been updated to reflect these removals and to ensure the remaining skills have accurate paths and computed hashes. This cleanup enhances maintainability and reduces clutter in the skills repository.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T14:15:28Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T14:15:28Z",
-      "url": "https://github.com/musemvp/musemvp/commit/d332cd3701f831f746c5f31aee1d5821d53a1122"
     }
   ]
 }

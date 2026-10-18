@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "1073f9c",
+      "sha_full": "1073f9cb7b5790fd193460bb357dc1b4d55e7cba",
+      "message": "feat: allow extra API origins and configurable signup",
+      "message_full": "feat: allow extra API origins and configurable signup\n\nCORS reads CORS_ALLOWED_ORIGINS in addition to the site origin and accepts PUT, PATCH, and DELETE. Email OTP sign-up follows config.auth.gates.allowRegister. D1 migrations read the database name from wrangler.jsonc.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-17T17:35:19Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-17T17:35:19Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1073f9cb7b5790fd193460bb357dc1b4d55e7cba"
+    },
+    {
       "sha": "d5cbcba",
       "sha_full": "d5cbcbaa2828c2d0cac1002cdd24a33aa9f442d7",
       "message": "docs: align commercial license and Complete delivery",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-08-23T09:40:30Z",
       "url": "https://github.com/musemvp/musemvp/commit/7e0983a036de39db9a03f7803b4406d605fff2d8"
-    },
-    {
-      "sha": "fe9f622",
-      "sha_full": "fe9f622e1d0b1f854a22e3fc71b01c47b5f22c52",
-      "message": "chore(env): update example environment variables for Waffo pricing plans",
-      "message_full": "chore(env): update example environment variables for Waffo pricing plans\n\nThis commit adds new environment variable entries for Waffo pricing plans in the .env.local.example file, including monthly, yearly, and lifetime IDs. This update ensures that developers have the latest configuration options available for integration with the Waffo billing gateway.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-22T15:03:52Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-22T15:03:52Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fe9f622e1d0b1f854a22e3fc71b01c47b5f22c52"
     }
   ]
 }

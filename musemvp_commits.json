@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "440b68e",
+      "sha_full": "440b68e048cb960226a817eba0b6fe178601170f",
+      "message": "feat: implement social sign-in functionality and update related components",
+      "message_full": "feat: implement social sign-in functionality and update related components\n\n- Added `getEnabledSocialProviders` utility to determine available social sign-in options based on environment variables.\n- Updated `LoginFormMailOTP`, `SignupFormMailOTP`, and `ConnectedAccountsBlock` components to utilize social providers.\n- Modified `AccountSettingsPage`, `LoginPage`, and `SignupPage` to pass social providers to respective components.\n- Adjusted configuration to disable registration and two-factor authentication for testing purposes.\n- Enhanced e2e tests to verify social provider visibility based on configuration and credentials.\n- Created unit tests for `getEnabledSocialProviders` to ensure correct functionality.\n- Updated security settings tests to reflect changes in social provider handling.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-29T08:42:38Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-29T08:42:38Z",
+      "url": "https://github.com/musemvp/musemvp/commit/440b68e048cb960226a817eba0b6fe178601170f"
+    },
+    {
       "sha": "1073f9c",
       "sha_full": "1073f9cb7b5790fd193460bb357dc1b4d55e7cba",
       "message": "feat: allow extra API origins and configurable signup",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-08-23T10:06:06Z",
       "url": "https://github.com/musemvp/musemvp/commit/2519eaca9d88682e7686badde2b07f905ac990fd"
-    },
-    {
-      "sha": "7e0983a",
-      "sha_full": "7e0983a036de39db9a03f7803b4406d605fff2d8",
-      "message": "feat(settings): implement admin settings management and database schema for application settings",
-      "message_full": "feat(settings): implement admin settings management and database schema for application settings\n\nThis commit introduces a new admin settings management feature, allowing for the retrieval and updating of application settings through a dedicated API. It includes the addition of a new `app_setting` table in the database schema to store settings, along with corresponding queries for listing, upserting, and deleting settings. The frontend has been updated to integrate with this new functionality, enhancing the overall configuration capabilities for administrators.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-23T09:40:30Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-23T09:40:30Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7e0983a036de39db9a03f7803b4406d605fff2d8"
     }
   ]
 }

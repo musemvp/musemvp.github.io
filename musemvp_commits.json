@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "b5575ff",
+      "sha_full": "b5575ff9f05ac2f71de5845f21c302cd861672e0",
+      "message": "chore: update dependencies to Next.js 16.4.3 and related packages",
+      "message_full": "chore: update dependencies to Next.js 16.4.3 and related packages\n\n- Updated `@next/third-parties` and `next` versions to ^16.4.3 in multiple package.json files.\n- Ensured consistency across `pnpm-lock.yaml` and various application configurations.",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-30T05:39:27Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-30T05:39:27Z",
+      "url": "https://github.com/musemvp/musemvp/commit/b5575ff9f05ac2f71de5845f21c302cd861672e0"
+    },
+    {
       "sha": "440b68e",
       "sha_full": "440b68e048cb960226a817eba0b6fe178601170f",
       "message": "feat: implement social sign-in functionality and update related components",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-08-23T16:13:30Z",
       "url": "https://github.com/musemvp/musemvp/commit/c1a6841488428a8fec37385e300235f803bc3183"
-    },
-    {
-      "sha": "2519eac",
-      "sha_full": "2519eaca9d88682e7686badde2b07f905ac990fd",
-      "message": "fix(contact-form): update subject line for clarity",
-      "message_full": "fix(contact-form): update subject line for clarity",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-23T10:06:06Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-23T10:06:06Z",
-      "url": "https://github.com/musemvp/musemvp/commit/2519eaca9d88682e7686badde2b07f905ac990fd"
     }
   ]
 }

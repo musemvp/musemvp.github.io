@@ -6,6 +6,171 @@
   },
   "commits": [
     {
+      "sha": "8f24fb1",
+      "sha_full": "8f24fb1363e605e95b5ecf8f9d22afe5ef6ca33e",
+      "message": "Merge pull request #154 from musemvp/feat/new-buyer-setup",
+      "message_full": "Merge pull request #154 from musemvp/feat/new-buyer-setup\n\nNew buyer setup: sign-up security fix, one-command init, per-app doctor",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T07:50:57Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T07:50:57Z",
+      "url": "https://github.com/musemvp/musemvp/commit/8f24fb1363e605e95b5ecf8f9d22afe5ef6ca33e"
+    },
+    {
+      "sha": "087e349",
+      "sha_full": "087e349663e3bf468c000596de2726e1fad5480e",
+      "message": "refactor(skills): rebuild repo skills around setup, doctor, and real paths",
+      "message_full": "refactor(skills): rebuild repo skills around setup, doctor, and real paths\n\nMost skill paths pointed at `src/...` locations that moved into\n`apps/web`, `packages/config`, and `packages/i18n`. Two skills still\ntaught the removed placeholder pattern. Claude Code could not discover\nthe skills because there was no `.claude/skills`.\n\n- Nine task skills replace the old eight: musemvp-setup,\n  musemvp-connect-services, musemvp-new-feature, musemvp-customize-site,\n  musemvp-customize-app, musemvp-testing, musemvp-review, musemvp-deploy,\n  musemvp-changelog. The router skill is gone; AGENTS.md holds the\n  routing table.\n- New skills build on muse:init and muse:doctor, separate human-only\n  steps from agent steps, and cover Dodo via MCP, mail, OAuth, Turnstile,\n  storage, and deployment.\n- `scripts/skills.ts` checks frontmatter, size, every referenced path,\n  skill cross-references, the AGENTS.md index, and the `.claude/skills`\n  copy. `pnpm skills:sync` regenerates the copy (copies, not symlinks,\n  for Windows). `pnpm skills:check` runs in CI.\n\nRefs musemvp/musemvp-com#28\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T07:31:56Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T07:31:56Z",
+      "url": "https://github.com/musemvp/musemvp/commit/087e349663e3bf468c000596de2726e1fad5480e"
+    },
+    {
+      "sha": "7c8f8f5",
+      "sha_full": "7c8f8f54e0d9aa038af4528530d2daf7e3f37e81",
+      "message": "ci: replay a new buyer's first run for both apps",
+      "message_full": "ci: replay a new buyer's first run for both apps\n\nTwo jobs start from a clean checkout with no third-party keys: init,\ndoctor, a dev server, then scripts/first-run-smoke.mjs (seed sign-in,\nclosed password sign-up, email-code sign-up through console mail, dev\norigin rules). The Node job runs against a Postgres service and also runs\nthe full API contract suite, which CI did not run before.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T07:06:06Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T07:06:06Z",
+      "url": "https://github.com/musemvp/musemvp/commit/7c8f8f54e0d9aa038af4528530d2daf7e3f37e81"
+    },
+    {
+      "sha": "c8cd532",
+      "sha_full": "c8cd53289b080aa9e6a9610fdf07d72f918f28e3",
+      "message": "docs: add the English getting-started guide and the 2026-10-31 changelog",
+      "message_full": "docs: add the English getting-started guide and the 2026-10-31 changelog\n\nThe changelog tells existing buyers how to apply the sign-up security fix.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T07:01:21Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T07:01:21Z",
+      "url": "https://github.com/musemvp/musemvp/commit/c8cd53289b080aa9e6a9610fdf07d72f918f28e3"
+    },
+    {
+      "sha": "395b04d",
+      "sha_full": "395b04db35e07466ecb8e2d124bd66f64eb3aef2",
+      "message": "docs: add the new-buyer guide and align setup docs",
+      "message_full": "docs: add the new-buyer guide and align setup docs\n\ndocs/getting-started.zh.md walks a buyer from a fresh clone to production:\nchoosing an app, the three setup commands, what works locally without\nkeys, prompts for AI agents, connecting payments, mail, OAuth, Turnstile,\nand storage, recommended MCP servers, and a table of every step that\nneeds a human. README, AGENTS.md, and skills now use the new init and\ndoctor commands. The billing module README no longer claims gateway\ncredentials come from app settings.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:50Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:50Z",
+      "url": "https://github.com/musemvp/musemvp/commit/395b04db35e07466ecb8e2d124bd66f64eb3aef2"
+    },
+    {
+      "sha": "6af5e41",
+      "sha_full": "6af5e411f35f9af25af0d93d1faeb2017bcccb51",
+      "message": "feat(cli): require --app for init and report per-app status in doctor",
+      "message_full": "feat(cli): require --app for init and report per-app status in doctor\n\n`pnpm muse:init` now takes `--app cloudflare|node|both` and finishes the\nwhole local setup: env file, migrations, seed accounts, and the right\nnext command. It edits `.env.local` in place, so re-running it keeps\nvalues, comments, and custom keys. It records the app in the gitignored\n`muse.project.json` and prints short errors with the next command\ninstead of stack traces. `--docker` waits for the Postgres health check.\n\n`pnpm muse:doctor` checks only the chosen app and reports each feature as\nready, local, disabled, or missing, with the variable names involved and\na fix. `--json` is for agents, never includes env values, and exits 1\nwhen a blocking check fails. The Cloudflare app is no longer told it\nneeds DATABASE_URL.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:42Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:42Z",
+      "url": "https://github.com/musemvp/musemvp/commit/6af5e411f35f9af25af0d93d1faeb2017bcccb51"
+    },
+    {
+      "sha": "432a71e",
+      "sha_full": "432a71ec50f03cb6a1418cc129f03aaefd352f67",
+      "message": "feat(auth): open registration by default",
+      "message_full": "feat(auth): open registration by default\n\nNew products usually want sign-up on day one. Registration goes through\nemail OTP, which works locally with console mail.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:34Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:34Z",
+      "url": "https://github.com/musemvp/musemvp/commit/432a71ec50f03cb6a1418cc129f03aaefd352f67"
+    },
+    {
+      "sha": "140b64b",
+      "sha_full": "140b64b660de776cc598c1ddf037efa9292cc297",
+      "message": "fix(billing): accept short gateway names in BILLING_DEFAULT_GATEWAY",
+      "message_full": "fix(billing): accept short gateway names in BILLING_DEFAULT_GATEWAY\n\n.env.example documented `dodo`, but only `muse_dodo` was recognized, so\nthe documented value was ignored and checkout fell back to another\ngateway. Both forms now work.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/140b64b660de776cc598c1ddf037efa9292cc297"
+    },
+    {
+      "sha": "07c9cd2",
+      "sha_full": "07c9cd280fe7e419542682fe79c7acd27c18390a",
+      "message": "fix(mail): print mail locally when MAIL_PROVIDER is empty",
+      "message_full": "fix(mail): print mail locally when MAIL_PROVIDER is empty\n\nThe example and init used console mail, but an empty MAIL_PROVIDER fell\nback to Resend at runtime. An empty value now means console outside\nproduction and the platform provider (Resend or Cloudflare) in\nproduction. The Cloudflare app also supports MAIL_PROVIDER=console in\ndevelopment, so sign-up codes reach the dev server terminal.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/07c9cd280fe7e419542682fe79c7acd27c18390a"
+    },
+    {
+      "sha": "cede4d4",
+      "sha_full": "cede4d4d82928185a4b479a2f93fd4d72db1b8f2",
+      "message": "feat(dev): trust localhost on any port outside production",
+      "message_full": "feat(dev): trust localhost on any port outside production\n\nNext.js moves to the next free port when 3000 is taken, and the auth\norigin check then rejected sign-in from that port. Outside production,\nBetter Auth and the API CORS check now accept http://localhost and\nhttp://127.0.0.1 on any port. Production keeps the exact origin list.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:33Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:33Z",
+      "url": "https://github.com/musemvp/musemvp/commit/cede4d4d82928185a4b479a2f93fd4d72db1b8f2"
+    },
+    {
+      "sha": "1020f19",
+      "sha_full": "1020f1911142b81d22f3225a5618aca1279bb437",
+      "message": "fix(auth): close the password sign-up endpoint",
+      "message_full": "fix(auth): close the password sign-up endpoint\n\n`config.auth.gates.allowRegister: false` hid the register page but left\nPOST /api/auth/sign-up/email open. With the gate closed, Better Auth also\nturned on autoSignIn and turned off email verification, so anyone could\ncreate an account with an unverified address and get a session.\n\nAccounts are created through email OTP, which proves the address, so the\npassword sign-up endpoint now stays closed whatever the gate says. Password\nsign-in still works for seeded and admin-created users, and never signs in\nan unverified address. Test helpers create password users directly.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-10-31T06:59:18Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-10-31T06:59:18Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1020f1911142b81d22f3225a5618aca1279bb437"
+    },
+    {
       "sha": "b5575ff",
       "sha_full": "b5575ff9f05ac2f71de5845f21c302cd861672e0",
       "message": "chore: update dependencies to Next.js 16.4.3 and related packages",
@@ -589,171 +754,6 @@
       },
       "committed_at": "2026-10-07T14:46:45Z",
       "url": "https://github.com/musemvp/musemvp/commit/90d569a5164d1bb5b573636d200dc7ae357e7e95"
-    },
-    {
-      "sha": "04e6f92",
-      "sha_full": "04e6f9235974250c5512b923ed8d490b3b545d7c",
-      "message": "refactor: read payment and storage secrets from environment variables",
-      "message_full": "refactor: read payment and storage secrets from environment variables\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T14:32:29Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T14:32:29Z",
-      "url": "https://github.com/musemvp/musemvp/commit/04e6f9235974250c5512b923ed8d490b3b545d7c"
-    },
-    {
-      "sha": "ebd73ea",
-      "sha_full": "ebd73ea83221fb4104f8e425ce2bebcfee18e937",
-      "message": "refactor: move the Next.js app into a pnpm workspace",
-      "message_full": "refactor: move the Next.js app into a pnpm workspace\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T14:25:51Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T14:25:51Z",
-      "url": "https://github.com/musemvp/musemvp/commit/ebd73ea83221fb4104f8e425ce2bebcfee18e937"
-    },
-    {
-      "sha": "55fa4a8",
-      "sha_full": "55fa4a8a7477ad58b8f6de248f262e0873fcd3bd",
-      "message": "docs: record the pnpm monorepo refactor spec and baseline",
-      "message_full": "docs: record the pnpm monorepo refactor spec and baseline\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T14:17:07Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T14:17:07Z",
-      "url": "https://github.com/musemvp/musemvp/commit/55fa4a8a7477ad58b8f6de248f262e0873fcd3bd"
-    },
-    {
-      "sha": "fa68e0e",
-      "sha_full": "fa68e0efeb61a0a839fbcf4f5549dec545898024",
-      "message": "refactor(storage): streamline resolveAvatarsFileProxyUrl function signature",
-      "message_full": "refactor(storage): streamline resolveAvatarsFileProxyUrl function signature\n\nThis commit simplifies the function signature of `resolveAvatarsFileProxyUrl` by consolidating the parameter declaration into a single line. This change enhances code readability without altering the function's behavior.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T07:44:23Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T07:44:23Z",
-      "url": "https://github.com/musemvp/musemvp/commit/fa68e0efeb61a0a839fbcf4f5549dec545898024"
-    },
-    {
-      "sha": "64df2bb",
-      "sha_full": "64df2bb54ad0ee746e5d0ba5dba8b508068b6d47",
-      "message": "feat(auth): integrate Google One Tap authentication into landing and auth layouts",
-      "message_full": "feat(auth): integrate Google One Tap authentication into landing and auth layouts\n\nThis commit adds the Google One Tap component to both the landing page and auth layouts, enhancing the user authentication experience. Additionally, it refactors the LoginFormMailOTP component to remove the direct use of Google One Tap hooks, streamlining the authentication process. The SessionProvider component is updated to improve session handling, ensuring a more efficient user session management.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T07:32:42Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T07:32:42Z",
-      "url": "https://github.com/musemvp/musemvp/commit/64df2bb54ad0ee746e5d0ba5dba8b508068b6d47"
-    },
-    {
-      "sha": "9800d44",
-      "sha_full": "9800d44f881a5d70e52102bedb5b28d41435bc41",
-      "message": "feat(captcha, newsletter): integrate Turnstile captcha and newsletter signing secret management",
-      "message_full": "feat(captcha, newsletter): integrate Turnstile captcha and newsletter signing secret management\n\nThis commit introduces the integration of Cloudflare Turnstile for captcha functionality in the password reset process, enhancing security. It also implements a new newsletter signing secret management system, allowing for the configuration of a dedicated signing secret for newsletter tokens. Updates include modifications to the environment configuration, API routes, and frontend components to support these features, improving overall application security and user experience.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T07:00:13Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T07:00:13Z",
-      "url": "https://github.com/musemvp/musemvp/commit/9800d44f881a5d70e52102bedb5b28d41435bc41"
-    },
-    {
-      "sha": "c6cfcc8",
-      "sha_full": "c6cfcc801dc4b23c148e893180065b1c531aec47",
-      "message": "feat(auth): implement custom session handling with avatar proxy URL support",
-      "message_full": "feat(auth): implement custom session handling with avatar proxy URL support\n\nThis commit introduces a custom session handling mechanism in the authentication process, allowing the inclusion of an avatar proxy URL in the session data. The changes involve updates to the auth middleware, session context, and various components to utilize the new avatar proxy URL, enhancing the user experience by providing a dynamic avatar URL based on the session configuration. Additionally, the configuration and schema have been updated to accommodate this new feature.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T06:29:25Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T06:29:25Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c6cfcc801dc4b23c148e893180065b1c531aec47"
-    },
-    {
-      "sha": "940b810",
-      "sha_full": "940b810e6ab5e89927d7ba629fe93ae63d79ad91",
-      "message": "chore(docs): remove outdated security audit and admin user ban design documents",
-      "message_full": "chore(docs): remove outdated security audit and admin user ban design documents\n\nThis commit deletes the `security-audit-2026-06-remediation.md` and `2026-04-25-admin-user-ban-design.md` files, which are no longer relevant to the current project scope. This cleanup helps maintain an organized documentation structure and ensures that only up-to-date information is available for developers.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T05:23:16Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T05:23:16Z",
-      "url": "https://github.com/musemvp/musemvp/commit/940b810e6ab5e89927d7ba629fe93ae63d79ad91"
-    },
-    {
-      "sha": "5a0916a",
-      "sha_full": "5a0916a5cae160c700567e3700d071000bd0c981",
-      "message": "feat(config): update wrangler configuration for compatibility and routing",
-      "message_full": "feat(config): update wrangler configuration for compatibility and routing\n\nThis commit enhances the `wrangler.jsonc` configuration by updating the compatibility date to 2026-09-30 and adding necessary compatibility flags. It also introduces a custom route for the domain `demo.musemvp.com`, while refining existing settings for better deployment management.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T05:21:59Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T05:21:59Z",
-      "url": "https://github.com/musemvp/musemvp/commit/5a0916a5cae160c700567e3700d071000bd0c981"
-    },
-    {
-      "sha": "804e842",
-      "sha_full": "804e842f19d59e67f4fc6e72daea9e2e4d9c8e7f",
-      "message": "feat(config): add Next.js configuration with security headers and output settings",
-      "message_full": "feat(config): add Next.js configuration with security headers and output settings\n\nThis commit introduces a new `next.config.ts` file that configures Next.js with baseline security headers and output settings for standalone builds. It also integrates MDX and internationalization plugins, enhancing the application's configuration capabilities. Additionally, the `postcss.config.mjs` file is added for Tailwind CSS support, and several scripts are updated or removed to streamline the build process.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-09-30T03:49:03Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-09-30T03:49:03Z",
-      "url": "https://github.com/musemvp/musemvp/commit/804e842f19d59e67f4fc6e72daea9e2e4d9c8e7f"
-    },
-    {
-      "sha": "c1a6841",
-      "sha_full": "c1a6841488428a8fec37385e300235f803bc3183",
-      "message": "chore(env): add default locale to example environment variables",
-      "message_full": "chore(env): add default locale to example environment variables\n\nThis commit updates the .env.local.example file to include a new environment variable for the default locale, enhancing the configuration options available for developers.",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-08-23T16:13:30Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-08-23T16:13:30Z",
-      "url": "https://github.com/musemvp/musemvp/commit/c1a6841488428a8fec37385e300235f803bc3183"
     }
   ]
 }

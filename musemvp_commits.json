@@ -6,6 +6,21 @@
   },
   "commits": [
     {
+      "sha": "1989a04",
+      "sha_full": "1989a046153d90264d77c0fdc107b3a2ac4f59e0",
+      "message": "🐛 fix(layout): Restore saved sidebar state",
+      "message_full": "🐛 fix(layout): Restore saved sidebar state",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-11-02T06:35:51Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-11-02T06:35:51Z",
+      "url": "https://github.com/musemvp/musemvp/commit/1989a046153d90264d77c0fdc107b3a2ac4f59e0"
+    },
+    {
       "sha": "8f24fb1",
       "sha_full": "8f24fb1363e605e95b5ecf8f9d22afe5ef6ca33e",
       "message": "Merge pull request #154 from musemvp/feat/new-buyer-setup",
@@ -739,21 +754,6 @@
       },
       "committed_at": "2026-10-07T14:53:07Z",
       "url": "https://github.com/musemvp/musemvp/commit/a1d3e2b06c4bf800a7fa749b87aa8c5be6befa07"
-    },
-    {
-      "sha": "90d569a",
-      "sha_full": "90d569a5164d1bb5b573636d200dc7ae357e7e95",
-      "message": "refactor: extract shared, ui, config, and i18n packages",
-      "message_full": "refactor: extract shared, ui, config, and i18n packages\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T14:46:45Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T14:46:45Z",
-      "url": "https://github.com/musemvp/musemvp/commit/90d569a5164d1bb5b573636d200dc7ae357e7e95"
     }
   ]
 }

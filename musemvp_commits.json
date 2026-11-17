@@ -6,6 +6,51 @@
   },
   "commits": [
     {
+      "sha": "a6bce37",
+      "sha_full": "a6bce375025d0cebe762d57eb8270fb87f46c8b5",
+      "message": "fix(build): configure SWC for Workers Builds (#158)",
+      "message_full": "fix(build): configure SWC for Workers Builds (#158)\n\nConfigure the documented SWC cache override only in the isolated Cloudflare builder, honor explicit strict settings, and test unsafe user and temporary caches.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-11-17T02:38:02Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-11-17T02:38:02Z",
+      "url": "https://github.com/musemvp/musemvp/commit/a6bce375025d0cebe762d57eb8270fb87f46c8b5"
+    },
+    {
+      "sha": "fe383fd",
+      "sha_full": "fe383fdda043b6b22806fb3aebd1e089ea69a208",
+      "message": "fix(build): restore Cloudflare Worker builds (#157)",
+      "message_full": "fix(build): restore Cloudflare Worker builds (#157)\n\nUpdate SWC for safe Unix cache fallback, upgrade OpenNext and Wrangler, remove the obsolete manifest patch, and verify the Worker build on Linux.",
+      "author": {
+        "name": "尼采般地抒情",
+        "email": "wztlink1013@163.com",
+        "date": "2026-11-17T02:11:20Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-11-17T02:11:20Z",
+      "url": "https://github.com/musemvp/musemvp/commit/fe383fdda043b6b22806fb3aebd1e089ea69a208"
+    },
+    {
+      "sha": "e73e75c",
+      "sha_full": "e73e75cdb9397aa5bba240e6368c053617358e1b",
+      "message": "chore(deps): upgrade Next.js to 16.4.6",
+      "message_full": "chore(deps): upgrade Next.js to 16.4.6",
+      "author": {
+        "name": "wztlink1013",
+        "email": "wztlink1013@163.com",
+        "date": "2026-11-17T01:27:56Z",
+        "github_login": "wztlink1013",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
+      },
+      "committed_at": "2026-11-17T01:27:56Z",
+      "url": "https://github.com/musemvp/musemvp/commit/e73e75cdb9397aa5bba240e6368c053617358e1b"
+    },
+    {
       "sha": "1989a04",
       "sha_full": "1989a046153d90264d77c0fdc107b3a2ac4f59e0",
       "message": "🐛 fix(layout): Restore saved sidebar state",
@@ -709,51 +754,6 @@
       },
       "committed_at": "2026-10-07T15:17:02Z",
       "url": "https://github.com/musemvp/musemvp/commit/3f1644f62d075121828d3fa884a720ed24255d68"
-    },
-    {
-      "sha": "eb35209",
-      "sha_full": "eb35209a653af859a02ca7c519813778969a3e62",
-      "message": "refactor: extract auth and api composition root",
-      "message_full": "refactor: extract auth and api composition root\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T15:05:41Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T15:05:41Z",
-      "url": "https://github.com/musemvp/musemvp/commit/eb35209a653af859a02ca7c519813778969a3e62"
-    },
-    {
-      "sha": "7fd77fa",
-      "sha_full": "7fd77fae44e31a708a6a4eca7b508e006084c84b",
-      "message": "refactor: extract storage, mail, and billing packages",
-      "message_full": "refactor: extract storage, mail, and billing packages\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T15:01:36Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T15:01:36Z",
-      "url": "https://github.com/musemvp/musemvp/commit/7fd77fae44e31a708a6a4eca7b508e006084c84b"
-    },
-    {
-      "sha": "a1d3e2b",
-      "sha_full": "a1d3e2b06c4bf800a7fa749b87aa8c5be6befa07",
-      "message": "refactor: extract the database package and query drivers",
-      "message_full": "refactor: extract the database package and query drivers\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
-      "author": {
-        "name": "wztlink1013",
-        "email": "wztlink1013@163.com",
-        "date": "2026-10-07T14:53:07Z",
-        "github_login": "wztlink1013",
-        "avatar_url": "https://avatars.githubusercontent.com/u/50895943?v=4"
-      },
-      "committed_at": "2026-10-07T14:53:07Z",
-      "url": "https://github.com/musemvp/musemvp/commit/a1d3e2b06c4bf800a7fa749b87aa8c5be6befa07"
     }
   ]
 }
